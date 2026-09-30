@@ -1,0 +1,74 @@
+{
+  "protocol_version": "0.1",
+  "status": "planned_not_executed",
+  "regime": "continued_pretraining",
+  "seeds": [42, 43, 44],
+  "optimizers": ["adamw", "guidon"],
+  "required_information_control": "adamw_plus_guidance",
+  "training_loss_tokens": 1000000000,
+  "global_batch_sequences": 256,
+  "sequence_length": 2048,
+  "model": {
+    "id": "EleutherAI/pythia-160m-deduped",
+    "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+    "family": "gpt_neox",
+    "initialization": "identical_final_pretrained_checkpoint_for_all_arms",
+    "optimizer_state": "reset_moments_and_guidance_at_start",
+    "tokenizer": "same_pinned_model_repository",
+    "architecture_change": false
+  },
+  "data": {
+    "dataset": "HuggingFaceTB/finemath",
+    "config": "finemath-4plus",
+    "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+    "training_mixture": {"finemath": 0.9, "fineweb_edu_retention": 0.1},
+    "retention_revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+    "guidance_mixture": {"finemath": 0.9, "fineweb_edu_retention": 0.1},
+    "split_seed": 20260930,
+    "minimum_guidance_tokens": 10000000,
+    "minimum_development_tokens": 10000000,
+    "minimum_validation_tokens": 10000000,
+    "minimum_test_tokens": 10000000,
+    "guidance_reuse": false,
+    "group_before_pack": true,
+    "audit_pretrained_corpus_overlap": true,
+    "manifest_ready": false
+  },
+  "optimizer_defaults": {
+    "learning_rate": 0.00006,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "epsilon": 1e-8,
+    "weight_decay": 0.1,
+    "global_gradient_clip_norm": 1.0,
+    "guidon_radius": 0.15,
+    "guide_interval": 64,
+    "guide_warmup_updates": 128,
+    "guide_batch_sequences": 32,
+    "neutrality_tolerance": 1e-5,
+    "decay_exclusions": ["bias", "layernorm_scale", "layernorm_bias"]
+  },
+  "schedule": {
+    "type": "cosine_by_consumed_training_loss_tokens",
+    "warmup_fraction": 0.02,
+    "minimum_learning_rate_fraction": 0.1,
+    "checkpoint_selection": "final_exact_token_checkpoint"
+  },
+  "hardware": {
+    "accelerator": "v4-32",
+    "physical_chips": 16,
+    "topology": "2x2x4",
+    "jax_devices": "discover_after_distributed_initialize",
+    "model_compute_dtype": "bfloat16",
+    "parameter_and_moment_dtype": "float32"
+  },
+  "gates": {
+    "minimum_nll_improvement": 0.005,
+    "maximum_retention_nll_regression": 0.01,
+    "maximum_wall_time_ratio": 1.1,
+    "maximum_compute_ratio": 1.1,
+    "maximum_fallback_fraction": 0.01,
+    "final_evaluation_locked": true,
+    "frozen": false
+  }
+}

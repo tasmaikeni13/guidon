@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "protocol_version": "0.1",
+  "foundation": "theory_proofs_optimizer_prototypes_and_plans",
+  "llm_training_executed": false,
+  "phases": [
+    {"id": "01", "status": "not_started", "depends_on": [], "evidence": null},
+    {"id": "02", "status": "not_started", "depends_on": ["01"], "evidence": null},
+    {"id": "03", "status": "not_started", "depends_on": ["01", "02"], "evidence": null},
+    {"id": "04", "status": "not_started", "depends_on": ["01", "03"], "evidence": null},
+    {"id": "05", "status": "not_started", "depends_on": ["02", "03", "04"], "evidence": null},
+    {"id": "06", "status": "not_started", "depends_on": ["05"], "evidence": null},
+    {"id": "07", "status": "not_started", "depends_on": ["05", "06"], "evidence": null},
+    {"id": "08", "status": "not_started", "depends_on": ["06", "07"], "evidence": null},
+    {"id": "09", "status": "not_started", "depends_on": ["01", "02", "03", "04", "05", "06", "07", "08"], "evidence": null}
+  ]
+}
