@@ -1,0 +1,15 @@
+{
+  "regime": "from_scratch",
+  "status": "planned_not_executed",
+  "required_primary_runs": 6,
+  "required_information_control_runs": 3,
+  "training_loss_tokens_per_run": 2500000000,
+  "batch_loss_tokens": 524288,
+  "full_updates": 4768,
+  "final_partial_loss_tokens": 194816,
+  "updates": 4769,
+  "guidance_probes": 73,
+  "additional_guidance_tokens_per_guidon_or_control_run": 4784128,
+  "guide_token_fraction": 0.0019136512,
+  "ready_for_confirmation": false
+}

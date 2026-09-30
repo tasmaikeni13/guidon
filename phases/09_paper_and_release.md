@@ -23,7 +23,7 @@ requires upstream invalidation and new confirmation evidence.
 
 Clean and organize the repository: remove generated dependency caches from tracking,
 organize source/tests/configs/proofs/research/paper, keep raw artifacts linked by hash,
-retire misleading examples, and preserve user-supplied `prompt.md` and `skills/`.
+retire misleading examples, and preserve the user-supplied `skills/` and the original prompt in Git history (the owner removed `prompt.md` in `f85bfcb`).
 Add comments explaining nonobvious equations, reduction ownership, masks, and timing;
 avoid restating every Python line. Apply PEP 8 formatting/lint and meaningful type,
 correctness, resume, sharding, logit, data-boundary, and kernel tests. Rebuild Lean

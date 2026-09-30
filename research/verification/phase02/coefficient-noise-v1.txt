@@ -1,0 +1,1 @@
+Measured coefficient errors and normalization sensitivity for 60 registered conditions; 60000 existing draw identities

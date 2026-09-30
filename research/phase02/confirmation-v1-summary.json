@@ -1,0 +1,5510 @@
+{
+  "control-collinear": {
+    "actual_guide_advantage": {
+      "lower95": 0.0004796148349783218,
+      "mcse": 0.00010190359719783955,
+      "mean": 0.0006793458854860873,
+      "upper95": 0.0008790769359938527
+    },
+    "actual_train_advantage": {
+      "lower95": -2.2500711567921577e-05,
+      "mcse": 2.805799473903304e-07,
+      "mean": -2.1950774871036528e-05,
+      "upper95": -2.140083817415148e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.003506139728314774,
+      "mcse": 0.0030932613264369794,
+      "mean": 0.009568931928131253,
+      "upper95": 0.015631724127947732
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.14684862139462,
+      "mcse": 0.021383692063399556,
+      "mean": 11.188760657838882,
+      "upper95": 11.230672694283145
+    },
+    "control_minus_guidon": {
+      "lower95": 0.0247985597425684,
+      "mcse": 0.0031518909762377157,
+      "mean": 0.030976266055994323,
+      "upper95": 0.037153972369420245
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.7021177085143054,
+      "mcse": 0.142804017278676,
+      "mean": 0.9820135823805104,
+      "upper95": 1.2619094562467152
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.7021177085143054,
+      "mcse": 0.142804017278676,
+      "mean": 0.9820135823805104,
+      "upper95": 1.2619094562467152
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.150366351486317,
+        "mcse": 0.10778533082905126,
+        "mean": 15.361625599911259,
+        "upper95": 15.5728848483362
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.171962779398303,
+        "mcse": 0.10768885440857977,
+        "mean": 15.38303293403912,
+        "upper95": 15.594103088679937
+      },
+      "guidon": {
+        "lower95": 15.136731360415538,
+        "mcse": 0.10985985079978844,
+        "mean": 15.352056667983124,
+        "upper95": 15.56738197555071
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.585584901137542e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6771624239777037,
+      "mcse": 0.0004540905820937364,
+      "mean": 3.6780524415186076,
+      "upper95": 3.6789424590595114
+    }
+  },
+  "control-remove": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.868359935273492,
+      "mcse": 0.011946496657943353,
+      "mean": 10.891775068723062,
+      "upper95": 10.915190202172631
+    },
+    "control_minus_guidon": {
+      "lower95": 0.021078846685580466,
+      "mcse": 0.00010794306077745146,
+      "mean": 0.02129041508470427,
+      "upper95": 0.021501983483828077
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.23016114403538,
+        "mcse": 0.1100144755755212,
+        "mean": 15.445789516163401,
+        "upper95": 15.661417888291423
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.251644519222777,
+        "mcse": 0.10991602654353473,
+        "mean": 15.467079931248106,
+        "upper95": 15.682515343273435
+      },
+      "guidon": {
+        "lower95": 15.23016114403538,
+        "mcse": 0.1100144755755212,
+        "mean": 15.445789516163401,
+        "upper95": 15.661417888291423
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.666001985468321,
+      "mcse": 0.00027770471574398647,
+      "mean": 3.666546286711179,
+      "upper95": 3.6670905879540374
+    }
+  },
+  "control-reverse": {
+    "actual_guide_advantage": {
+      "lower95": -0.007869590726393136,
+      "mcse": 2.956104395591191e-05,
+      "mean": -0.007811651080239548,
+      "upper95": -0.007753711434085961
+    },
+    "actual_train_advantage": {
+      "lower95": -1.805600955528894e-06,
+      "mcse": 5.281680173899914e-07,
+      "mean": -7.703916414445108e-07,
+      "upper95": 2.6481767263987244e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.24163806350952,
+      "mcse": 0.000680250342438454,
+      "mean": -0.24030477283834062,
+      "upper95": -0.23897148216716124
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.489025422386103,
+      "mcse": 0.004588711372990828,
+      "mean": 10.498019296677166,
+      "upper95": 10.507013170968229
+    },
+    "control_minus_guidon": {
+      "lower95": -0.2202975054256263,
+      "mcse": 0.0006584236355436368,
+      "mean": -0.21900699509996077,
+      "upper95": -0.21771648477429525
+    },
+    "current_guide_linear_gain": {
+      "lower95": -11.017572035725292,
+      "mcse": 0.04199696521727344,
+      "mean": -10.935257983899437,
+      "upper95": -10.85294393207358
+    },
+    "evaluation_linear_gain": {
+      "lower95": -11.017572035725292,
+      "mcse": 0.04199696521727344,
+      "mean": -10.935257983899437,
+      "upper95": -10.85294393207358
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.221950166939322,
+        "mcse": 0.10675676791000795,
+        "mean": 15.431193432042939,
+        "upper95": 15.640436697146555
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.243430631741653,
+        "mcse": 0.10666356022431844,
+        "mean": 15.452491209781318,
+        "upper95": 15.661551787820983
+      },
+      "guidon": {
+        "lower95": 15.46288983379584,
+        "mcse": 0.10643284239053084,
+        "mean": 15.67149820488128,
+        "upper95": 15.88010657596672
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.4163524936183746e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6777925657570836,
+      "mcse": 0.00042696863011307197,
+      "mean": 3.6786294242721054,
+      "upper95": 3.679466282787127
+    }
+  },
+  "control-shuffle": {
+    "actual_guide_advantage": {
+      "lower95": -0.0022608460652736796,
+      "mcse": 2.491376232166718e-05,
+      "mean": -0.002212015091123212,
+      "upper95": -0.0021631841169727447
+    },
+    "actual_train_advantage": {
+      "lower95": -2.9454414152206963e-06,
+      "mcse": 1.4151579578525045e-07,
+      "mean": -2.6680704554816056e-06,
+      "upper95": -2.390699495742515e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.0714340432802251,
+      "mcse": 0.000790673148748939,
+      "mean": -0.06988432390867717,
+      "upper95": -0.06833460453712925
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.791353771970916,
+      "mcse": 0.010857576523548653,
+      "mean": 10.812634621957072,
+      "upper95": 10.833915471943227
+    },
+    "control_minus_guidon": {
+      "lower95": -0.050117010392325974,
+      "mcse": 0.0007972435708170867,
+      "mean": -0.04855441299352448,
+      "upper95": -0.04699181559472299
+    },
+    "current_guide_linear_gain": {
+      "lower95": -3.1612765931335614,
+      "mcse": 0.034798058322216045,
+      "mean": -3.093072398822018,
+      "upper95": -3.0248682045104744
+    },
+    "evaluation_linear_gain": {
+      "lower95": -3.1612765931335614,
+      "mcse": 0.034798058322216045,
+      "mean": -3.093072398822018,
+      "upper95": -3.0248682045104744
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.153857504875335,
+        "mcse": 0.10506457382578725,
+        "mean": 15.359784069573879,
+        "upper95": 15.565710634272422
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.175363931957417,
+        "mcse": 0.10497451455694526,
+        "mean": 15.38111398048903,
+        "upper95": 15.586864029020642
+      },
+      "guidon": {
+        "lower95": 15.22356285643311,
+        "mcse": 0.10515588624971592,
+        "mean": 15.429668393482554,
+        "upper95": 15.635773930531998
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.693763766749044e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6916074404167634,
+      "mcse": 0.000292927043390977,
+      "mean": 3.6921815774218096,
+      "upper95": 3.692755714426856
+    }
+  },
+  "curvature-large-step": {
+    "actual_guide_advantage": {
+      "lower95": 0.0031486000764361123,
+      "mcse": 0.013600573680228495,
+      "mean": 0.029805724489683962,
+      "upper95": 0.05646284890293181
+    },
+    "actual_train_advantage": {
+      "lower95": -0.007028012397927219,
+      "mcse": 0.0064946806821412585,
+      "mean": 0.005701561739069647,
+      "upper95": 0.018431135876066512
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.10616548110844781,
+      "mcse": 0.03566281387648308,
+      "mean": -0.036266365910540964,
+      "upper95": 0.03363274928736588
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 17275643.891924094,
+      "mcse": 175303.60992359574,
+      "mean": 17619238.967374343,
+      "upper95": 17962834.042824592
+    },
+    "control_minus_guidon": {
+      "lower95": 239.52832598989292,
+      "mcse": 9.096171513623277,
+      "mean": 257.35682215659455,
+      "upper95": 275.18531832329614
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.009416339181843394,
+      "mcse": 0.007493787535116706,
+      "mean": 0.024104162750672137,
+      "upper95": 0.038791986319500885
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.009416339181843394,
+      "mcse": 0.007493787535116706,
+      "mean": 0.024104162750672137,
+      "upper95": 0.038791986319500885
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 739.1117211627793,
+        "mcse": 33.610927360379144,
+        "mean": 804.9891387891224,
+        "upper95": 870.8665564154655
+      },
+      "adamw_plus_guidance": {
+        "lower95": 980.1539513727744,
+        "mcse": 41.95320200961898,
+        "mean": 1062.3822273116275,
+        "upper95": 1144.6105032504806
+      },
+      "guidon": {
+        "lower95": 739.143391020411,
+        "mcse": 33.61327251766436,
+        "mean": 805.0254051550331,
+        "upper95": 870.9074192896553
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.397178332240404e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 0.487906685946934,
+      "mcse": 0.0008469379644458405,
+      "mean": 0.4895666843572478,
+      "upper95": 0.49122668276756165
+    }
+  },
+  "intended": {
+    "actual_guide_advantage": {
+      "lower95": 0.007855149184206822,
+      "mcse": 2.6923442253566125e-05,
+      "mean": 0.007907919131023811,
+      "upper95": 0.0079606890778408
+    },
+    "actual_train_advantage": {
+      "lower95": -1.0993124687581752e-05,
+      "mcse": 5.687080942472201e-07,
+      "mean": -9.8784568228572e-06,
+      "upper95": -8.76378895813265e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.24079585601335832,
+      "mcse": 0.0006265037097277312,
+      "mean": 0.24202380328442466,
+      "upper95": 0.243251750555491
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.346892170956064,
+      "mcse": 0.019329454709531766,
+      "mean": 11.384777902186746,
+      "upper95": 11.422663633417429
+    },
+    "control_minus_guidon": {
+      "lower95": 0.2620895706803936,
+      "mcse": 0.0006458635306171212,
+      "mean": 0.2633554632004032,
+      "upper95": 0.2646213557204128
+    },
+    "current_guide_linear_gain": {
+      "lower95": 11.009750834004361,
+      "mcse": 0.038341407655654365,
+      "mean": 11.084899993009444,
+      "upper95": 11.160049152014526
+    },
+    "evaluation_linear_gain": {
+      "lower95": 11.009750834004361,
+      "mcse": 0.038341407655654365,
+      "mean": 11.084899993009444,
+      "upper95": 11.160049152014526
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.122547718441053,
+        "mcse": 0.10174727034948754,
+        "mean": 15.32197236832605,
+        "upper95": 15.521397018211045
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.144052677842444,
+        "mcse": 0.10165885224468482,
+        "mean": 15.343304028242025,
+        "upper95": 15.542555378641607
+      },
+      "guidon": {
+        "lower95": 14.88010867804782,
+        "mcse": 0.10195912601724655,
+        "mean": 15.079948565041624,
+        "upper95": 15.279788452035428
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.95940256507771e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.659406375262286,
+      "mcse": 0.0004321625680651444,
+      "mean": 3.6602534138956937,
+      "upper95": 3.6611004525291015
+    }
+  },
+  "rotate-0.001-1": {
+    "actual_guide_advantage": {
+      "lower95": 0.0006188248332084165,
+      "mcse": 1.7793049003158173e-06,
+      "mean": 0.0006223122708130355,
+      "upper95": 0.0006257997084176545
+    },
+    "actual_train_advantage": {
+      "lower95": 1.740477899858098e-06,
+      "mcse": 3.987425163060244e-08,
+      "mean": 1.8186314330540789e-06,
+      "upper95": 1.8967849662500597e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.020112998904965516,
+      "mcse": 4.8677984591161086e-05,
+      "mean": 0.02020840775476419,
+      "upper95": 0.020303816604562864
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.011214677059927807,
+      "mcse": 1.888280795918859e-05,
+      "mean": 0.011251687363527817,
+      "upper95": 0.011288697667127827
+    },
+    "control_minus_guidon": {
+      "lower95": 0.018558486956879634,
+      "mcse": 7.161116220882526e-05,
+      "mean": 0.01869884483480893,
+      "upper95": 0.018839202712738225
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.864592829063511,
+      "mcse": 0.0025244512738753166,
+      "mean": 0.8695407535603066,
+      "upper95": 0.8744886780571022
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.864592829063511,
+      "mcse": 0.0025244512738753166,
+      "mean": 0.8695407535603066,
+      "upper95": 0.8744886780571022
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5533498128905812,
+        "mcse": 0.0025716772053133758,
+        "mean": 0.5583903002129954,
+        "upper95": 0.5634307875354096
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5518388596745394,
+        "mcse": 0.0025723865400513733,
+        "mean": 0.5568807372930401,
+        "upper95": 0.5619226149115408
+      },
+      "guidon": {
+        "lower95": 0.5330989812119149,
+        "mcse": 0.0025933220644471238,
+        "mean": 0.5381818924582312,
+        "upper95": 0.5432648037045475
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 4.678139213305678e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6125224618415865,
+      "mcse": 0.0011595054488905347,
+      "mean": 3.614795092521412,
+      "upper95": 3.617067723201237
+    }
+  },
+  "rotate-0.001-64": {
+    "actual_guide_advantage": {
+      "lower95": 0.0004509191019898909,
+      "mcse": 1.4086671126718086e-06,
+      "mean": 0.00045368008953072765,
+      "upper95": 0.0004564410770715644
+    },
+    "actual_train_advantage": {
+      "lower95": 1.2003450912940415e-06,
+      "mcse": 2.9574608261687834e-08,
+      "mean": 1.2583113234869497e-06,
+      "upper95": 1.3162775556798579e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.014618080295692941,
+      "mcse": 3.89421021032173e-05,
+      "mean": 0.014694406815815247,
+      "upper95": 0.014770733335937553
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.015153904553700744,
+      "mcse": 3.784935077913164e-05,
+      "mean": 0.015228089281227842,
+      "upper95": 0.015302274008754939
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.630177845118853,
+      "mcse": 0.0019939907242861586,
+      "mean": 0.6340860669384538,
+      "upper95": 0.6379942887580546
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.630177845118853,
+      "mcse": 0.0019939907242861586,
+      "mean": 0.6340860669384538,
+      "upper95": 0.6379942887580546
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5464981554724024,
+        "mcse": 0.002539733613574108,
+        "mean": 0.5514760333550077,
+        "upper95": 0.556453911237613
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5470330727107929,
+        "mcse": 0.0025391036273609844,
+        "mean": 0.5520097158204205,
+        "upper95": 0.556986358930048
+      },
+      "guidon": {
+        "lower95": 0.5317761735670532,
+        "mcse": 0.0025538025368057717,
+        "mean": 0.5367816265391925,
+        "upper95": 0.5417870795113318
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 8.058315131264873e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.628710023893836,
+      "mcse": 0.000910608472602028,
+      "mean": 3.630494816500136,
+      "upper95": 3.632279609106436
+    }
+  },
+  "rotate-0.2-16": {
+    "actual_guide_advantage": {
+      "lower95": 0.00026081786459385066,
+      "mcse": 6.43995974516312e-07,
+      "mean": 0.00026208009670390263,
+      "upper95": 0.0002633423288139546
+    },
+    "actual_train_advantage": {
+      "lower95": 8.269727552477611e-07,
+      "mcse": 2.0213411292286138e-08,
+      "mean": 8.665910413806419e-07,
+      "upper95": 9.062093275135227e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0079956649646645,
+      "mcse": 1.4009925827231436e-05,
+      "mean": 0.008023124419285875,
+      "upper95": 0.008050583873907249
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0894161798002667,
+      "mcse": 0.00013692180444397164,
+      "mean": 0.08968454653697688,
+      "upper95": 0.08995291327368707
+    },
+    "control_minus_guidon": {
+      "lower95": 0.008517166741318928,
+      "mcse": 1.44056182765698e-05,
+      "mean": 0.008545401753141004,
+      "upper95": 0.00857363676496308
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.3643602865147962,
+      "mcse": 0.000915422409616893,
+      "mean": 0.3661545144376453,
+      "upper95": 0.3679487423604944
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.3643602865147962,
+      "mcse": 0.000915422409616893,
+      "mean": 0.3661545144376453,
+      "upper95": 0.3679487423604944
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.558434115356447,
+        "mcse": 0.002440967837096767,
+        "mean": 0.5632184123171567,
+        "upper95": 0.5680027092778664
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5589588090880447,
+        "mcse": 0.002439734981105673,
+        "mean": 0.5637406896510119,
+        "upper95": 0.568522570213979
+      },
+      "guidon": {
+        "lower95": 0.550402480307549,
+        "mcse": 0.0024453099950621504,
+        "mean": 0.5551952878978709,
+        "upper95": 0.5599880954881927
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.084824653606438e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.639501679458759,
+      "mcse": 0.0007131114063551813,
+      "mean": 3.640899377815215,
+      "upper95": 3.6422970761716713
+    }
+  },
+  "rotate-0.2-256": {
+    "actual_guide_advantage": {
+      "lower95": 0.00036796396665212625,
+      "mcse": 9.81690506032695e-07,
+      "mean": 0.00036988808004395033,
+      "upper95": 0.0003718121934357744
+    },
+    "actual_train_advantage": {
+      "lower95": 9.494667719494605e-07,
+      "mcse": 3.1961231540212906e-08,
+      "mean": 1.0121107857682778e-06,
+      "upper95": 1.0747547995870952e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.01619694725959576,
+      "mcse": 2.8659341124629694e-05,
+      "mean": 0.016253119568200036,
+      "upper95": 0.01630929187680431
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.016797594235624106,
+      "mcse": 2.7454140666708694e-05,
+      "mean": 0.016851404351330854,
+      "upper95": 0.0169052144670376
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.5144024533146982,
+      "mcse": 0.0013945796474541493,
+      "mean": 0.5171358294237084,
+      "upper95": 0.5198692055327185
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.5144024533146982,
+      "mcse": 0.0013945796474541493,
+      "mean": 0.5171358294237084,
+      "upper95": 0.5198692055327185
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5554132127014925,
+        "mcse": 0.0025314884280873955,
+        "mean": 0.5603749300205437,
+        "upper95": 0.565336647339595
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5560134221565521,
+        "mcse": 0.002530506452613469,
+        "mean": 0.5609732148036746,
+        "upper95": 0.565933007450797
+      },
+      "guidon": {
+        "lower95": 0.5391494936945231,
+        "mcse": 0.0025368963050104586,
+        "mean": 0.5441218104523436,
+        "upper95": 0.5490941272101642
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 4.75985695936464e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.641509532925636,
+      "mcse": 0.0009205946792510979,
+      "mean": 3.6433138984969684,
+      "upper95": 3.6451182640683006
+    }
+  },
+  "rotate-0.2-64": {
+    "actual_guide_advantage": {
+      "lower95": 0.00030273967795674,
+      "mcse": 7.331674509011061e-07,
+      "mean": 0.0003041766861605062,
+      "upper95": 0.0003056136943642724
+    },
+    "actual_train_advantage": {
+      "lower95": 8.784876220102502e-07,
+      "mcse": 2.5666900061627423e-08,
+      "mean": 9.287947461310399e-07,
+      "upper95": 9.791018702518298e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0132538574345282,
+      "mcse": 2.1738257390874803e-05,
+      "mean": 0.013296464419014315,
+      "upper95": 0.01333907140350043
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.013859465859873582,
+      "mcse": 2.0470819341797475e-05,
+      "mean": 0.013899588665783504,
+      "upper95": 0.013939711471693426
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.42311048820480945,
+      "mcse": 0.0010416321746144327,
+      "mean": 0.4251520872670537,
+      "upper95": 0.427193686329298
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.42311048820480945,
+      "mcse": 0.0010416321746144327,
+      "mean": 0.4251520872670537,
+      "upper95": 0.427193686329298
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5508932740339182,
+        "mcse": 0.002470005492896086,
+        "mean": 0.5557344847999945,
+        "upper95": 0.5605756955660709
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5514983511890602,
+        "mcse": 0.0024690091110732104,
+        "mean": 0.5563376090467637,
+        "upper95": 0.5611768669044671
+      },
+      "guidon": {
+        "lower95": 0.5375925523719594,
+        "mcse": 0.002472177555622962,
+        "mean": 0.5424380203809803,
+        "upper95": 0.5472834883900013
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.67832355890018e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.64093779739821,
+      "mcse": 0.0007871804887640758,
+      "mean": 3.642480671156188,
+      "upper95": 3.6440235449141656
+    }
+  },
+  "screen-00": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.050247529078743865,
+      "mcse": 9.82148612731731e-05,
+      "mean": 0.050440030206839286,
+      "upper95": 0.050632531334934706
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0009118467354919274,
+      "mcse": 1.4510289524692928e-05,
+      "mean": -0.0008834065680235292,
+      "upper95": -0.0008549664005551311
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5617388883387394,
+        "mcse": 0.006402388696849083,
+        "mean": 0.5742875701845637,
+        "upper95": 0.5868362520303879
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5608381584156286,
+        "mcse": 0.006411227143322267,
+        "mean": 0.5734041636165402,
+        "upper95": 0.5859701688174519
+      },
+      "guidon": {
+        "lower95": 0.5617388883387394,
+        "mcse": 0.006402388696849083,
+        "mean": 0.5742875701845637,
+        "upper95": 0.5868362520303879
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.3062530160280568,
+      "mcse": 0.000827144250358094,
+      "mean": 1.3078742187587586,
+      "upper95": 1.3094954214894605
+    }
+  },
+  "screen-01": {
+    "actual_guide_advantage": {
+      "lower95": 0.0013436252747869276,
+      "mcse": 2.638187051615708e-06,
+      "mean": 0.0013487961214080943,
+      "upper95": 0.001353966968029261
+    },
+    "actual_train_advantage": {
+      "lower95": -2.1338690689448255e-07,
+      "mcse": 6.070273072379006e-09,
+      "mean": -2.014891716726197e-07,
+      "upper95": -1.8959143645075685e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.42971123066429884,
+      "mcse": 0.000842323150766079,
+      "mean": 0.43136218403980037,
+      "upper95": 0.4330131374153019
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.830720183651131,
+      "mcse": 0.01695439048701498,
+      "mean": 10.863950789005681,
+      "upper95": 10.897181394360231
+    },
+    "control_minus_guidon": {
+      "lower95": 0.42962250744006486,
+      "mcse": 0.0008421430184287905,
+      "mean": 0.43127310775618527,
+      "upper95": 0.4329237080723057
+    },
+    "current_guide_linear_gain": {
+      "lower95": 860.0446391178453,
+      "mcse": 1.6912945776286568,
+      "mean": 863.3595764899975,
+      "upper95": 866.6745138621496
+    },
+    "evaluation_linear_gain": {
+      "lower95": 8600.43652264105,
+      "mcse": 16.9129034624334,
+      "mean": 8633.58581342742,
+      "upper95": 8666.73510421379
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 1000.330238155737,
+        "mcse": 3.798975404714995,
+        "mean": 1007.7762299489784,
+        "upper95": 1015.2222217422199
+      },
+      "adamw_plus_guidance": {
+        "lower95": 1000.3301479541194,
+        "mcse": 3.798975978864986,
+        "mean": 1007.7761408726948,
+        "upper95": 1015.2221337912702
+      },
+      "guidon": {
+        "lower95": 999.8981622185952,
+        "mcse": 3.799339564460922,
+        "mean": 1007.3448677649386,
+        "upper95": 1014.791573311282
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 2.246269416981925e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.994217480469119,
+      "mcse": 0.0010557726385043479,
+      "mean": 7.996286794840588,
+      "upper95": 7.9983561092120565
+    }
+  },
+  "screen-02": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.012595204613277797,
+      "mcse": 4.2308117579264e-06,
+      "mean": 0.012603497004323333,
+      "upper95": 0.01261178939536887
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00010947174674068685,
+      "mcse": 3.2171720328796904e-07,
+      "mean": 0.00011010231245913127,
+      "upper95": 0.00011073287817757568
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5664809639541681,
+        "mcse": 0.0011447013635148544,
+        "mean": 0.5687245786266573,
+        "upper95": 0.5709681932991464
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5665915059609672,
+        "mcse": 0.001144477029667934,
+        "mean": 0.5688346809391164,
+        "upper95": 0.5710778559172656
+      },
+      "guidon": {
+        "lower95": 0.5664809639541681,
+        "mcse": 0.0011447013635148544,
+        "mean": 0.5687245786266573,
+        "upper95": 0.5709681932991464
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.391924610014968,
+      "mcse": 0.0008406774273584449,
+      "mean": 7.39357233777259,
+      "upper95": 7.3952200655302125
+    }
+  },
+  "screen-03": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 151.3522576957896,
+      "mcse": 0.08188123519613565,
+      "mean": 151.51274491677404,
+      "upper95": 151.67323213775848
+    },
+    "control_minus_guidon": {
+      "lower95": 9.19327457709264e-05,
+      "mcse": 1.4550236623607525e-06,
+      "mean": 9.478459214915347e-05,
+      "upper95": 9.763643852738054e-05
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7599.971079072664,
+        "mcse": 79.27126222591869,
+        "mean": 7755.342753035465,
+        "upper95": 7910.7144269982655
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7599.971176440026,
+        "mcse": 79.27126090817892,
+        "mean": 7755.342847820057,
+        "upper95": 7910.714519200087
+      },
+      "guidon": {
+        "lower95": 7599.971079072664,
+        "mcse": 79.27126222591869,
+        "mean": 7755.342753035465,
+        "upper95": 7910.7144269982655
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4124347573663738,
+      "mcse": 0.00014899864314321768,
+      "mean": 1.4127267947069344,
+      "upper95": 1.413018832047495
+    }
+  },
+  "screen-04": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 4.348236808961622,
+      "mcse": 0.0036041422502451834,
+      "mean": 4.355300927772102,
+      "upper95": 4.362365046582583
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0003932088184058809,
+      "mcse": 4.322430140086318e-06,
+      "mean": -0.00038473685533131174,
+      "upper95": -0.00037626489225674257
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 991.7569468959176,
+        "mcse": 3.8733082285191687,
+        "mean": 999.3486310238152,
+        "upper95": 1006.9403151517128
+      },
+      "adamw_plus_guidance": {
+        "lower95": 991.7565553762636,
+        "mcse": 3.873311689130753,
+        "mean": 999.3482462869598,
+        "upper95": 1006.939937197656
+      },
+      "guidon": {
+        "lower95": 991.7569468959176,
+        "mcse": 3.8733082285191687,
+        "mean": 999.3486310238152,
+        "upper95": 1006.9403151517128
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.001039524842776,
+      "mcse": 1.3564967331249922e-06,
+      "mean": 8.001042183576374,
+      "upper95": 8.001044842309971
+    }
+  },
+  "screen-05": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.1351738998855583,
+      "mcse": 0.0010529575150359444,
+      "mean": 0.13723769661502877,
+      "upper95": 0.13930149334449923
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00757367890549832,
+      "mcse": 0.0005359709696732914,
+      "mean": 0.008624182006057971,
+      "upper95": 0.009674685106617622
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5466470422302009,
+        "mcse": 0.006502905322518225,
+        "mean": 0.5593927366623366,
+        "upper95": 0.5721384310944723
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5559152198444746,
+        "mcse": 0.006174336134653033,
+        "mean": 0.5680169186683945,
+        "upper95": 0.5801186174923145
+      },
+      "guidon": {
+        "lower95": 0.5466470422302009,
+        "mcse": 0.006502905322518225,
+        "mean": 0.5593927366623366,
+        "upper95": 0.5721384310944723
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.3985767705257033,
+      "mcse": 0.0005858544072363662,
+      "mean": 1.3997250451638865,
+      "upper95": 1.4008733198020697
+    }
+  },
+  "screen-06": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 54.777834208318,
+      "mcse": 0.12107769640082347,
+      "mean": 55.015146493263615,
+      "upper95": 55.25245877820923
+    },
+    "control_minus_guidon": {
+      "lower95": 0.000164158133209582,
+      "mcse": 2.451402522491007e-06,
+      "mean": 0.0001689628821536644,
+      "upper95": 0.00017376763109774678
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7559.955701926608,
+        "mcse": 79.19037259800848,
+        "mean": 7715.168832218705,
+        "upper95": 7870.381962510802
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7559.95587527064,
+        "mcse": 79.19037036272813,
+        "mean": 7715.169001181587,
+        "upper95": 7870.382127092535
+      },
+      "guidon": {
+        "lower95": 7559.955701926608,
+        "mcse": 79.19037259800848,
+        "mean": 7715.168832218705,
+        "upper95": 7870.381962510802
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4143954161252135,
+      "mcse": 1.3247939151308918e-06,
+      "mean": 1.4143980127212872,
+      "upper95": 1.414400609317361
+    }
+  },
+  "screen-07": {
+    "actual_guide_advantage": {
+      "lower95": 0.0014452183609611033,
+      "mcse": 7.292114644063773e-07,
+      "mean": 0.00144664761543134,
+      "upper95": 0.0014480768699015765
+    },
+    "actual_train_advantage": {
+      "lower95": 1.95873151959114e-06,
+      "mcse": 6.875642508043446e-08,
+      "mean": 2.0934941127487917e-06,
+      "upper95": 2.2282567059064433e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.046510374465967376,
+      "mcse": 3.129709260030844e-05,
+      "mean": 0.04657171676746398,
+      "upper95": 0.046633059068960585
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.03831505544321601,
+      "mcse": 3.731613357804012e-05,
+      "mean": 0.038388195065028975,
+      "upper95": 0.03846133468684194
+    },
+    "control_minus_guidon": {
+      "lower95": 0.04659315866877521,
+      "mcse": 3.135967675779003e-05,
+      "mean": 0.04665462363522048,
+      "upper95": 0.04671608860166575
+    },
+    "current_guide_linear_gain": {
+      "lower95": 9.266960309164887,
+      "mcse": 0.0045954077886087635,
+      "mean": 9.27596730843056,
+      "upper95": 9.284974307696235
+    },
+    "evaluation_linear_gain": {
+      "lower95": 9.266960309164887,
+      "mcse": 0.0045954077886087635,
+      "mean": 9.27596730843056,
+      "upper95": 9.284974307696235
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5505752848584239,
+        "mcse": 0.0011718994523604504,
+        "mean": 0.5528722077850504,
+        "upper95": 0.555169130711677
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5506582475040523,
+        "mcse": 0.0011718709942625755,
+        "mean": 0.552955114652807,
+        "upper95": 0.5552519818015617
+      },
+      "guidon": {
+        "lower95": 0.5040391498997897,
+        "mcse": 0.001153745468263673,
+        "mean": 0.5063004910175865,
+        "upper95": 0.5085618321353832
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 1.5513374222082223e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.299655020503838,
+      "mcse": 0.0017742069936598308,
+      "mean": 8.303132466211412,
+      "upper95": 8.306609911918986
+    }
+  },
+  "screen-08": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.00010672588746906744,
+      "mcse": 9.603258378165215e-07,
+      "mean": -0.00010484364882694706,
+      "upper95": -0.00010296141018482668
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5282430819596788,
+        "mcse": 0.0067200883910848415,
+        "mean": 0.5414144552062051,
+        "upper95": 0.5545858284527314
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.528138818996734,
+        "mcse": 0.006719792122777611,
+        "mean": 0.5413096115573781,
+        "upper95": 0.5544804041180222
+      },
+      "guidon": {
+        "lower95": 0.5282430819596788,
+        "mcse": 0.0067200883910848415,
+        "mean": 0.5414144552062051,
+        "upper95": 0.5545858284527314
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4325406118697241,
+      "mcse": 0.0001251028514449487,
+      "mean": 1.4327858134585563,
+      "upper95": 1.4330310150473884
+    }
+  },
+  "screen-09": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0016803811434403211,
+      "mcse": 4.207515977992824e-06,
+      "mean": -0.0016721344121234552,
+      "upper95": -0.0016638876808065892
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 999.0649321860689,
+        "mcse": 3.7655241246149,
+        "mean": 1006.4453594703141,
+        "upper95": 1013.8257867545593
+      },
+      "adamw_plus_guidance": {
+        "lower95": 999.0632549752839,
+        "mcse": 3.765526714600999,
+        "mean": 1006.4436873359019,
+        "upper95": 1013.8241196965199
+      },
+      "guidon": {
+        "lower95": 999.0649321860689,
+        "mcse": 3.7655241246149,
+        "mean": 1006.4453594703141,
+        "upper95": 1013.8257867545593
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.99251684115347,
+      "mcse": 0.00017175640769109748,
+      "mean": 7.992853483712544,
+      "upper95": 7.993190126271618
+    }
+  },
+  "screen-10": {
+    "actual_guide_advantage": {
+      "lower95": 0.00011451758908962582,
+      "mcse": 1.359579737773603e-07,
+      "mean": 0.00011478406671822944,
+      "upper95": 0.00011505054434683306
+    },
+    "actual_train_advantage": {
+      "lower95": -4.53681812396703e-06,
+      "mcse": 2.548965747157686e-08,
+      "mean": -4.486858395322739e-06,
+      "upper95": -4.436898666678449e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.03998196840971161,
+      "mcse": 6.18664216655951e-05,
+      "mean": -0.039860710223247046,
+      "upper95": -0.03973945203678248
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.03996810588594817,
+      "mcse": 6.185443105682567e-05,
+      "mean": -0.03984687120107679,
+      "upper95": -0.03972563651620541
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.7613685453219946,
+      "mcse": 0.0010027425534368732,
+      "mean": 0.7633339207267309,
+      "upper95": 0.7652992961314672
+    },
+    "evaluation_linear_gain": {
+      "lower95": -7.652992961314673,
+      "mcse": 0.010027425534368735,
+      "mean": -7.63333920726731,
+      "upper95": -7.613685453219947
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5485600140496619,
+        "mcse": 0.0011855716195671392,
+        "mean": 0.5508837344240135,
+        "upper95": 0.5532074547983651
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5485738508714093,
+        "mcse": 0.0011855727422318255,
+        "mean": 0.5508975734461837,
+        "upper95": 0.5532212960209582
+      },
+      "guidon": {
+        "lower95": 0.5883508611106151,
+        "mcse": 0.0012212160901252434,
+        "mean": 0.5907444446472605,
+        "upper95": 0.5931380281839059
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 1.8676582926398396e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.449132594811482,
+      "mcse": 0.002012605352422229,
+      "mean": 8.45307730130223,
+      "upper95": 8.457022007792977
+    }
+  },
+  "screen-11": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.0019345864774257605,
+      "mcse": 9.594702945983353e-06,
+      "mean": 0.001953392095199888,
+      "upper95": 0.001972197712974015
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7804.218613345098,
+        "mcse": 83.08990868246606,
+        "mean": 7967.074834362731,
+        "upper95": 8129.931055380364
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7804.220584376598,
+        "mcse": 83.08989968276943,
+        "mean": 7967.076787754826,
+        "upper95": 8129.932991133054
+      },
+      "guidon": {
+        "lower95": 7804.218613345098,
+        "mcse": 83.08990868246606,
+        "mean": 7967.074834362731,
+        "upper95": 8129.931055380364
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4135256452677236,
+      "mcse": 3.6141243302157675e-05,
+      "mean": 1.4135964821045959,
+      "upper95": 1.4136673189414681
+    }
+  },
+  "screen-12": {
+    "actual_guide_advantage": {
+      "lower95": 0.012639805936424381,
+      "mcse": 2.4483449398093123e-05,
+      "mean": 0.012687793497244644,
+      "upper95": 0.012735781058064907
+    },
+    "actual_train_advantage": {
+      "lower95": -1.5171429017801369e-07,
+      "mcse": 5.031981227218737e-09,
+      "mean": -1.4185160697266497e-07,
+      "upper95": -1.3198892376731626e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.40724390993286,
+      "mcse": 0.0007803166256149129,
+      "mean": -0.40571448934665477,
+      "upper95": -0.4041850687604495
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.4891522389544957,
+      "mcse": 0.000777250084376173,
+      "mean": -0.4876288287891184,
+      "upper95": -0.48610541862374107
+    },
+    "current_guide_linear_gain": {
+      "lower95": 8089.570173742635,
+      "mcse": 15.667576286848783,
+      "mean": 8120.278623264859,
+      "upper95": 8150.987072787082
+    },
+    "evaluation_linear_gain": {
+      "lower95": -8150.987072787082,
+      "mcse": 15.667576286848785,
+      "mean": -8120.278623264859,
+      "upper95": -8089.570173742635
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 995.97636369296,
+        "mcse": 3.8561164634406855,
+        "mean": 1003.5343519613037,
+        "upper95": 1011.0923402296474
+      },
+      "adamw_plus_guidance": {
+        "lower95": 995.8942294070473,
+        "mcse": 3.856228681027545,
+        "mean": 1003.4524376218612,
+        "upper95": 1011.0106458366752
+      },
+      "guidon": {
+        "lower95": 996.3827482248868,
+        "mcse": 3.8557746049814194,
+        "mean": 1003.9400664506503,
+        "upper95": 1011.4973846764138
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 2.1457033464270406e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.026906254208674,
+      "mcse": 0.0007635166322485917,
+      "mean": 8.028402746807881,
+      "upper95": 8.029899239407088
+    }
+  },
+  "screen-13": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0063909682122433266,
+      "mcse": 8.792036992952057e-05,
+      "mean": -0.006218644287181466,
+      "upper95": -0.006046320362119605
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5635918242790872,
+        "mcse": 0.006424628724643946,
+        "mean": 0.5761840965793893,
+        "upper95": 0.5887763688796914
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5573757917108446,
+        "mcse": 0.0064232962149812665,
+        "mean": 0.5699654522922079,
+        "upper95": 0.5825551128735711
+      },
+      "guidon": {
+        "lower95": 0.5635918242790872,
+        "mcse": 0.006424628724643946,
+        "mean": 0.5761840965793893,
+        "upper95": 0.5887763688796914
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.2812417772695375,
+      "mcse": 0.0015562926046864256,
+      "mean": 1.284292110774723,
+      "upper95": 1.2873424442799084
+    }
+  },
+  "screen-14": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.09830724312757262,
+      "mcse": 0.00047846680665335596,
+      "mean": 0.0992450380686132,
+      "upper95": 0.10018283300965379
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7640.23928656546,
+        "mcse": 81.71197077326397,
+        "mean": 7800.394749281058,
+        "upper95": 7960.550211996655
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7640.339411307694,
+        "mcse": 81.71152194460794,
+        "mean": 7800.493994319126,
+        "upper95": 7960.648577330558
+      },
+      "guidon": {
+        "lower95": 7640.23928656546,
+        "mcse": 81.71197077326397,
+        "mean": 7800.394749281058,
+        "upper95": 7960.550211996655
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4132274408837886,
+      "mcse": 7.124385173180605e-06,
+      "mean": 1.413241404678728,
+      "upper95": 1.4132553684736675
+    }
+  },
+  "screen-15": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00083717874307129,
+      "mcse": 1.4709998070681334e-06,
+      "mean": 0.0008400619026931436,
+      "upper95": 0.0008429450623149971
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5665982859553939,
+        "mcse": 0.0011145360255408049,
+        "mean": 0.5687827765654538,
+        "upper95": 0.5709672671755138
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5674389444264644,
+        "mcse": 0.0011142316539196897,
+        "mean": 0.569622838468147,
+        "upper95": 0.5718067325098296
+      },
+      "guidon": {
+        "lower95": 0.5665982859553939,
+        "mcse": 0.0011145360255408049,
+        "mean": 0.5687827765654538,
+        "upper95": 0.5709672671755138
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.393949288184833,
+      "mcse": 0.0008332298536563572,
+      "mean": 7.395582418698,
+      "upper95": 7.397215549211166
+    }
+  },
+  "screen-16": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.05002218976534225,
+      "mcse": 0.00010131278623169723,
+      "mean": 0.050220762826356374,
+      "upper95": 0.0504193358873705
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0009345812156551066,
+      "mcse": 1.5180929871144326e-05,
+      "mean": -0.0009048265931076637,
+      "upper95": -0.0008750719705602209
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5691393583206714,
+        "mcse": 0.006691517576433561,
+        "mean": 0.5822547327704812,
+        "upper95": 0.595370107220291
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5682149229678533,
+        "mcse": 0.006701522045673678,
+        "mean": 0.5813499061773737,
+        "upper95": 0.5944848893868941
+      },
+      "guidon": {
+        "lower95": 0.5691393583206714,
+        "mcse": 0.006691517576433561,
+        "mean": 0.5822547327704812,
+        "upper95": 0.595370107220291
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.3045165186941754,
+      "mcse": 0.0008719826034553915,
+      "mean": 1.306225604596948,
+      "upper95": 1.3079346904997207
+    }
+  },
+  "screen-17": {
+    "actual_guide_advantage": {
+      "lower95": 0.0013454093265836127,
+      "mcse": 2.6945671011144168e-06,
+      "mean": 0.001350690678101797,
+      "upper95": 0.0013559720296199814
+    },
+    "actual_train_advantage": {
+      "lower95": -2.1424636525534052e-07,
+      "mcse": 6.080128992733272e-09,
+      "mean": -2.023293124295833e-07,
+      "upper95": -1.9041225960382608e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.4302812349779334,
+      "mcse": 0.0008603666728302582,
+      "mean": 0.4319675536566807,
+      "upper95": 0.433653872335428
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.824536434706557,
+      "mcse": 0.01689708777257264,
+      "mean": 10.8576547267408,
+      "upper95": 10.890773018775041
+    },
+    "control_minus_guidon": {
+      "lower95": 0.43019233564129744,
+      "mcse": 0.0008602614088307137,
+      "mean": 0.43187844800260566,
+      "upper95": 0.4335645603639139
+    },
+    "current_guide_linear_gain": {
+      "lower95": 861.1868490818466,
+      "mcse": 1.7273606237490875,
+      "mean": 864.5724759043949,
+      "upper95": 867.9581027269431
+    },
+    "evaluation_linear_gain": {
+      "lower95": 8611.859636079105,
+      "mcse": 17.273756394363588,
+      "mean": 8645.716198612057,
+      "upper95": 8679.57276114501
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 998.6964975581975,
+        "mcse": 3.8003687581635752,
+        "mean": 1006.1452203241981,
+        "upper95": 1013.5939430901988
+      },
+      "adamw_plus_guidance": {
+        "lower95": 998.6964073389646,
+        "mcse": 3.8003693263160203,
+        "mean": 1006.145131218544,
+        "upper95": 1013.5938550981233
+      },
+      "guidon": {
+        "lower95": 998.2637814701643,
+        "mcse": 3.8007506634577375,
+        "mean": 1005.7132527705414,
+        "upper95": 1013.1627240709186
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 2.0712106068067384e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.9959664039726315,
+      "mcse": 0.0010987363046849239,
+      "mean": 7.998119927129814,
+      "upper95": 8.000273450286997
+    }
+  },
+  "screen-18": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.01259127767018667,
+      "mcse": 4.342376438772151e-06,
+      "mean": 0.012599788728006663,
+      "upper95": 0.012608299785826655
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00010976128156360875,
+      "mcse": 3.2681433459797995e-07,
+      "mean": 0.00011040183765942079,
+      "upper95": 0.00011104239375523283
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5653187707097035,
+        "mcse": 0.0011374059636018348,
+        "mean": 0.5675480863983631,
+        "upper95": 0.5697774020870227
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5654296353865889,
+        "mcse": 0.0011371698211396226,
+        "mean": 0.5676584882360225,
+        "upper95": 0.5698873410854561
+      },
+      "guidon": {
+        "lower95": 0.5653187707097035,
+        "mcse": 0.0011374059636018348,
+        "mean": 0.5675480863983631,
+        "upper95": 0.5697774020870227
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.391194214970453,
+      "mcse": 0.0008595716413754149,
+      "mean": 7.392878975387548,
+      "upper95": 7.394563735804644
+    }
+  },
+  "screen-19": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 151.46571189146783,
+      "mcse": 0.08177012804494382,
+      "mean": 151.62598134243592,
+      "upper95": 151.786250793404
+    },
+    "control_minus_guidon": {
+      "lower95": 8.975172642866152e-05,
+      "mcse": 1.423335140175339e-06,
+      "mean": 9.254146330340518e-05,
+      "upper95": 9.533120017814885e-05
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7726.85780660373,
+        "mcse": 79.84817203702765,
+        "mean": 7883.360223796304,
+        "upper95": 8039.862640988878
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7726.85790166398,
+        "mcse": 79.8481707519321,
+        "mean": 7883.360316337767,
+        "upper95": 8039.8627310115535
+      },
+      "guidon": {
+        "lower95": 7726.85780660373,
+        "mcse": 79.84817203702765,
+        "mean": 7883.360223796304,
+        "upper95": 8039.862640988878
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4125317185847264,
+      "mcse": 0.0001544236869573513,
+      "mean": 1.4128343890111628,
+      "upper95": 1.4131370594375992
+    }
+  },
+  "screen-20": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 4.3500539121176445,
+      "mcse": 0.003361910419518315,
+      "mean": 4.3566432565399005,
+      "upper95": 4.3632326009621565
+    },
+    "control_minus_guidon": {
+      "lower95": -0.000389198616035913,
+      "mcse": 4.101137822710986e-06,
+      "mean": -0.0003811603859033994,
+      "upper95": -0.00037312215577088586
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 993.4120480175786,
+        "mcse": 3.7568330827763674,
+        "mean": 1000.7754408598203,
+        "upper95": 1008.1388337020619
+      },
+      "adamw_plus_guidance": {
+        "lower95": 993.4116605489638,
+        "mcse": 3.7568363012604102,
+        "mean": 1000.7750596994342,
+        "upper95": 1008.1384588499046
+      },
+      "guidon": {
+        "lower95": 993.4120480175786,
+        "mcse": 3.7568330827763674,
+        "mean": 1000.7754408598203,
+        "upper95": 1008.1388337020619
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.001041317537755,
+      "mcse": 1.3497186373171066e-06,
+      "mean": 8.001043962986284,
+      "upper95": 8.001046608434812
+    }
+  },
+  "screen-21": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.1350976092371965,
+      "mcse": 0.0010806713105781243,
+      "mean": 0.13721572500592963,
+      "upper95": 0.13933384077466276
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00798875087667493,
+      "mcse": 0.0005565653002760179,
+      "mean": 0.009079618865215924,
+      "upper95": 0.010170486853756919
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5468389425087329,
+        "mcse": 0.006610317630129739,
+        "mean": 0.5597951650637871,
+        "upper95": 0.5727513876188414
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5565865707023582,
+        "mcse": 0.006269496544206607,
+        "mean": 0.5688747839290031,
+        "upper95": 0.5811629971556481
+      },
+      "guidon": {
+        "lower95": 0.5468389425087329,
+        "mcse": 0.006610317630129739,
+        "mean": 0.5597951650637871,
+        "upper95": 0.5727513876188414
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.397970589365974,
+      "mcse": 0.0005886483584072255,
+      "mean": 1.399124340148452,
+      "upper95": 1.4002780909309303
+    }
+  },
+  "screen-22": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 54.89518007841223,
+      "mcse": 0.1196112560785132,
+      "mean": 55.129618140326116,
+      "upper95": 55.36405620224
+    },
+    "control_minus_guidon": {
+      "lower95": 0.00016188275462356903,
+      "mcse": 2.4242965650848265e-06,
+      "mean": 0.00016663437589113528,
+      "upper95": 0.00017138599715870153
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7624.5065973751225,
+        "mcse": 78.97639601551569,
+        "mean": 7779.300333565533,
+        "upper95": 7934.094069755944
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7624.506768313175,
+        "mcse": 78.97639381976308,
+        "mean": 7779.30050019991,
+        "upper95": 7934.094232086645
+      },
+      "guidon": {
+        "lower95": 7624.5065973751225,
+        "mcse": 78.97639601551569,
+        "mean": 7779.300333565533,
+        "upper95": 7934.094069755944
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.414395681124428,
+      "mcse": 1.3098573704992295e-06,
+      "mean": 1.4143982484448743,
+      "upper95": 1.4144008157653205
+    }
+  },
+  "screen-23": {
+    "actual_guide_advantage": {
+      "lower95": 0.0014441890973992126,
+      "mcse": 7.606747005491814e-07,
+      "mean": 0.001445680019812289,
+      "upper95": 0.0014471709422253652
+    },
+    "actual_train_advantage": {
+      "lower95": 1.8315890306991052e-06,
+      "mcse": 6.901770224019384e-08,
+      "mean": 1.966863727089885e-06,
+      "upper95": 2.102138423480665e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0464653361217764,
+      "mcse": 3.237436216467428e-05,
+      "mean": 0.04652878987161916,
+      "upper95": 0.04659224362146192
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.03830490673232888,
+      "mcse": 3.8187530980211e-05,
+      "mean": 0.03837975429305009,
+      "upper95": 0.03845460185377131
+    },
+    "control_minus_guidon": {
+      "lower95": 0.04654836399380431,
+      "mcse": 3.242911005973906e-05,
+      "mean": 0.0466119250495214,
+      "upper95": 0.04667548610523849
+    },
+    "current_guide_linear_gain": {
+      "lower95": 9.26053819274853,
+      "mcse": 0.00479676491599725,
+      "mean": 9.269939851983885,
+      "upper95": 9.27934151121924
+    },
+    "evaluation_linear_gain": {
+      "lower95": 9.26053819274853,
+      "mcse": 0.00479676491599725,
+      "mean": 9.269939851983885,
+      "upper95": 9.27934151121924
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5481478739153944,
+        "mcse": 0.0011682139506611513,
+        "mean": 0.5504375732586902,
+        "upper95": 0.5527272726019861
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5482310238218663,
+        "mcse": 0.0011682064360847891,
+        "mean": 0.5505207084365925,
+        "upper95": 0.5528103930513187
+      },
+      "guidon": {
+        "lower95": 0.5016571115341065,
+        "mcse": 0.0011488121698798924,
+        "mean": 0.5039087833870711,
+        "upper95": 0.5061604552400357
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 1.5355173221811745e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.301827568679894,
+      "mcse": 0.0018127359517043473,
+      "mean": 8.305380531145234,
+      "upper95": 8.308933493610574
+    }
+  },
+  "screen-24": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.00010622220896224533,
+      "mcse": 9.622503799777424e-07,
+      "mean": -0.00010433619821748896,
+      "upper95": -0.00010245018747273258
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5408113927378173,
+        "mcse": 0.0066013083106899045,
+        "mean": 0.5537499570267695,
+        "upper95": 0.5666885213157218
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5407076417782597,
+        "mcse": 0.006601009719536868,
+        "mean": 0.553645620828552,
+        "upper95": 0.5665835998788442
+      },
+      "guidon": {
+        "lower95": 0.5408113927378173,
+        "mcse": 0.0066013083106899045,
+        "mean": 0.5537499570267695,
+        "upper95": 0.5666885213157218
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4322052096792097,
+      "mcse": 0.0001222427378902536,
+      "mean": 1.4324448054454746,
+      "upper95": 1.4326844012117395
+    }
+  },
+  "screen-25": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.0016886157737941974,
+      "mcse": 4.1284886394841805e-06,
+      "mean": -0.0016805239360608085,
+      "upper95": -0.0016724320983274195
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 989.5026200590287,
+        "mcse": 3.705062251913581,
+        "mean": 996.7645420727792,
+        "upper95": 1004.0264640865298
+      },
+      "adamw_plus_guidance": {
+        "lower95": 989.50093433826,
+        "mcse": 3.7050649033588874,
+        "mean": 996.7628615488434,
+        "upper95": 1004.0247887594268
+      },
+      "guidon": {
+        "lower95": 989.5026200590287,
+        "mcse": 3.705062251913581,
+        "mean": 996.7645420727792,
+        "upper95": 1004.0264640865298
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.992122052046978,
+      "mcse": 0.00018361102311743,
+      "mean": 7.992481929652287,
+      "upper95": 7.992841807257597
+    }
+  },
+  "screen-26": {
+    "actual_guide_advantage": {
+      "lower95": 0.00011439058539223349,
+      "mcse": 1.3802616004669792e-07,
+      "mean": 0.00011466111666592501,
+      "upper95": 0.00011493164793961654
+    },
+    "actual_train_advantage": {
+      "lower95": -4.478656535200682e-06,
+      "mcse": 2.4390809567164727e-08,
+      "mean": -4.430850548449039e-06,
+      "upper95": -4.3830445616973965e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.039894192483027724,
+      "mcse": 6.123700049626335e-05,
+      "mean": -0.039774167962055046,
+      "upper95": -0.03965414344108237
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.03988036582647612,
+      "mcse": 6.122633857097913e-05,
+      "mean": -0.039760362202877,
+      "upper95": -0.03964035857927788
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.7602184767408187,
+      "mcse": 0.001005159913866301,
+      "mean": 0.7621885901719966,
+      "upper95": 0.7641587036031745
+    },
+    "evaluation_linear_gain": {
+      "lower95": -7.641587036031747,
+      "mcse": 0.01005159913866301,
+      "mean": -7.621885901719967,
+      "upper95": -7.602184767408187
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.547717863079586,
+        "mcse": 0.001181557891442698,
+        "mean": 0.5500337165468138,
+        "upper95": 0.5523495700140415
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.547731666691876,
+        "mcse": 0.0011815589867938802,
+        "mean": 0.550047522305992,
+        "upper95": 0.5523633779201079
+      },
+      "guidon": {
+        "lower95": 0.5874193194422511,
+        "mcse": 0.0012186556462335516,
+        "mean": 0.5898078845088689,
+        "upper95": 0.5921964495754867
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 1.7373132326278964e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.44485537247903,
+      "mcse": 0.0019231371614831,
+      "mean": 8.448624721315536,
+      "upper95": 8.452394070152042
+    }
+  },
+  "screen-27": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.0019443237091584362,
+      "mcse": 9.491016090939388e-06,
+      "mean": 0.0019629261006966774,
+      "upper95": 0.0019815284922349184
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7676.68125414007,
+        "mcse": 81.198820036788,
+        "mean": 7835.830941412175,
+        "upper95": 7994.9806286842795
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7676.683234457853,
+        "mcse": 81.198811163481,
+        "mean": 7835.832904338276,
+        "upper95": 7994.9825742186995
+      },
+      "guidon": {
+        "lower95": 7676.68125414007,
+        "mcse": 81.198820036788,
+        "mean": 7835.830941412175,
+        "upper95": 7994.9806286842795
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4135739137857588,
+      "mcse": 3.775482165456841e-05,
+      "mean": 1.4136479132362019,
+      "upper95": 1.413721912686645
+    }
+  },
+  "screen-28": {
+    "actual_guide_advantage": {
+      "lower95": 0.012658700739417774,
+      "mcse": 2.4127207772158603e-05,
+      "mean": 0.012705990066651204,
+      "upper95": 0.012753279393884634
+    },
+    "actual_train_advantage": {
+      "lower95": -1.5161352816462096e-07,
+      "mcse": 4.955144075841543e-09,
+      "mean": -1.4190144577597154e-07,
+      "upper95": -1.321893633873221e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.4078022185020125,
+      "mcse": 0.0007690180148122722,
+      "mean": -0.40629494319298043,
+      "upper95": -0.4047876678839484
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.49001132645674605,
+      "mcse": 0.000765355788534276,
+      "mean": -0.48851122911121886,
+      "upper95": -0.48701113176569166
+    },
+    "current_guide_linear_gain": {
+      "lower95": 8101.662738001795,
+      "mcse": 15.439653867343548,
+      "mean": 8131.924459581789,
+      "upper95": 8162.186181161783
+    },
+    "evaluation_linear_gain": {
+      "lower95": -8162.186181161783,
+      "mcse": 15.439653867343546,
+      "mean": -8131.924459581789,
+      "upper95": -8101.662738001795
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 991.5403743777808,
+        "mcse": 3.84617464554085,
+        "mean": 999.0788766830409,
+        "upper95": 1006.617378988301
+      },
+      "adamw_plus_guidance": {
+        "lower95": 991.457924299069,
+        "mcse": 3.846293927578398,
+        "mean": 998.9966603971226,
+        "upper95": 1006.5353964951762
+      },
+      "guidon": {
+        "lower95": 991.9472584842486,
+        "mcse": 3.8458740520333317,
+        "mean": 999.4851716262339,
+        "upper95": 1007.0230847682192
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 2.2357425192433253e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 8.026873438037459,
+      "mcse": 0.0007511135318459347,
+      "mean": 8.028345620559877,
+      "upper95": 8.029817803082295
+    }
+  },
+  "screen-29": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": -0.006112916428736243,
+      "mcse": 8.802440787726465e-05,
+      "mean": -0.0059403885892968045,
+      "upper95": -0.005767860749857366
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5383106913840474,
+        "mcse": 0.00629137303457039,
+        "mean": 0.5506417825318054,
+        "upper95": 0.5629728736795634
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.532385390089856,
+        "mcse": 0.006283675435026798,
+        "mean": 0.5447013939425085,
+        "upper95": 0.557017397795161
+      },
+      "guidon": {
+        "lower95": 0.5383106913840474,
+        "mcse": 0.00629137303457039,
+        "mean": 0.5506417825318054,
+        "upper95": 0.5629728736795634
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.2815185746437272,
+      "mcse": 0.001591514511539891,
+      "mean": 1.2846379430863455,
+      "upper95": 1.2877573115289638
+    }
+  },
+  "screen-30": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.09760585329772964,
+      "mcse": 0.00045434239660247975,
+      "mean": 0.0984963643950705,
+      "upper95": 0.09938687549241135
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 7712.5078256167635,
+        "mcse": 79.58179744162129,
+        "mean": 7868.488148602341,
+        "upper95": 8024.468471587919
+      },
+      "adamw_plus_guidance": {
+        "lower95": 7712.607159431147,
+        "mcse": 79.58137017121946,
+        "mean": 7868.586644966737,
+        "upper95": 8024.566130502328
+      },
+      "guidon": {
+        "lower95": 7712.5078256167635,
+        "mcse": 79.58179744162129,
+        "mean": 7868.488148602341,
+        "upper95": 8024.468471587919
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.4132247349956504,
+      "mcse": 7.262944178515478e-06,
+      "mean": 1.4132389703662402,
+      "upper95": 1.41325320573683
+    }
+  },
+  "screen-31": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.0008359482524736804,
+      "mcse": 1.501858362395883e-06,
+      "mean": 0.0008388918948639764,
+      "upper95": 0.0008418355372542723
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5663137817851405,
+        "mcse": 0.0011291661018341518,
+        "mean": 0.5685269473447354,
+        "upper95": 0.5707401129043304
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5671531420330334,
+        "mcse": 0.0011289271462072376,
+        "mean": 0.5693658392395995,
+        "upper95": 0.5715785364461656
+      },
+      "guidon": {
+        "lower95": 0.5663137817851405,
+        "mcse": 0.0011291661018341518,
+        "mean": 0.5685269473447354,
+        "upper95": 0.5707401129043304
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.393613640428229,
+      "mcse": 0.0008351020984906761,
+      "mean": 7.395250440541271,
+      "upper95": 7.396887240654313
+    }
+  },
+  "spurious-classification-0": {
+    "actual_guide_advantage": {
+      "lower95": 0.001166429613281825,
+      "mcse": 3.955383516500231e-06,
+      "mean": 0.0011741821649741654,
+      "upper95": 0.0011819347166665058
+    },
+    "actual_train_advantage": {
+      "lower95": 2.3653246859982267e-06,
+      "mcse": 8.204397471968808e-07,
+      "mean": 3.973386590504113e-06,
+      "upper95": 5.58144849501e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.05628541762440749,
+      "mcse": 0.00019472647803559117,
+      "mean": 0.05666708152135725,
+      "upper95": 0.05704874541830701
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.014438090687022086,
+      "mcse": 7.907521001755945e-05,
+      "mean": 0.014593078098656502,
+      "upper95": 0.014748065510290918
+    },
+    "control_minus_guidon": {
+      "lower95": 0.02409265804215831,
+      "mcse": 0.0001934296069630687,
+      "mean": 0.024471780071805924,
+      "upper95": 0.024850902101453538
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.038898453768574676,
+      "mcse": 0.00013181424375666354,
+      "mean": 0.03915680968633774,
+      "upper95": 0.0394151656041008
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.03889818789718034,
+      "mcse": 0.00012704923256977204,
+      "mean": 0.03914720439301709,
+      "upper95": 0.03939622088885384
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5001549082187383,
+        "mcse": 0.0009958190875465351,
+        "mean": 0.5021067136303295,
+        "upper95": 0.5040585190419208
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.4681500358456544,
+        "mcse": 0.0008986613954713423,
+        "mean": 0.46991141218077825,
+        "upper95": 0.4716727885159021
+      },
+      "guidon": {
+        "lower95": 0.4437627356977,
+        "mcse": 0.0008555593935063065,
+        "mean": 0.44543963210897236,
+        "upper95": 0.44711652852024475
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.483312529149768e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.1955223174214138,
+      "mcse": 0.0003473832057936167,
+      "mean": 1.1962031885047693,
+      "upper95": 1.1968840595881247
+    }
+  },
+  "spurious-classification-1": {
+    "actual_guide_advantage": {
+      "lower95": 2.408195700251302e-05,
+      "mcse": 3.260106778918013e-07,
+      "mean": 2.472093793118095e-05,
+      "upper95": 2.535991885984888e-05
+    },
+    "actual_train_advantage": {
+      "lower95": 2.4136719432958452e-05,
+      "mcse": 3.1988840310166155e-07,
+      "mean": 2.476370070303771e-05,
+      "upper95": 2.5390681973116968e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.0016623284429795313,
+      "mcse": 0.000285816584073261,
+      "mean": -0.0011021279381959398,
+      "upper95": -0.0005419274334123483
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.012086170771923938,
+      "mcse": 7.205993759259227e-05,
+      "mean": 0.012227408249605418,
+      "upper95": 0.012368645727286898
+    },
+    "control_minus_guidon": {
+      "lower95": -0.00144198936254428,
+      "mcse": 0.00028156552817895506,
+      "mean": -0.0008901209273135283,
+      "upper95": -0.00033825249208277637
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0008409972255432608,
+      "mcse": 1.1256089814618415e-05,
+      "mean": 0.000863059161579913,
+      "upper95": 0.0008851210976165651
+    },
+    "evaluation_linear_gain": {
+      "lower95": -0.0007656492291423292,
+      "mcse": 0.0001999355639173648,
+      "mean": -0.00037377552386429414,
+      "upper95": 1.8098181413740884e-05
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5004349433189118,
+        "mcse": 0.001011905992072097,
+        "mean": 0.5024182790633731,
+        "upper95": 0.5044016148078344
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.500645426770273,
+        "mcse": 0.0010126833183584211,
+        "mean": 0.5026302860742555,
+        "upper95": 0.504615145378238
+      },
+      "guidon": {
+        "lower95": 0.5014582184553044,
+        "mcse": 0.001052137013400322,
+        "mean": 0.503520407001569,
+        "upper95": 0.5055825955478336
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.106830518676131e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.2044367957813753,
+      "mcse": 0.00033919850722251125,
+      "mean": 1.2051016248555315,
+      "upper95": 1.2057664539296877
+    }
+  },
+  "spurious-regression-0": {
+    "actual_guide_advantage": {
+      "lower95": 0.0016246867403164232,
+      "mcse": 5.393880721434599e-06,
+      "mean": 0.001635258746530435,
+      "upper95": 0.0016458307527444469
+    },
+    "actual_train_advantage": {
+      "lower95": 8.623677957249376e-06,
+      "mcse": 6.778104567456801e-07,
+      "mean": 9.952186452470909e-06,
+      "upper95": 1.128069494769244e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.06248599932730219,
+      "mcse": 0.0002115152100653706,
+      "mean": 0.06290056913903032,
+      "upper95": 0.06331513895075845
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.11144480951221253,
+      "mcse": 0.0008718973020390228,
+      "mean": 0.11315372822420901,
+      "upper95": 0.11486264693620549
+    },
+    "control_minus_guidon": {
+      "lower95": -0.08191931402070081,
+      "mcse": 0.0003665911748024703,
+      "mean": -0.08120079531808796,
+      "upper95": -0.08048227661547512
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.05427050582552242,
+      "mcse": 0.00018183890263462238,
+      "mean": 0.05462691007468628,
+      "upper95": 0.05498331432385014
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.05431607781160904,
+      "mcse": 0.00018346402054929918,
+      "mean": 0.054675667291885666,
+      "upper95": 0.05503525677216229
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.20791530557078047,
+        "mcse": 0.0006254875757525309,
+        "mean": 0.20914126121925544,
+        "upper95": 0.2103672168677304
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.06438954817055942,
+        "mcse": 0.0003318105059070037,
+        "mean": 0.06503989676213714,
+        "upper95": 0.06569024535371487
+      },
+      "guidon": {
+        "lower95": 0.1453695258703048,
+        "mcse": 0.00044447255608180035,
+        "mean": 0.14624069208022514,
+        "upper95": 0.14711185829014548
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.92293276820615e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 0.7288036346117194,
+      "mcse": 0.0006333706560097748,
+      "mean": 0.7300450410974986,
+      "upper95": 0.7312864475832778
+    }
+  },
+  "spurious-regression-1": {
+    "actual_guide_advantage": {
+      "lower95": 2.2121518379478835e-05,
+      "mcse": 4.4936802083584584e-07,
+      "mean": 2.3002279700317094e-05,
+      "upper95": 2.3883041021155353e-05
+    },
+    "actual_train_advantage": {
+      "lower95": 2.199404397261495e-05,
+      "mcse": 4.438647885080114e-07,
+      "mean": 2.286401895809065e-05,
+      "upper95": 2.3733993943566352e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.002790743354149383,
+      "mcse": 0.0003945363414127493,
+      "mean": 0.0035640345833183717,
+      "upper95": 0.00433732581248736
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.11359787224616567,
+      "mcse": 0.0014249710195764474,
+      "mean": 0.11639081544453551,
+      "upper95": 0.11918375864290535
+    },
+    "control_minus_guidon": {
+      "lower95": 0.002429906919099943,
+      "mcse": 0.000369882242887589,
+      "mean": 0.0031548761151596176,
+      "upper95": 0.003879845311219292
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0008346783401673566,
+      "mcse": 1.553404553282345e-05,
+      "mean": 0.0008651250694116905,
+      "upper95": 0.0008955717986560244
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.002726049699481312,
+      "mcse": 0.0003494520531070762,
+      "mean": 0.0034109757235711814,
+      "upper95": 0.004095901747661051
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.2073891573815838,
+        "mcse": 0.0005928975380219566,
+        "mean": 0.20855123655610686,
+        "upper95": 0.2097133157306299
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.20699052755307945,
+        "mcse": 0.0005875257830962465,
+        "mean": 0.2081420780879481,
+        "upper95": 0.20929362862281675
+      },
+      "guidon": {
+        "lower95": 0.2036775545941084,
+        "mcse": 0.0006681874381020994,
+        "mean": 0.20498720197278852,
+        "upper95": 0.20629684935146864
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.697366379755024e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 0.7273250046818857,
+      "mcse": 0.0005817097361404908,
+      "mean": 0.728465155764721,
+      "upper95": 0.7296053068475564
+    }
+  },
+  "target-batch_size-128": {
+    "actual_guide_advantage": {
+      "lower95": 0.007729970152859853,
+      "mcse": 2.8360723413032656e-05,
+      "mean": 0.0077855571707493975,
+      "upper95": 0.00784114418863894
+    },
+    "actual_train_advantage": {
+      "lower95": -9.270435429495621e-06,
+      "mcse": 5.918138697392528e-07,
+      "mean": -8.110480244806686e-06,
+      "upper95": -6.950525060117751e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23779586842502715,
+      "mcse": 0.0006612305670470039,
+      "mean": 0.23909188033643927,
+      "upper95": 0.2403878922478514
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.302690223226803,
+      "mcse": 0.02079047999555375,
+      "mean": 11.343439564018087,
+      "upper95": 11.384188904809372
+    },
+    "control_minus_guidon": {
+      "lower95": 0.24282756230638475,
+      "mcse": 0.0006608081860280653,
+      "mean": 0.24412274635099976,
+      "upper95": 0.24541793039561477
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.832001885548813,
+      "mcse": 0.04037474546411419,
+      "mean": 10.911136386658477,
+      "upper95": 10.99027088776814
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.832001885548813,
+      "mcse": 0.04037474546411419,
+      "mean": 10.911136386658477,
+      "upper95": 10.99027088776814
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.311089953464519,
+        "mcse": 0.11111600771067641,
+        "mean": 15.528877328577444,
+        "upper95": 15.746664703690369
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.316151405981936,
+        "mcse": 0.11110040235207622,
+        "mean": 15.533908194592005,
+        "upper95": 15.751664983202074
+      },
+      "guidon": {
+        "lower95": 15.071474435161706,
+        "mcse": 0.11138316993841714,
+        "mean": 15.289785448241004,
+        "upper95": 15.508096461320301
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.995077119844808e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6585191548638933,
+      "mcse": 0.0004165066231158262,
+      "mean": 3.6593355078452006,
+      "upper95": 3.660151860826508
+    }
+  },
+  "target-batch_size-8": {
+    "actual_guide_advantage": {
+      "lower95": 0.007821316340924611,
+      "mcse": 2.801128871301767e-05,
+      "mean": 0.007876218466802126,
+      "upper95": 0.00793112059267964
+    },
+    "actual_train_advantage": {
+      "lower95": -1.0815316314646031e-05,
+      "mcse": 5.905646799281128e-07,
+      "mean": -9.65780954198693e-06,
+      "upper95": -8.50030276932783e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23965056686829458,
+      "mcse": 0.0006564498728184249,
+      "mean": 0.24093720861901868,
+      "upper95": 0.24222385036974278
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.356946141196524,
+      "mcse": 0.020600476573289846,
+      "mean": 11.397323075280172,
+      "upper95": 11.43770000936382
+    },
+    "control_minus_guidon": {
+      "lower95": 0.31098465107500184,
+      "mcse": 0.000930317581466977,
+      "mean": 0.3128080735346771,
+      "upper95": 0.31463149599435236
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.962089280668337,
+      "mcse": 0.03988216515072891,
+      "mean": 11.040258324363766,
+      "upper95": 11.118427368059194
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.962089280668337,
+      "mcse": 0.03988216515072891,
+      "mean": 11.040258324363766,
+      "upper95": 11.118427368059194
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.085921409749393,
+        "mcse": 0.10717102708131336,
+        "mean": 15.295976622828766,
+        "upper95": 15.50603183590814
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.158606447826315,
+        "mcse": 0.10675563261128009,
+        "mean": 15.367847487744424,
+        "upper95": 15.577088527662532
+      },
+      "guidon": {
+        "lower95": 14.844509338585105,
+        "mcse": 0.10741330389012325,
+        "mean": 15.055039414209746,
+        "upper95": 15.265569489834387
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.72676195921036e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.658997607219095,
+      "mcse": 0.0004460656840733051,
+      "mean": 3.6598718959598786,
+      "upper95": 3.6607461847006624
+    }
+  },
+  "target-beta1-0": {
+    "actual_guide_advantage": {
+      "lower95": 0.007419091090009259,
+      "mcse": 2.6369231151292413e-05,
+      "mean": 0.007470774783065792,
+      "upper95": 0.007522458476122326
+    },
+    "actual_train_advantage": {
+      "lower95": -8.547512181960218e-06,
+      "mcse": 4.824643930074965e-07,
+      "mean": -7.601881971665524e-06,
+      "upper95": -6.656251761370831e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.2112804973586981,
+      "mcse": 0.0006051167877810012,
+      "mean": 0.21246652626274887,
+      "upper95": 0.21365255516679962
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 21.776606556884577,
+      "mcse": 0.07444910266349847,
+      "mean": 21.922526798105032,
+      "upper95": 22.068447039325488
+    },
+    "control_minus_guidon": {
+      "lower95": 0.28495515453192666,
+      "mcse": 0.0005347204539610466,
+      "mean": 0.2860032066216903,
+      "upper95": 0.287051258711454
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.396285578409811,
+      "mcse": 0.03746592922644569,
+      "mean": 10.469718799693645,
+      "upper95": 10.543152020977479
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.396285578409811,
+      "mcse": 0.03746592922644569,
+      "mean": 10.469718799693645,
+      "upper95": 10.543152020977479
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.465633559402994,
+        "mcse": 0.10727326073764071,
+        "mean": 15.67588915044877,
+        "upper95": 15.886144741494546
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.539380795137605,
+        "mcse": 0.10716583452556407,
+        "mean": 15.749425830807711,
+        "upper95": 15.959470866477817
+      },
+      "guidon": {
+        "lower95": 15.252998059892423,
+        "mcse": 0.10735947157836587,
+        "mean": 15.46342262418602,
+        "upper95": 15.673847188479616
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.9633702606958875e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.4505897787723674,
+      "mcse": 0.000897179078921305,
+      "mean": 3.452348249767053,
+      "upper95": 3.4541067207617386
+    }
+  },
+  "target-beta1-0.99": {
+    "actual_guide_advantage": {
+      "lower95": 0.008016501873134326,
+      "mcse": 2.7527336967695814e-05,
+      "mean": 0.00807045545359101,
+      "upper95": 0.008124409034047693
+    },
+    "actual_train_advantage": {
+      "lower95": -1.109286415454126e-05,
+      "mcse": 6.28680175673469e-07,
+      "mean": -9.86065101022126e-06,
+      "upper95": -8.62843786590126e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.2575178584272678,
+      "mcse": 0.0006563158643828374,
+      "mean": 0.2588042375214582,
+      "upper95": 0.2600906166156486
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 8.102223040740963,
+      "mcse": 0.002460638591024191,
+      "mean": 8.10704589237937,
+      "upper95": 8.111868744017777
+    },
+    "control_minus_guidon": {
+      "lower95": 0.25534146372175315,
+      "mcse": 0.0007180349340276577,
+      "mean": 0.2567488121924474,
+      "upper95": 0.2581561606631416
+    },
+    "current_guide_linear_gain": {
+      "lower95": 11.235518205347475,
+      "mcse": 0.03926261278764883,
+      "mean": 11.312472926411267,
+      "upper95": 11.38942764747506
+    },
+    "evaluation_linear_gain": {
+      "lower95": 11.235518205347475,
+      "mcse": 0.03926261278764883,
+      "mean": 11.312472926411267,
+      "upper95": 11.38942764747506
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.045252371984798,
+        "mcse": 0.10742471632337951,
+        "mean": 15.255804815978623,
+        "upper95": 15.466357259972447
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.04334816602657,
+        "mcse": 0.10734756358318594,
+        "mean": 15.253749390649615,
+        "upper95": 15.46415061527266
+      },
+      "guidon": {
+        "lower95": 14.785761702839443,
+        "mcse": 0.10777493653965495,
+        "mean": 14.997000578457166,
+        "upper95": 15.20823945407489
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.479833409651193e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.782559703954953,
+      "mcse": 0.0004068022050659972,
+      "mean": 3.7833570362768825,
+      "upper95": 3.784154368598812
+    }
+  },
+  "target-condition_number-1": {
+    "actual_guide_advantage": {
+      "lower95": 0.0005064433524810383,
+      "mcse": 7.963882198713584e-07,
+      "mean": 0.0005080042733919861,
+      "upper95": 0.0005095651943029339
+    },
+    "actual_train_advantage": {
+      "lower95": -2.6307192784038447e-07,
+      "mcse": 2.6411182534612464e-08,
+      "mean": -2.1130601007254401e-07,
+      "upper95": -1.5954009230470359e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.01565103544251355,
+      "mcse": 2.8699015505695165e-05,
+      "mean": 0.015707285512904713,
+      "upper95": 0.015763535583295876
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.008200210038253358,
+      "mcse": 3.832903421305106e-05,
+      "mean": 0.008275334945310938,
+      "upper95": 0.008350459852368517
+    },
+    "control_minus_guidon": {
+      "lower95": 0.016415038838592914,
+      "mcse": 2.7702261363507036e-05,
+      "mean": 0.016469335270865387,
+      "upper95": 0.01652363170313786
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.7096310078197465,
+      "mcse": 0.0011130258990766282,
+      "mean": 0.7118125385819367,
+      "upper95": 0.7139940693441269
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.7096310078197465,
+      "mcse": 0.0011130258990766282,
+      "mean": 0.7118125385819367,
+      "upper95": 0.7139940693441269
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 0.5506982168771617,
+        "mcse": 0.002434425715829171,
+        "mean": 0.5554696912801869,
+        "upper95": 0.560241165683212
+      },
+      "adamw_plus_guidance": {
+        "lower95": 0.5514642886269716,
+        "mcse": 0.002432373679171364,
+        "mean": 0.5562317410381474,
+        "upper95": 0.5609991934493233
+      },
+      "guidon": {
+        "lower95": 0.5350178270507117,
+        "mcse": 0.002420703426821718,
+        "mean": 0.5397624057672822,
+        "upper95": 0.5445069844838527
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 4.855234333011157e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6803317854178044,
+      "mcse": 0.0006245452520592735,
+      "mean": 3.6815558941118405,
+      "upper95": 3.6827800028058766
+    }
+  },
+  "target-condition_number-10000": {
+    "actual_guide_advantage": {
+      "lower95": 0.46106774056088,
+      "mcse": 0.0029376195238641125,
+      "mean": 0.4668254748276537,
+      "upper95": 0.47258320909442736
+    },
+    "actual_train_advantage": {
+      "lower95": -0.000779662752165788,
+      "mcse": 4.698665000823921e-05,
+      "mean": -0.0006875689181496392,
+      "upper95": -0.0005954750841334904
+    },
+    "adamw_minus_guidon": {
+      "lower95": 14.082927498819272,
+      "mcse": 0.06502817219747169,
+      "mean": 14.210382716326317,
+      "upper95": 14.337837933833361
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 79349.16205210157,
+      "mcse": 180.91459570511464,
+      "mean": 79703.7546596836,
+      "upper95": 80058.34726726564
+    },
+    "control_minus_guidon": {
+      "lower95": 15.514065201727583,
+      "mcse": 0.07065249299694339,
+      "mean": 15.652544088001592,
+      "upper95": 15.791022974275602
+    },
+    "current_guide_linear_gain": {
+      "lower95": 646.3318027468885,
+      "mcse": 4.176776193067713,
+      "mean": 654.5182840853012,
+      "upper95": 662.7047654237139
+    },
+    "evaluation_linear_gain": {
+      "lower95": 646.3318027468885,
+      "mcse": 4.176776193067713,
+      "mean": 654.5182840853012,
+      "upper95": 662.7047654237139
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 1007.5884852591438,
+        "mcse": 9.728393308692745,
+        "mean": 1026.6561361441816,
+        "upper95": 1045.7237870292192
+      },
+      "adamw_plus_guidance": {
+        "lower95": 1009.0473101651163,
+        "mcse": 9.719891505479815,
+        "mean": 1028.0982975158568,
+        "upper95": 1047.149284866597
+      },
+      "guidon": {
+        "lower95": 993.2938213492484,
+        "mcse": 9.771393917656503,
+        "mean": 1012.4457534278552,
+        "upper95": 1031.5976855064619
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 9.127009538221456e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6555595924859547,
+      "mcse": 0.0003498786977588009,
+      "mean": 3.656245354733562,
+      "upper95": 3.656931116981169
+    }
+  },
+  "target-delay-16": {
+    "actual_guide_advantage": {
+      "lower95": 0.007814902573625876,
+      "mcse": 2.744405492260492e-05,
+      "mean": 0.007868692921274182,
+      "upper95": 0.007922483268922488
+    },
+    "actual_train_advantage": {
+      "lower95": -1.0024295765587243e-05,
+      "mcse": 5.727858431578067e-07,
+      "mean": -8.901635512997941e-06,
+      "upper95": -7.77897526040864e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.24006476871682852,
+      "mcse": 0.0006312566324545018,
+      "mean": 0.24130203171643935,
+      "upper95": 0.24253929471605018
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.322306091378154,
+      "mcse": 0.019631255279474746,
+      "mean": 11.360783351725924,
+      "upper95": 11.399260612073695
+    },
+    "control_minus_guidon": {
+      "lower95": 0.2613937316581409,
+      "mcse": 0.0006555007240735089,
+      "mean": 0.262678513077325,
+      "upper95": 0.26396329449650907
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.95202319974705,
+      "mcse": 0.03908539000667911,
+      "mean": 11.02863056416014,
+      "upper95": 11.105237928573231
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.95202319974705,
+      "mcse": 0.03908539000667911,
+      "mean": 11.02863056416014,
+      "upper95": 11.105237928573231
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.078609006890352,
+        "mcse": 0.105517654840259,
+        "mean": 15.28542361037726,
+        "upper95": 15.492238213864168
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.100162209277276,
+        "mcse": 0.10542749105146525,
+        "mean": 15.306800091738147,
+        "upper95": 15.513437974199018
+      },
+      "guidon": {
+        "lower95": 14.836803428159987,
+        "mcse": 0.10577456658205864,
+        "mean": 15.044121578660823,
+        "upper95": 15.251439729161659
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.990811812446982e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6582990538263385,
+      "mcse": 0.0004296591423849076,
+      "mean": 3.659141185745413,
+      "upper95": 3.659983317664487
+    }
+  },
+  "target-delay-64": {
+    "actual_guide_advantage": {
+      "lower95": 0.007762668994501916,
+      "mcse": 2.8517172808972794e-05,
+      "mean": 0.007818562653207503,
+      "upper95": 0.00787445631191309
+    },
+    "actual_train_advantage": {
+      "lower95": -8.95467154902279e-06,
+      "mcse": 5.771540839917746e-07,
+      "mean": -7.823449544398912e-06,
+      "upper95": -6.6922275397750336e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23907432457343442,
+      "mcse": 0.0006600298928535259,
+      "mean": 0.24036798316342733,
+      "upper95": 0.24166164175342025
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.289978148897829,
+      "mcse": 0.020077466193724983,
+      "mean": 11.32932998263753,
+      "upper95": 11.368681816377231
+    },
+    "control_minus_guidon": {
+      "lower95": 0.2602149299232317,
+      "mcse": 0.0006870552499887347,
+      "mean": 0.26156155821320964,
+      "upper95": 0.2629081865031876
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.87736948988129,
+      "mcse": 0.04059646596678699,
+      "mean": 10.956938563176191,
+      "upper95": 11.036507636471093
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.87736948988129,
+      "mcse": 0.04059646596678699,
+      "mean": 10.956938563176191,
+      "upper95": 11.036507636471093
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.416215804403995,
+        "mcse": 0.10778176084123964,
+        "mean": 15.627468055652825,
+        "upper95": 15.838720306901655
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.437587505223172,
+        "mcse": 0.1076908803466514,
+        "mean": 15.648661630702609,
+        "upper95": 15.859735756182046
+      },
+      "guidon": {
+        "lower95": 15.175284821272221,
+        "mcse": 0.10806900572304895,
+        "mean": 15.387100072489398,
+        "upper95": 15.598915323706574
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.174705147518371e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.657945793711179,
+      "mcse": 0.0004337551304141946,
+      "mean": 3.6587959537667905,
+      "upper95": 3.659646113822402
+    }
+  },
+  "target-groups-1": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 85.61649483477748,
+      "mcse": 0.1413910296713696,
+      "mean": 85.89362125293337,
+      "upper95": 86.17074767108926
+    },
+    "control_minus_guidon": {
+      "lower95": 0.07520642005300254,
+      "mcse": 0.0006204887462465065,
+      "mean": 0.0764225779956457,
+      "upper95": 0.07763873593828885
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 51.91918618493999,
+        "mcse": 0.6443985812655332,
+        "mean": 53.182207404220435,
+        "upper95": 54.44522862350088
+      },
+      "adamw_plus_guidance": {
+        "lower95": 51.99671783338092,
+        "mcse": 0.6438327289975306,
+        "mean": 53.25862998221608,
+        "upper95": 54.520542131051236
+      },
+      "guidon": {
+        "lower95": 51.91918618493999,
+        "mcse": 0.6443985812655332,
+        "mean": 53.182207404220435,
+        "upper95": 54.44522862350088
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.38493655325333,
+      "mcse": 0.0002770324556827521,
+      "mean": 1.385479536866468,
+      "upper95": 1.3860225204796062
+    }
+  },
+  "target-groups-2": {
+    "actual_guide_advantage": {
+      "lower95": 0.0005406450726248543,
+      "mcse": 8.053615125684295e-06,
+      "mean": 0.0005564301582711955,
+      "upper95": 0.0005722152439175367
+    },
+    "actual_train_advantage": {
+      "lower95": -1.0562974039489475e-06,
+      "mcse": 8.125849136847433e-08,
+      "mean": -8.970307608667377e-07,
+      "upper95": -7.37764117784528e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.016329683948146084,
+      "mcse": 0.00020912864538668747,
+      "mean": 0.016739576093103992,
+      "upper95": 0.0171494682380619
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 42.1864578085791,
+      "mcse": 0.07357854244135925,
+      "mean": 42.330671751764164,
+      "upper95": 42.47488569494923
+    },
+    "control_minus_guidon": {
+      "lower95": 0.09196652631761798,
+      "mcse": 0.0008195752124400625,
+      "mean": 0.0935728937340005,
+      "upper95": 0.09517926115038303
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.10830375767166006,
+      "mcse": 0.0016242794084802756,
+      "mean": 0.1114873453122814,
+      "upper95": 0.11467093295290273
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.10830375767166006,
+      "mcse": 0.0016242794084802756,
+      "mean": 0.1114873453122814,
+      "upper95": 0.11467093295290273
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 52.04671253697029,
+        "mcse": 0.6590711237883713,
+        "mean": 53.3384919395955,
+        "upper95": 54.63027134222071
+      },
+      "adamw_plus_guidance": {
+        "lower95": 52.12470663471751,
+        "mcse": 0.6584788890402479,
+        "mean": 53.4153252572364,
+        "upper95": 54.70594387975528
+      },
+      "guidon": {
+        "lower95": 52.02964777500112,
+        "mcse": 0.6592370349496309,
+        "mean": 53.3217523635024,
+        "upper95": 54.61385695200367
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 1.1783027973752825e-14,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 1.3410970933113449,
+      "mcse": 0.0004376269431373671,
+      "mean": 1.3419548421198941,
+      "upper95": 1.3428125909284434
+    }
+  },
+  "target-groups-64": {
+    "actual_guide_advantage": {
+      "lower95": 0.006533926299710982,
+      "mcse": 9.261285023566772e-06,
+      "mean": 0.006552078418357173,
+      "upper95": 0.0065702305370033635
+    },
+    "actual_train_advantage": {
+      "lower95": -5.037752180265932e-06,
+      "mcse": 2.1288532775302384e-07,
+      "mean": -4.620496937870006e-06,
+      "upper95": -4.203241695474079e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.2020712116712412,
+      "mcse": 0.0003042422869110261,
+      "mean": 0.2026675265535868,
+      "upper95": 0.2032638414359324
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 8.758781930073294,
+      "mcse": 0.00664332121744733,
+      "mean": 8.771802839659491,
+      "upper95": 8.784823749245689
+    },
+    "control_minus_guidon": {
+      "lower95": 0.21942885341790141,
+      "mcse": 0.0002956395934676838,
+      "mean": 0.22000830702109808,
+      "upper95": 0.22058776062429475
+    },
+    "current_guide_linear_gain": {
+      "lower95": 41.84623841473164,
+      "mcse": 0.05952994895867187,
+      "mean": 41.96291711469063,
+      "upper95": 42.07959581464963
+    },
+    "evaluation_linear_gain": {
+      "lower95": 41.84623841473164,
+      "mcse": 0.05952994895867187,
+      "mean": 41.96291711469063,
+      "upper95": 42.07959581464963
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 12.601548494553963,
+        "mcse": 0.04235425362010204,
+        "mean": 12.684562831649364,
+        "upper95": 12.767577168744765
+      },
+      "adamw_plus_guidance": {
+        "lower95": 12.618961643883717,
+        "mcse": 0.04231733073120284,
+        "mean": 12.701903612116874,
+        "upper95": 12.784845580350032
+      },
+      "guidon": {
+        "lower95": 12.399015357416657,
+        "mcse": 0.042285687591387136,
+        "mean": 12.481895305095776,
+        "upper95": 12.564775252774895
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 4.342051745307068e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 7.839404979601582,
+      "mcse": 0.00041148906538611353,
+      "mean": 7.840211498169739,
+      "upper95": 7.8410180167378964
+    }
+  },
+  "target-guide_stream_size-512": {
+    "actual_guide_advantage": {
+      "lower95": 0.007805256447297518,
+      "mcse": 2.739725436486557e-05,
+      "mean": 0.007858955065852654,
+      "upper95": 0.007912653684407791
+    },
+    "actual_train_advantage": {
+      "lower95": -1.036870626315294e-05,
+      "mcse": 5.777518000854428e-07,
+      "mean": -9.236312734985472e-06,
+      "upper95": -8.103919206818004e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23944796114691594,
+      "mcse": 0.0006320101391887639,
+      "mean": 0.24068670101972592,
+      "upper95": 0.2419254408925359
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.344343419914113,
+      "mcse": 0.020364007126669786,
+      "mean": 11.384256873882386,
+      "upper95": 11.424170327850659
+    },
+    "control_minus_guidon": {
+      "lower95": 0.26083703355954446,
+      "mcse": 0.0006581419609984145,
+      "mean": 0.26212699180310134,
+      "upper95": 0.2634169500466582
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.938992687024102,
+      "mcse": 0.03901772873468117,
+      "mean": 11.015467435344078,
+      "upper95": 11.091942183664054
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.938992687024102,
+      "mcse": 0.03901772873468117,
+      "mean": 11.015467435344078,
+      "upper95": 11.091942183664054
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.099682659543774,
+        "mcse": 0.10628899355154761,
+        "mean": 15.308009086904807,
+        "upper95": 15.51633551426584
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.121307739004637,
+        "mcse": 0.10619471361405393,
+        "mean": 15.329449377688183,
+        "upper95": 15.53759101637173
+      },
+      "guidon": {
+        "lower95": 14.858532547081882,
+        "mcse": 0.1065254279608163,
+        "mean": 15.067322385885083,
+        "upper95": 15.276112224688283
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.952325993681847e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6588609258140123,
+      "mcse": 0.00042981339555880427,
+      "mean": 3.6597033600693076,
+      "upper95": 3.660545794324603
+    }
+  },
+  "target-interval-1": {
+    "actual_guide_advantage": {
+      "lower95": 0.014627018554758472,
+      "mcse": 5.2576039276747686e-05,
+      "mean": 0.014730067591740897,
+      "upper95": 0.014833116628723322
+    },
+    "actual_train_advantage": {
+      "lower95": -2.08714521977741e-05,
+      "mcse": 1.0671197599627143e-06,
+      "mean": -1.877989746824718e-05,
+      "upper95": -1.668834273872026e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.45161388073148007,
+      "mcse": 0.0012696611961954443,
+      "mean": 0.45410241667602314,
+      "upper95": 0.4565909526205662
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 17.50851447188829,
+      "mcse": 0.05796555766131716,
+      "mean": 17.62212696490447,
+      "upper95": 17.73573945792065
+    },
+    "control_minus_guidon": {
+      "lower95": 0.42172284799694687,
+      "mcse": 0.0013843962149145482,
+      "mean": 0.4244362645781794,
+      "upper95": 0.42714968115941193
+    },
+    "current_guide_linear_gain": {
+      "lower95": 20.501659724286686,
+      "mcse": 0.07485673294169998,
+      "mean": 20.64837892085242,
+      "upper95": 20.795098117418153
+    },
+    "evaluation_linear_gain": {
+      "lower95": 20.501659724286686,
+      "mcse": 0.07485673294169998,
+      "mean": 20.64837892085242,
+      "upper95": 20.795098117418153
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.36450212406379,
+        "mcse": 0.10584740043981816,
+        "mean": 15.571963028925834,
+        "upper95": 15.779423933787879
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.334442775432443,
+        "mcse": 0.1060480109160959,
+        "mean": 15.54229687682799,
+        "upper95": 15.750150978223537
+      },
+      "guidon": {
+        "lower95": 14.909365540641494,
+        "mcse": 0.1063750365348553,
+        "mean": 15.11786061224981,
+        "upper95": 15.326355683858127
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 5.321080603280252e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6535520246099353,
+      "mcse": 0.0006757563281481448,
+      "mean": 3.6548765070131055,
+      "upper95": 3.6562009894162757
+    }
+  },
+  "target-interval-256": {
+    "actual_guide_advantage": {
+      "lower95": 0.01372225126292103,
+      "mcse": 4.598449406664876e-05,
+      "mean": 0.013812380871291661,
+      "upper95": 0.013902510479662292
+    },
+    "actual_train_advantage": {
+      "lower95": -2.1875465753957096e-05,
+      "mcse": 9.982595338556836e-07,
+      "mean": -1.9918877067599955e-05,
+      "upper95": -1.7962288381242814e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.42199585048580124,
+      "mcse": 0.0011585600683549082,
+      "mean": 0.42426662821977684,
+      "upper95": 0.42653740595375245
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.4467648498276922,
+      "mcse": 0.0011585930078591943,
+      "mean": 0.44903569212309624,
+      "upper95": 0.45130653441850027
+    },
+    "current_guide_linear_gain": {
+      "lower95": 19.23695648398983,
+      "mcse": 0.06543240527800624,
+      "mean": 19.36520399833472,
+      "upper95": 19.493451512679613
+    },
+    "evaluation_linear_gain": {
+      "lower95": 19.23695648398983,
+      "mcse": 0.06543240527800624,
+      "mean": 19.36520399833472,
+      "upper95": 19.493451512679613
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.221550668527804,
+        "mcse": 0.10849262125774894,
+        "mean": 15.434196206192992,
+        "upper95": 15.646841743858179
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.246504021869336,
+        "mcse": 0.10839859603417006,
+        "mean": 15.458965270096309,
+        "upper95": 15.671426518323281
+      },
+      "guidon": {
+        "lower95": 14.79650102310912,
+        "mcse": 0.10889211982861872,
+        "mean": 15.009929577973212,
+        "upper95": 15.223358132837305
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.168259005769339e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6556214922903085,
+      "mcse": 0.0006562065149431702,
+      "mean": 3.6569076570595973,
+      "upper95": 3.658193821828886
+    }
+  },
+  "target-interval-64": {
+    "actual_guide_advantage": {
+      "lower95": 0.011057572482954147,
+      "mcse": 3.666758364889811e-05,
+      "mean": 0.011129440946905987,
+      "upper95": 0.011201309410857826
+    },
+    "actual_train_advantage": {
+      "lower95": -1.570703216733078e-05,
+      "mcse": 8.188294983585128e-07,
+      "mean": -1.4102126350548097e-05,
+      "upper95": -1.2497220533765412e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.3392735817845379,
+      "mcse": 0.0009017832121458407,
+      "mean": 0.3410410768803438,
+      "upper95": 0.34280857197614967
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "control_minus_guidon": {
+      "lower95": 0.3641605290127146,
+      "mcse": 0.0008961447315722418,
+      "mean": 0.36591697268659623,
+      "upper95": 0.36767341636047784
+    },
+    "current_guide_linear_gain": {
+      "lower95": 15.498668406471927,
+      "mcse": 0.052202497736411085,
+      "mean": 15.600985302035292,
+      "upper95": 15.703302197598658
+    },
+    "evaluation_linear_gain": {
+      "lower95": 15.498668406471927,
+      "mcse": 0.052202497736411085,
+      "mean": 15.600985302035292,
+      "upper95": 15.703302197598658
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.243100371973268,
+        "mcse": 0.1085141532224677,
+        "mean": 15.455788112289305,
+        "upper95": 15.668475852605342
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.268168910783997,
+        "mcse": 0.1084158659752864,
+        "mean": 15.480664008095559,
+        "upper95": 15.693159105407121
+      },
+      "guidon": {
+        "lower95": 14.901589542148201,
+        "mcse": 0.1087538230922249,
+        "mean": 15.114747035408962,
+        "upper95": 15.327904528669723
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 8.866607029490838e-16,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6560647520603817,
+      "mcse": 0.000558902960594237,
+      "mean": 3.6571602018631464,
+      "upper95": 3.658255651665911
+    }
+  },
+  "target-mismatch-1": {
+    "actual_guide_advantage": {
+      "lower95": 0.00770602914028303,
+      "mcse": 3.107510667650354e-05,
+      "mean": 0.007766936349368977,
+      "upper95": 0.007827843558454924
+    },
+    "actual_train_advantage": {
+      "lower95": -2.440580722973642e-06,
+      "mcse": 5.202507472933951e-07,
+      "mean": -1.4208892582785877e-06,
+      "upper95": -4.011977935835333e-07
+    },
+    "adamw_minus_guidon": {
+      "lower95": -0.24069267278956377,
+      "mcse": 0.0006841133992052204,
+      "mean": -0.23935181052712154,
+      "upper95": -0.2380109482646793
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 9.835609546875718,
+      "mcse": 0.015630987092158995,
+      "mean": 9.86624628157635,
+      "upper95": 9.896883016276982
+    },
+    "control_minus_guidon": {
+      "lower95": -0.24843732098861393,
+      "mcse": 0.0006309162568062809,
+      "mean": -0.2472007251252736,
+      "upper95": -0.24596412926193328
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.791686093696997,
+      "mcse": 0.042869096835553525,
+      "mean": 10.875709523494683,
+      "upper95": 10.959732953292368
+    },
+    "evaluation_linear_gain": {
+      "lower95": -10.95971304090743,
+      "mcse": 0.04286851849276268,
+      "mean": -10.875690744661615,
+      "upper95": -10.7916684484158
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.168993237390866,
+        "mcse": 0.10670204530296805,
+        "mean": 15.378129246184685,
+        "upper95": 15.587265254978503
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.161217979080298,
+        "mcse": 0.10666446556440463,
+        "mean": 15.370280331586532,
+        "upper95": 15.579342684092765
+      },
+      "guidon": {
+        "lower95": 15.40902362665943,
+        "mcse": 0.10635583165937675,
+        "mean": 15.617481056711808,
+        "upper95": 15.825938486764187
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.36759454457666e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6780298755523884,
+      "mcse": 0.00042028224909409844,
+      "mean": 3.6788536287606126,
+      "upper95": 3.679677381968837
+    }
+  },
+  "target-noise-0": {
+    "actual_guide_advantage": {
+      "lower95": 0.007754147149711933,
+      "mcse": 2.8225262646131032e-05,
+      "mean": 0.00780946866449835,
+      "upper95": 0.007864790179284768
+    },
+    "actual_train_advantage": {
+      "lower95": -8.935454558227874e-06,
+      "mcse": 5.772919721774291e-07,
+      "mean": -7.803962292760112e-06,
+      "upper95": -6.672470027292351e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23884373887484694,
+      "mcse": 0.0006592757460385149,
+      "mean": 0.24013591933708242,
+      "upper95": 0.2414280997993179
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.286236878624301,
+      "mcse": 0.01977775438606992,
+      "mean": 11.325001277220998,
+      "upper95": 11.363765675817696
+    },
+    "control_minus_guidon": {
+      "lower95": 0.25997375703584635,
+      "mcse": 0.0006860284386228203,
+      "mean": 0.2613183727755471,
+      "upper95": 0.26266298851524783
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.865436935315337,
+      "mcse": 0.04017588887356815,
+      "mean": 10.944181677507531,
+      "upper95": 11.022926419699726
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.865436935315337,
+      "mcse": 0.04017588887356815,
+      "mean": 10.944181677507531,
+      "upper95": 11.022926419699726
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.346366101591402,
+        "mcse": 0.10814966632265838,
+        "mean": 15.558339447583812,
+        "upper95": 15.770312793576222
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.367730883193081,
+        "mcse": 0.10805664174958891,
+        "mean": 15.579521901022275,
+        "upper95": 15.79131291885147
+      },
+      "guidon": {
+        "lower95": 15.105701310731881,
+        "mcse": 0.10841949873206502,
+        "mean": 15.318203528246729,
+        "upper95": 15.530705745761576
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 7.518537573647977e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.65852666460459,
+      "mcse": 0.00043645599205194947,
+      "mean": 3.659382118349012,
+      "upper95": 3.6602375720934335
+    }
+  },
+  "target-noise-0.5": {
+    "actual_guide_advantage": {
+      "lower95": 0.007783905866255387,
+      "mcse": 2.756220646464192e-05,
+      "mean": 0.007837927790926085,
+      "upper95": 0.007891949715596784
+    },
+    "actual_train_advantage": {
+      "lower95": -9.785349334210636e-06,
+      "mcse": 5.768568978028184e-07,
+      "mean": -8.65470981451711e-06,
+      "upper95": -7.524070294823587e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.23914395137043637,
+      "mcse": 0.0006313839929285353,
+      "mean": 0.2403814639965763,
+      "upper95": 0.24161897662271625
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.33510874084313,
+      "mcse": 0.021041016485705923,
+      "mean": 11.376349133155115,
+      "upper95": 11.417589525467099
+    },
+    "control_minus_guidon": {
+      "lower95": 0.26044775325344477,
+      "mcse": 0.0006617262803639945,
+      "mean": 0.2617447367629582,
+      "upper95": 0.2630417202724716
+    },
+    "current_guide_linear_gain": {
+      "lower95": 10.908392090005183,
+      "mcse": 0.039251771487192375,
+      "mean": 10.98532556212008,
+      "upper95": 11.062259034234977
+    },
+    "evaluation_linear_gain": {
+      "lower95": 10.908392090005183,
+      "mcse": 0.039251771487192375,
+      "mean": 10.98532556212008,
+      "upper95": 11.062259034234977
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.170971501789957,
+        "mcse": 0.10980034275386903,
+        "mean": 15.38618017358754,
+        "upper95": 15.601388845385124
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.192521494211089,
+        "mcse": 0.10970507762389278,
+        "mean": 15.40754344635392,
+        "upper95": 15.62256539849675
+      },
+      "guidon": {
+        "lower95": 14.93007330331374,
+        "mcse": 0.11006398279450111,
+        "mean": 15.145798709590963,
+        "upper95": 15.361524115868185
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 6.809587510373222e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.655726133800683,
+      "mcse": 0.0004433865452316257,
+      "mean": 3.656595171429337,
+      "upper95": 3.6574642090579914
+    }
+  },
+  "target-radius-0": {
+    "actual_guide_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "actual_train_advantage": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 10.871224712562874,
+      "mcse": 0.01148565992777484,
+      "mean": 10.893736606021314,
+      "upper95": 10.916248499479753
+    },
+    "control_minus_guidon": {
+      "lower95": 0.021186791593000534,
+      "mcse": 0.00010618286354907385,
+      "mean": 0.021394910005556718,
+      "upper95": 0.021603028418112902
+    },
+    "current_guide_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_linear_gain": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.13287740343227,
+        "mcse": 0.10873556633267718,
+        "mean": 15.345999113444316,
+        "upper95": 15.559120823456363
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.154461880361616,
+        "mcse": 0.10863884851441605,
+        "mean": 15.367394023449872,
+        "upper95": 15.580326166538129
+      },
+      "guidon": {
+        "lower95": 15.13287740343227,
+        "mcse": 0.10873556633267718,
+        "mean": 15.345999113444316,
+        "upper95": 15.559120823456363
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 0.0,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.665528239153468,
+      "mcse": 0.00028254185710867004,
+      "mean": 3.6660820211934007,
+      "upper95": 3.6666358032333335
+    }
+  },
+  "target-radius-0.05": {
+    "actual_guide_advantage": {
+      "lower95": 0.002610442334974661,
+      "mcse": 9.231224448189274e-06,
+      "mean": 0.002628535534893112,
+      "upper95": 0.002646628734811563
+    },
+    "actual_train_advantage": {
+      "lower95": -2.590157784547766e-06,
+      "mcse": 1.8532063081855115e-07,
+      "mean": -2.2269293481434056e-06,
+      "upper95": -1.8637009117390454e-06
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.0800460415400707,
+      "mcse": 0.00021153400103185818,
+      "mean": 0.08046064818209314,
+      "upper95": 0.08087525482411559
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.037489477129805,
+      "mcse": 0.014229691998630964,
+      "mean": 11.065379673447122,
+      "upper95": 11.09326986976444
+    },
+    "control_minus_guidon": {
+      "lower95": 0.10148967139032947,
+      "mcse": 0.00025237705227631677,
+      "mean": 0.10198433041279105,
+      "upper95": 0.10247898943525263
+    },
+    "current_guide_linear_gain": {
+      "lower95": 3.6573280744319017,
+      "mcse": 0.013138776221997807,
+      "mean": 3.6830800758270175,
+      "upper95": 3.7088320772221333
+    },
+    "evaluation_linear_gain": {
+      "lower95": 3.6573280744319017,
+      "mcse": 0.013138776221997807,
+      "mean": 3.6830800758270175,
+      "upper95": 3.7088320772221333
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 15.032045459068119,
+        "mcse": 0.10424940594885505,
+        "mean": 15.236374294727874,
+        "upper95": 15.440703130387629
+      },
+      "adamw_plus_guidance": {
+        "lower95": 15.053750276022217,
+        "mcse": 0.10415699027364896,
+        "mean": 15.257897976958569,
+        "upper95": 15.46204567789492
+      },
+      "guidon": {
+        "lower95": 14.951418213932373,
+        "mcse": 0.10433440439459556,
+        "mean": 15.15591364654578,
+        "upper95": 15.360409079159188
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 2.19418700669501e-14,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.6629977976247208,
+      "mcse": 0.0002965414792647045,
+      "mean": 3.6635790189240796,
+      "upper95": 3.6641602402234383
+    }
+  },
+  "target-radius-0.3": {
+    "actual_guide_advantage": {
+      "lower95": 0.01573581386335267,
+      "mcse": 5.16851284073043e-05,
+      "mean": 0.015837116715030984,
+      "upper95": 0.0159384195667093
+    },
+    "actual_train_advantage": {
+      "lower95": -3.169549890887816e-05,
+      "mcse": 1.1735089229875314e-06,
+      "mean": -2.9395421419822597e-05,
+      "upper95": -2.7095343930767035e-05
+    },
+    "adamw_minus_guidon": {
+      "lower95": 0.4814170142524527,
+      "mcse": 0.001203287130841271,
+      "mean": 0.48377545702890157,
+      "upper95": 0.48613389980535043
+    },
+    "all_adamw_limit_bitwise": true,
+    "coefficient_time_variance": {
+      "lower95": 11.918426083986056,
+      "mcse": 0.02904096628554086,
+      "mean": 11.975346377905716,
+      "upper95": 12.032266671825376
+    },
+    "control_minus_guidon": {
+      "lower95": 0.5028838394802742,
+      "mcse": 0.0012180912567856094,
+      "mean": 0.505271298343574,
+      "upper95": 0.5076587572068738
+    },
+    "current_guide_linear_gain": {
+      "lower95": 22.068740470716083,
+      "mcse": 0.0736853205839889,
+      "mean": 22.2131636990607,
+      "upper95": 22.35758692740532
+    },
+    "evaluation_linear_gain": {
+      "lower95": 22.068740470716083,
+      "mcse": 0.0736853205839889,
+      "mean": 22.2131636990607,
+      "upper95": 22.35758692740532
+    },
+    "evaluation_loss": {
+      "adamw": {
+        "lower95": 14.975888640082395,
+        "mcse": 0.10612182971363004,
+        "mean": 15.18388742632111,
+        "upper95": 15.391886212559825
+      },
+      "adamw_plus_guidance": {
+        "lower95": 14.997569469123098,
+        "mcse": 0.10602744822075827,
+        "mean": 15.205383267635785,
+        "upper95": 15.413197066148472
+      },
+      "guidon": {
+        "lower95": 14.491360253180671,
+        "mcse": 0.1065059776079285,
+        "mean": 14.70011196929221,
+        "upper95": 14.90886368540375
+      }
+    },
+    "fallback_fraction": {
+      "lower95": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "upper95": 0.0
+    },
+    "max_relative_neutrality": 3.749021868746922e-15,
+    "min_fresh_gain": 0.0,
+    "min_proxy_gain": 0.0,
+    "n": 1000,
+    "update_norm_mean": {
+      "lower95": 3.657385055139171,
+      "mcse": 0.0007229553581775117,
+      "mean": 3.658802047641199,
+      "upper95": 3.660219040143227
+    }
+  }
+}

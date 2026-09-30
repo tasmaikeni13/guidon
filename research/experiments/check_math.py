@@ -73,6 +73,21 @@ def exact_witnesses() -> dict:
     assert Fraction(2, 3) * Fraction(1, 2) - Fraction(1, 3) == 0
     normalized_bias = (Fraction(2, 3) - Fraction(1, 3)) * r
     assert normalized_bias == Fraction(1, 20)
+    current_c = [-x for x in c]
+    current_gain = sum(x * y for x, y in zip(current_c, delta, strict=True))
+    assert current_gain == Fraction(-3, 10)
+    drift_budget = r * sum(abs(x - y) for x, y in zip(current_c, c, strict=True))
+    assert Fraction(3, 10) - drift_budget == current_gain
+    adverse_a = [-x for x in a]
+    assert sum(adverse_a) == -2
+    assert sum(x * y for x, y in zip(adverse_a, delta, strict=True)) == 0
+    # Guide curvature can reverse actual guide advantage too, at fixed progress.
+    guide_base = -2 + 50 * 2
+    guide_guided = -2 * (1 + r) + 50 * ((1 + r) ** 2 + (1 - r) ** 2)
+    assert guide_guided - guide_base == Fraction(39, 20)
+    train_losses = [(x - 1) ** 2 for x in (Fraction(0), Fraction(1))]
+    evaluation_losses = [(x + 1) ** 2 for x in (Fraction(0), Fraction(1))]
+    assert train_losses == [1, 0] and evaluation_losses == [1, 4]
     # q=epsilon*(1,-1) has full radius for every epsilon>0, but q=0 has none.
     return {
         "two_block_delta": [str(x) for x in delta],

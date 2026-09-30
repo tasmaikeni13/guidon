@@ -1,0 +1,30 @@
+discovery 1/18 drift-g14-w0.001-k256: 1000 draws
+discovery 2/18 drift-g14-w0.2-k1: 1000 draws
+discovery 3/18 drift-g2-w0.001-k1: 1000 draws
+discovery 4/18 drift-g64-w0.001-k1: 1000 draws
+discovery 5/18 drift-g2-w0.2-k1: 1000 draws
+discovery 6/18 drift-g2-w0.001-k256: 1000 draws
+discovery 7/18 drift-g14-w0.2-k256: 1000 draws
+discovery 8/18 drift-g2-w0.2-k256: 1000 draws
+discovery 9/18 drift-g2-w0.2-k64: 1000 draws
+discovery 10/18 drift-g64-w0.2-k64: 1000 draws
+discovery 11/18 drift-g64-w0.2-k1: 1000 draws
+discovery 12/18 drift-g64-w0.001-k64: 1000 draws
+discovery 13/18 drift-g14-w0.001-k64: 1000 draws
+discovery 14/18 drift-g64-w0.001-k256: 1000 draws
+discovery 15/18 drift-g14-w0.001-k1: 1000 draws
+discovery 16/18 drift-g2-w0.001-k64: 1000 draws
+discovery 17/18 drift-g14-w0.2-k64: 1000 draws
+discovery 18/18 drift-g64-w0.2-k256: 1000 draws
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/tasma/optimizer/research/experiments/simulate.py", line 106, in <module>
+    run(
+  File "/home/tasma/optimizer/research/experiments/simulate.py", line 74, in run
+    "raw_path": str(raw_path.relative_to(ROOT)),
+  File "/usr/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'artifacts/phase02/drift-discovery-v1.jsonl.gz' is not in the subpath of '/home/tasma/optimizer' OR one path is relative and the other is absolute.

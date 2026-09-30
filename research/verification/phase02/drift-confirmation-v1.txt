@@ -1,0 +1,19 @@
+confirmation 1/18 drift-g2-w0.2-k1: 1000 draws
+confirmation 2/18 drift-g14-w0.2-k64: 1000 draws
+confirmation 3/18 drift-g2-w0.001-k1: 1000 draws
+confirmation 4/18 drift-g2-w0.001-k256: 1000 draws
+confirmation 5/18 drift-g64-w0.2-k256: 1000 draws
+confirmation 6/18 drift-g64-w0.2-k64: 1000 draws
+confirmation 7/18 drift-g64-w0.001-k256: 1000 draws
+confirmation 8/18 drift-g2-w0.2-k64: 1000 draws
+confirmation 9/18 drift-g64-w0.001-k1: 1000 draws
+confirmation 10/18 drift-g64-w0.2-k1: 1000 draws
+confirmation 11/18 drift-g14-w0.2-k1: 1000 draws
+confirmation 12/18 drift-g14-w0.001-k64: 1000 draws
+confirmation 13/18 drift-g2-w0.001-k64: 1000 draws
+confirmation 14/18 drift-g2-w0.2-k256: 1000 draws
+confirmation 15/18 drift-g64-w0.001-k64: 1000 draws
+confirmation 16/18 drift-g14-w0.2-k256: 1000 draws
+confirmation 17/18 drift-g14-w0.001-k1: 1000 draws
+confirmation 18/18 drift-g14-w0.001-k256: 1000 draws
+Complete: 18000 rows, 24.5s

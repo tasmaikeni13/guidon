@@ -1,0 +1,49 @@
+{
+  "analysis_spec_sha256": "aeab6af9b3e4da3c3430a39b3a9268636478c74a19db82d11a6c8a8a11cbedee",
+  "code_commit": "0902877a8c79b1108c9bfbb8bcfd09c96e0d2233",
+  "condition_order": [
+    "drift-g14-w0.001-k256",
+    "drift-g14-w0.2-k1",
+    "drift-g2-w0.001-k1",
+    "drift-g64-w0.001-k1",
+    "drift-g2-w0.2-k1",
+    "drift-g2-w0.001-k256",
+    "drift-g14-w0.2-k256",
+    "drift-g2-w0.2-k256",
+    "drift-g2-w0.2-k64",
+    "drift-g64-w0.2-k64",
+    "drift-g64-w0.2-k1",
+    "drift-g64-w0.001-k64",
+    "drift-g14-w0.001-k64",
+    "drift-g64-w0.001-k256",
+    "drift-g14-w0.001-k1",
+    "drift-g2-w0.001-k64",
+    "drift-g14-w0.2-k64",
+    "drift-g64-w0.2-k256"
+  ],
+  "elapsed_reason": "Manifest write failed after raw completion; exact original duration unavailable, not invented",
+  "elapsed_seconds": null,
+  "environment": {
+    "backend": "NumPy float64 CPU",
+    "machine": "x86_64",
+    "numpy": "2.2.6",
+    "python": "3.10.12"
+  },
+  "exclusions": [],
+  "llm_training_executed": false,
+  "protocol_sha256": "4a2905e719361f40257a16007fecf29b71367566984cade0b65b8322af7047ee",
+  "protocol_version": "drift-interaction-followup-v1-guidon-0.2",
+  "raw_path": "artifacts/phase02/drift-discovery-v1.jsonl.gz",
+  "raw_sha256": "134b2b4dd8557464973b9798af6e041236840ad3e8bb4cd28327291316e69932",
+  "recording_fault": "relative output path, raw complete; provenance recovered after exact identity/count check; must independently verify before use",
+  "restarts": [],
+  "root_seed": 271804,
+  "rows": 18000,
+  "source_sha256": {
+    "research/experiments/register_simulation.py": "a5ebf3fd0a878e72980f0c3f7a17f4d5fe3dd30982be57e217b2480470d64deb",
+    "research/experiments/simulate.py": "2c602c5e9fb042cdc09dd74292a24f9e245317f2b244e3de75c25e8e8c16f218",
+    "research/experiments/synthetic.py": "87c9d3b81442e39a1ed1775052fceeded86aae3f04536b68b0f2041fba5c2fd4",
+    "src/guidon/reference.py": "a572a62840c5e4a9b323888c8e55fc5a13d1350f22a445d70bf4437d2bbcd108"
+  },
+  "stream": "discovery"
+}

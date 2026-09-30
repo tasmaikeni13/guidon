@@ -110,7 +110,7 @@ def test_registered_design_covers_required_factors_and_draws():
 def test_zero_coefficients_adverse_momentum_and_fixed_decay_witnesses():
     from dataclasses import replace
 
-    from guidon.reference import State, step
+    from guidon.reference import step
 
     weights, failed = controller(np.zeros(2), np.array([-0.5, 1.0]), 0.15, 1e-5)
     assert not failed
@@ -118,12 +118,12 @@ def test_zero_coefficients_adverse_momentum_and_fixed_decay_witnesses():
     np.testing.assert_array_equal(controller(np.ones(2), np.zeros(2), 0.15, 1e-5)[0], 1)
     p = (np.zeros(1), np.zeros(1))
     g = (np.ones(1), np.ones(1))
-    state = State(
-        0, (-np.ones(1), -np.ones(1)), (np.ones(1), np.ones(1)), np.zeros(2), -1
-    )
     cfg = Config(radius=0, weight_decay=0)
+    state = init(p)
+    for _ in range(8):
+        p, state, _ = step(p, (-2 * g[0], -2 * g[1]), state, cfg)
     changed, _, _ = step(p, g, state, cfg)
-    assert sum(float(x[0]) for x in changed) > 0  # F=x1+x2 ascends.
+    assert sum(float(x[0] - y[0]) for x, y in zip(changed, p, strict=True)) > 0
     cfg = Config(beta1=0, beta2=0, weight_decay=1, guide_warmup=0)
     u = 1 / (1 + cfg.epsilon)
     p = (-u * np.ones(1), -u * np.ones(1))

@@ -1,34 +1,50 @@
-# Research state — 2026-09-30
+# Research state — 2026-09-30 — GUIDON 0.2
 
-The requested foundation is being prepared; the user starts research phases later.
-Authoritative run/gate status is `phases/state.json`: all nine phases not started.
-There are no LLM, TPU, pilot, Monte Carlo study, or benchmark results to report.
+Current authorized scope is Phase 01 and Phase 02 plus GitHub publication. Both
+phases have passed gates backed by directly verified source, protocol and evidence
+hashes. Phase 02 includes registered discovery, confirmation, followup, verifier
+and statistical-design evidence. No LLM training, TPU profiling, corpus
+preparation, pilots or sealed real evaluation have been performed. The authoritative
+status and evidence hashes are in `phases/state.json`.
 
-Established evidence: the coefficient proofs compile; the axiom audit uses only
-Lean's standard foundations (and evaluation noninterference uses no axioms); current
-NumPy/JAX tests exercise projection, moment isolation, probe schedules, Optax parity,
-declared split boundaries, token/probe arithmetic, and global array reduction.
-See `research/verification.md` for exact final commands and retained outputs.
+Established evidence: all 32 public Lean theorem statements compile with standard
+foundations only; exact noise/drift bounds and signal-floor properties are added.
+The final 7,168-case actual FP32/bfloat16 coefficient audit passes its independent
+invariants. Near-collinear full-radius amplification and XLA rounded-correction
+certification were repaired; original failed/intermediate records are retained.
+Overflow is now a visible run failure. See `research/phase01/claims.md` and the
+versioned proof-fidelity report.
 
-Live hypothesis H1 is the training-neutral block controller. The full portfolio,
-mechanism mapping, risky predictions, and alternative explanations are in
-`research/mechanism.md`. Its generalization and cost predictions remain unknown.
-Novelty is provisional; `research/literature.md` records closest precedents and a
-blocked primary-source comparison, not a promise of exhaustive novelty.
+Phase 02 comprises 174,000 independent synthetic trajectory draws paired across
+three arms (136k main, 36k registered drift interaction followup, 2k opposite-
+evaluation witness), plus 240,000 synthetic three-pair design experiments.
+Every condition retains at least 1,000 draws in each stream. The independent
+verifier checks every raw record and replays sampled complete trajectories through
+the public reference. Changing evaluation gives bitwise identical training paths.
+Secondary coefficient/age diagnostics reuse those identities, not new confirmations.
 
-## Failure/limitation ledger
+Live H1 survives the registered representative local-mechanism tests: corruption
+reverses/weakens transfer, null controls reach AdamW, and stale-current benefit
+can reverse at controlled drift. Generalization and cost remain hypotheses.
+Extra-information AdamW wins the representative regression comparison; mismatch
+and universal-transfer failures remain. Original partial rotations did not
+reverse because stationary coordinates dominated; fresh group-interaction tests
+preserve that absence and locate the two-group boundary. The detailed competing-
+model, failures and uncertainty records are in `research/phase02/`.
 
-| Candidate assertion / branch | Evidence or mechanism | Resolution / reopening |
-|---|---|---|
-| Guidance can be untouched validation | Its coefficients influence parameters | Label it optimization data; seal distinct evaluation |
-| Local identities prove universal generalization | P10 counterexample: train 1→0, eval 1→4 | Replace with prospective empirical hypothesis |
-| Cache weights without current reprojection | $(1,1)\cdot(0.1,-0.1)=0$ but $(1,2)\cdot(0.1,-0.1)=-0.1$ | Store coefficients; reproject using current $a$ |
-| Preserve first-order progress ⇒ actual descent | Taylor curvature and negative momentum progress | Conditional P7, measured true losses |
-| Small probe-token fraction ⇒ near-parity speed | Every-step reductions/memory and pod communication | End-to-end Phase 04 measurement |
-| Check certificate before forming float32 weights | Adding 1 can alter the realized correction | Check $w-1$ and proxy sign after weight construction |
-| Existing proofs permit placeholders to pass | Initial Lean elaboration errors were implementation errors | Corrected definitions/proofs; final build and axiom audit clean |
-| Broad “validation-guided layerwise rates” novelty | MetaLR and other precedents | Narrow contribution to constrained composition; resolve remaining FSP access |
+Three LLM seed pairs remain required (42/43/44). At paired SD 0.005 nats, detecting
+a 0.005-nat effect has only about 18% two-sided power under the simulated normal
+model; skewed differences under-cover nominal t intervals. Never substitute
+synthetic draws/documents/checkpoints for trained-model replication.
 
-Next action for the user: request Phase 01. Its wider assumption/numerical/statistical
-audit uses the checked foundation and must produce its own gate evidence. A passing
-unit test does not mark that research phase complete.
+The 0.1 plans are archived and phases 02–09 were invalidated by the controller
+change. Phase 02 is renewed with 0.2 evidence; 03–09 remain unexecuted and require
+their current prerequisites and a separate user request. The original
+125,226,240-parameter / 2.5B / 42,43,44 contract and success thresholds are unchanged.
+
+Next action after publication: the user may request Phase 03. Its missing
+deliverables are an executable corpus preparation/deduplication/source-grouping
+pipeline, benchmark exclusion audit, pinned tokenizer/model/data evidence, and
+sealed readers/process boundaries. No existing full trainer or corpus builder is
+claimed. Before resuming, run `uv run python -m research.experiments.verify_gates`
+to verify the current evidence and transitive prerequisites.

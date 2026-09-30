@@ -1,0 +1,115 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2126981,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-final.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24"
+    },
+    {
+      "bytes": 172279,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "535cd969b60dce93166e632f62dd65decff564f3e32c0229d835fdb69beac03d"
+    },
+    {
+      "bytes": 2427196,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v2.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "6cabebdb8843de6d9ad9ea4297a8bfdbdc7b60e49795c7b7574f2c87b7389b59"
+    },
+    {
+      "bytes": 2126981,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v3.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24"
+    },
+    {
+      "bytes": 1733722,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/age-diagnostics-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "b4eb4c449119421c20923389e39b484986ce21217cd14434362fa3e98b36e19b"
+    },
+    {
+      "bytes": 51499022,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/coefficient-noise-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "3c91525bfeb70c71557c734529f89560a09e36b4de8e3d072a55a7b1cf995cad"
+    },
+    {
+      "bytes": 50974298,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/confirmation-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "6a8147d713326b0c58c22fb89126c7cbbf7ea48a55c70c1c7037f7e670fe49ad"
+    },
+    {
+      "bytes": 50969507,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/discovery-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "cd2c181cff8e4a48c013fdf42114c8f289fea8097474e6514f92318920bfcf7a"
+    },
+    {
+      "bytes": 6229222,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/drift-confirmation-age-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "9755c366ffbd6453ba6a4d262a517fe4147f5246f62f4492443cd1e83784813d"
+    },
+    {
+      "bytes": 17245223,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/drift-confirmation-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "4b65d8725e4c10cf06d0db576cb450b9d1f062ce8845d090b8891befc4729b5b"
+    },
+    {
+      "bytes": 6229139,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/drift-discovery-age-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "022a5ec2db77b7426fff5db503c7fe4dc923c06802e8d81aa7ccf0e14df89353"
+    },
+    {
+      "bytes": 17242260,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/drift-discovery-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "134b2b4dd8557464973b9798af6e041236840ad3e8bb4cd28327291316e69932"
+    },
+    {
+      "bytes": 180097,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase02/opposite-evaluation-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "6f0eb2ac3e6d8fb9b4a3915e9daa3288c959eb8010168195a2513a3f1f2534f7"
+    },
+    {
+      "bytes": 14200185,
+      "format": "gzip CSV",
+      "path": "artifacts/phase02/power-v1.csv.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "3f5cc5f3db9703ac71292ac8ff4b9632fe69ced9b74e42ace8618af62196e968"
+    }
+  ],
+  "environment": {
+    "compute": "CPU only; no TPU/LLM execution",
+    "machine": "x86_64",
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "platform": "Linux-5.19.0-1022-gcp-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scipy": "1.15.3"
+  },
+  "interpretation": "raws include original failures, independent confirmation and secondary reuse; repeated same identities do not increase independent sample count",
+  "schema_version": 1,
+  "source_snapshot_commit": "0902877a8c79b1108c9bfbb8bcfd09c96e0d2233",
+  "theory_version": "0.2"
+}

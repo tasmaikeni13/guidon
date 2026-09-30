@@ -22,7 +22,8 @@ speed are unmeasured.** The large research runs and full paper are future phases
 | [JAX optimizer and AdamW baseline](src/guidon/jax_optimizer.py) | JIT and global-array reduction correctness checked on CPU |
 | [Data-boundary checks](src/guidon/data_boundary.py) | Declared identity and reader-role checks; full corpus preparation is Phase 03 |
 | [Experiment configs](configs/) | Proposed, pinned sources; deliberately not frozen or launch ready |
-| [Nine research phases](phases/README.md) | Written; all execution gates remain not started |
+| [Nine research phases](phases/README.md) | Phases 01/02 completed locally with evidence; 03–09 remain unexecuted |
+| [Math fidelity and simulations](research/phase02/README.md) | Numerical repair, 174k paired synthetic draws, 240k three-pair design experiments; all failures retained |
 | [Agent instructions](AGENTS.md) | Setup, scope, scientific boundaries, verification, and repair rules |
 
 ## Guidance and leakage
@@ -92,14 +93,15 @@ For JAX use `jax_optimizer.init(params, group_ids, decay_mask)` and
 `(params, training_gradients, state, guide_gradients=None, learning_rate=None)`.
 Group/mask pytrees match parameter leaves; multiple leaves can share a contiguous
 group ID. Set `Config(radius=0)` for the shared AdamW baseline. A training harness
-must abort on `metrics["schedule_ok"] == False`, handle nonfinite training gradients,
+must abort on `metrics["schedule_ok"] == False` or `metrics["numerics_ok"] == False`, handle nonfinite training gradients,
 and log numerical fallbacks. Current code returns updated parameters directly;
 it is not an Optax transformation. See the tests for concrete pytree/sharding use.
 
-## Start research later
+## Research progress
 
-Ask an agent to execute [Phase 01](phases/01_math_and_proofs.md), then advance through
-the gates in [phases/README.md](phases/README.md). That contract specifies how to
+[Phase 01](research/phase01/proof_fidelity_v0.2.md) verified mathematical and numerical fidelity and repaired weak-signal normalization and XLA rounding certification. [Phase 02](research/phase02/mechanism_report_v0.2.md) confirmed the registered local mechanism on synthetic problems and documented failure regimes and weak three-seed statistical resolution. These results do not establish LLM superiority or TPU efficiency. Reproduction and raw-artifact retention are documented in [the experiment guide](research/phase02/README.md).
+
+The next phase is [Phase 03](phases/03_data_and_evaluation_boundary.md), on a separate user request. Advance through the gates in [phases/README.md](phases/README.md). That contract specifies how to
 research failures, revise math/proofs, invalidate and rewrite dependent phases,
 preserve all results, and obtain new sealed evaluation after a redesign.
 
@@ -116,7 +118,6 @@ them during repository preparation.
 
 The [literature ledger](research/literature.md) records close precedents and coverage
 limits. The proposed composition's novelty is provisional; the projection itself
-is standard mathematics. User-supplied research skills and the original prompt
-are preserved in `skills/` and `prompt.md`. The skills are a pinned submodule of
+is standard mathematics. User-supplied research skills are preserved in `skills/`. The original prompt was removed by the owner in commit `f85bfcb` and remains in Git history. The skills are a pinned submodule of
 the supplied [skills repository](https://github.com/tasmaikeni13/skills), at commit
 `0f4d8e0f9d6269094e585caded2cc8d0a9d2b0be`; initialize it with the setup command above.

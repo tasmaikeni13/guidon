@@ -1,0 +1,47 @@
+{
+  "analysis_spec_sha256": "aeab6af9b3e4da3c3430a39b3a9268636478c74a19db82d11a6c8a8a11cbedee",
+  "code_commit": "0902877a8c79b1108c9bfbb8bcfd09c96e0d2233",
+  "condition_order": [
+    "drift-g2-w0.2-k1",
+    "drift-g14-w0.2-k64",
+    "drift-g2-w0.001-k1",
+    "drift-g2-w0.001-k256",
+    "drift-g64-w0.2-k256",
+    "drift-g64-w0.2-k64",
+    "drift-g64-w0.001-k256",
+    "drift-g2-w0.2-k64",
+    "drift-g64-w0.001-k1",
+    "drift-g64-w0.2-k1",
+    "drift-g14-w0.2-k1",
+    "drift-g14-w0.001-k64",
+    "drift-g2-w0.001-k64",
+    "drift-g2-w0.2-k256",
+    "drift-g64-w0.001-k64",
+    "drift-g14-w0.2-k256",
+    "drift-g14-w0.001-k1",
+    "drift-g14-w0.001-k256"
+  ],
+  "elapsed_seconds": 24.522161946981214,
+  "environment": {
+    "backend": "NumPy float64 CPU",
+    "machine": "x86_64",
+    "numpy": "2.2.6",
+    "python": "3.10.12"
+  },
+  "exclusions": [],
+  "llm_training_executed": false,
+  "protocol_sha256": "4a2905e719361f40257a16007fecf29b71367566984cade0b65b8322af7047ee",
+  "protocol_version": "drift-interaction-followup-v1-guidon-0.2",
+  "raw_path": "artifacts/phase02/drift-confirmation-v1.jsonl.gz",
+  "raw_sha256": "4b65d8725e4c10cf06d0db576cb450b9d1f062ce8845d090b8891befc4729b5b",
+  "restarts": [],
+  "root_seed": 271805,
+  "rows": 18000,
+  "source_sha256": {
+    "research/experiments/register_simulation.py": "a5ebf3fd0a878e72980f0c3f7a17f4d5fe3dd30982be57e217b2480470d64deb",
+    "research/experiments/simulate.py": "e51fae5dc09de8ab763b03ccf64daf8620a05ff83c188c59bb86ff73b0a89c6f",
+    "research/experiments/synthetic.py": "87c9d3b81442e39a1ed1775052fceeded86aae3f04536b68b0f2041fba5c2fd4",
+    "src/guidon/reference.py": "a572a62840c5e4a9b323888c8e55fc5a13d1350f22a445d70bf4437d2bbcd108"
+  },
+  "stream": "confirmation"
+}

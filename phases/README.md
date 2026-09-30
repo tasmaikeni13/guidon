@@ -2,8 +2,7 @@
 
 This is the execution contract for a future research agent. The initial repository
 contains theory, checked coefficient proofs, optimizer prototypes, tests, and
-proposed protocols. **No phase has been signed off and no LLM training run has been
-performed.** The user will request phases separately. Read the requested phase and
+proposed protocols. **Phases 01 and 02 now have local audit/simulation evidence; no LLM training run has been performed.** Current signoff is hash-verified in `state.json` and `research/gates/`; the initial foundation alone did not pass these gates. The user will request phases separately. Read the requested phase and
 its direct dependencies; do not start another phase or provision a pod just because
 these instructions describe it.
 

@@ -28,3 +28,5 @@
 'Guidon.floor_weights_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Guidon.floor_perturbation_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Guidon.normalized_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Guidon.effective_degrees_of_freedom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Guidon.zero_constraint_degrees_of_freedom' depends on axioms: [propext, Classical.choice, Quot.sound]

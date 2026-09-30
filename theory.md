@@ -248,7 +248,9 @@ the signal floor controls the latter amplification but does not certify populati
 progress. Phase 02 measures these effects rather than assuming independence.
 
 The valid nullspace has $B-1$ dimensions for nonzero $a$ and $B$ for $a=0$
-by rank-nullity. One nonzero training group therefore has no correction. Canonical
+by checked `effective_degrees_of_freedom` / `zero_constraint_degrees_of_freedom`
+(rank-nullity of the coefficient functional). One nonzero training group therefore
+has no correction. Canonical
 tied parameters occur once; accumulation precedes the common global clipping.
 A positive global clip rescales $a$ for a fixed $u$, preserving its nullspace, but
 clipping changes Adam moments and the protected gradient is the supplied clipped

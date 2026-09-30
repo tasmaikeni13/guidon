@@ -1,0 +1,12 @@
+{
+  "all_arms_worsen_independent_evaluation": true,
+  "counts": {
+    "confirmation": 1000,
+    "discovery": 1000
+  },
+  "passed": true,
+  "protocol_sha256": "ed5a3cd2a4fe2c06e66d99188d8ba0d67b72dc1a7330549f3d165be021160cf4",
+  "raw_path": "artifacts/phase02/opposite-evaluation-v1.jsonl.gz",
+  "raw_sha256": "6f0eb2ac3e6d8fb9b4a3915e9daa3288c959eb8010168195a2513a3f1f2534f7",
+  "scope": "counterexample to universal transfer; not evidence about representative guidance or LLM superiority"
+}

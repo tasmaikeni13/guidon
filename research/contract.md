@@ -8,8 +8,7 @@ allocating updates poorly for independent source distributions.
 Regimes: approximately 125M decoder trained from scratch on exactly 2.5B FineWeb-Edu
 tokens; Pythia-160M continued for 1B domain/retention tokens. Hardware target: the
 user's existing 16-chip v4-32 slice. Seeds 42/43/44 are required full confirmation.
-The present task prepares the design, proofs, prototypes, plan, and GitHub repository;
-the user starts experimental phases later.
+The foundation was prepared earlier. The current task executes Phases 01/02 locally and pushes their verified artifacts to GitHub. Later phases require a separate user request.
 
 Comparison class: strong tuned AdamW, plus AdamW with identical additional guidance
 examples. Only AdamW is a competitor optimizer. Match architectures, initial states,

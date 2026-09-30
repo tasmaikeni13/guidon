@@ -1,0 +1,23 @@
+{
+  "version": "opposite-evaluation-v1",
+  "discovery_seed": 271806,
+  "confirmation_seed": 271807,
+  "draws_per_stream": 1000,
+  "family": "one-group quadratic",
+  "H_train": 1,
+  "H_guide": 1,
+  "train_and_guide_center": 0,
+  "evaluation_center_distribution": "independent Uniform(3,4)",
+  "initial_parameters_distribution": "Uniform(0.5,1.5)",
+  "steps": 8,
+  "learning_rate": 0.01,
+  "guide_interval": 1,
+  "radius": 0.15,
+  "decision": "All arms must reduce training/guide loss and increase independent evaluation loss on every draw; changing evaluation leaves trajectories bitwise equal. This is a falsifier of universal transfer, not an intended-regime success proxy.",
+  "fresh_guidance": "Fresh observations of identical population objective at each probe; no recycled sample IDs",
+  "arms": [
+    "adamw",
+    "guidon",
+    "adamw_plus_guidance"
+  ]
+}

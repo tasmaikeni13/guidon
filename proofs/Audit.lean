@@ -30,3 +30,5 @@ import Guidon
 #print axioms Guidon.floor_weights_positive
 #print axioms Guidon.floor_perturbation_energy
 #print axioms Guidon.normalized_reconstruction
+#print axioms Guidon.effective_degrees_of_freedom
+#print axioms Guidon.zero_constraint_degrees_of_freedom

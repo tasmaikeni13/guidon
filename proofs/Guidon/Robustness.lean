@@ -6,6 +6,38 @@ namespace Guidon
 noncomputable section
 variable {ι : Type*} [Fintype ι]
 
+def coefficientFunctional (a : ι → ℝ) : Module.Dual ℝ (ι → ℝ) where
+  toFun := dot a
+  map_add' := dot_add_right a
+  map_smul' r x := by
+    change dot a (fun i => r * x i) = r * dot a x
+    exact dot_scale_right a x r
+
+/-- A nonzero sampled training constraint removes exactly one coefficient degree. -/
+theorem effective_degrees_of_freedom (a : ι → ℝ) (ha : a ≠ fun _ => 0) :
+    Module.finrank ℝ (LinearMap.ker (coefficientFunctional a)) + 1 =
+      Fintype.card ι := by
+  have hn : dot a a ≠ 0 := by
+    intro hz
+    apply ha
+    funext i
+    exact dot_self_zero a hz i
+  have hf : coefficientFunctional a ≠ 0 := by
+    intro hz
+    have he := congrArg (fun f : Module.Dual ℝ (ι → ℝ) => f a) hz
+    exact hn (by simpa [coefficientFunctional] using he)
+  simpa using Module.Dual.finrank_ker_add_one_of_ne_zero hf
+
+/-- At zero training coefficients the neutral plane is the whole coefficient space. -/
+theorem zero_constraint_degrees_of_freedom :
+    Module.finrank ℝ (LinearMap.ker (coefficientFunctional (fun _ : ι => 0))) =
+      Fintype.card ι := by
+  have hz : coefficientFunctional (fun _ : ι => 0) = 0 := by
+    ext x
+    simp [coefficientFunctional, dot]
+  rw [hz, LinearMap.ker_zero, finrank_top]
+  exact Module.finrank_fintype_fun_eq_card ℝ
+
 /-- The numerical second projection is an exact-real identity. -/
 theorem projection_idempotent (a c : ι → ℝ) :
     project a (project a c) = project a c := by

@@ -7,6 +7,7 @@ import gzip
 import hashlib
 import json
 import platform
+import subprocess
 import time
 from pathlib import Path
 
@@ -27,6 +28,9 @@ def draw_seeds(root: int, condition_id: str, draws: int) -> np.ndarray:
 def run(
     stream: str, protocol_path: Path, raw_path: Path, provenance_path: Path
 ) -> None:
+    protocol_path = protocol_path.resolve()
+    raw_path = raw_path.resolve()
+    provenance_path = provenance_path.resolve()
     if raw_path.exists() or provenance_path.exists():
         raise FileExistsError(
             "Raw evidence and provenance are immutable; use a new run ID"
@@ -62,6 +66,9 @@ def run(
         ROOT / "src/guidon/reference.py",
     ]
     provenance = {
+        "code_commit": subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+        ).strip(),
         "protocol_version": protocol["version"],
         "stream": stream,
         "root_seed": root,

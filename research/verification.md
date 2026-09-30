@@ -55,7 +55,24 @@ six primary and three required information-control runs in its future matrix.
 Both report `ready_for_confirmation=false`; real manifests and frozen gates are absent.
 
 Local Markdown link targets and the nine-phase dependency/state consistency are
-checked during release. Original prompt and supplied skills remain preserved.
+checked during release. The original prompt remains in Git history after the
+owner removed it in `f85bfcb`; the supplied skills remain preserved.
 The supplied skills are preserved as an initialized, pinned submodule with a
 tracked `.gitmodules` URL and a publicly available commit. Large dependency caches,
 environments, data, runs, and checkpoints are ignored.
+
+## Phase 01/02 verification — GUIDON 0.2
+
+Current command output is retained in `research/verification/phase01` and `phase02`.
+The final suite has 33 passing tests and one device-count skip; forcing four host
+devices passes the sharding test. Ruff checks/formats include the new experiment
+scripts. Both registered token-budget CLIs pass. Lean builds and all 32 public
+theorem dependency printouts use the permitted standard foundations only.
+Independent raw verifiers cover 7168 actual FP32/bfloat16 coefficient cases,
+all main/followup Monte Carlo records, 240000 three-pair intervals, scalar
+optimizer trajectory replays and bitwise evaluation noninterference. A second
+summary checker recomputes means/SEs and exact stream identities from raw evidence.
+`uv run python -m research.experiments.verify_gates` verifies the current content-
+addressed sources, records, raw artifacts and dependency chain before resumption.
+Original failed checker/recording outputs remain in the failure ledger. CPU
+verification still does not imply TPU profiling or LLM performance.

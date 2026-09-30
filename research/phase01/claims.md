@@ -29,7 +29,7 @@ uses no axioms; `transcript_extensionality` uses `propext`.
 
 | Further analysis | Status and exact assumptions | Phase 02 measurement / falsifier |
 |---|---|---|
-| Degrees of freedom B−1 for a≠0; B at zero | Standard rank-nullity applied to one nonzero linear functional; SVD oracle checks all requested group sizes | One-group correction absent; vary 1/2/14/64 |
+| Degrees of freedom B−1 for a≠0; B at zero | `effective_degrees_of_freedom`, `zero_constraint_degrees_of_freedom` check rank-nullity of the exact coefficient functional; SVD oracle checks all requested group sizes | One-group correction absent; vary 1/2/14/64 |
 | Projection sensitivity near a=0 | No unconditional Lipschitz claim: normalization changes direction arbitrarily at zero. A bounded-noise/separated-norm result would need a norm lower bound | Vary noise covariance, batch size and moment lag; retain opposite-gradient cases |
 | Normalization bias | Exact skew zero-mean coefficient noise has nonzero expected correction; rational witness. No unbiasedness theorem | Compare IID/correlated noise and finite guide source sizes; coefficient variance/transfer |
 | Fixed-u variance scale ∝1/n | Measurement-model prediction with IID fresh gradients, fixed u and finite covariance; does not apply directly to adaptive u(g) | Batch 8/32/128, guide stream 512/4096, dependence-sensitive summaries |

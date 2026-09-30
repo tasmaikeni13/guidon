@@ -1,0 +1,81 @@
+{
+  "critical_t_from_independent_df2_cdf": 4.302652729749464,
+  "nonnormal_coverage": "reported as sensitivity, not required to equal 0.95",
+  "normal_calibration": [
+    {
+      "cell": [
+        "normal",
+        0.005,
+        0
+      ],
+      "coverage_error_mcse": 0.3211820274187511,
+      "power_error_mcse": 0.32118202741878615
+    },
+    {
+      "cell": [
+        "normal",
+        0.002,
+        0.005
+      ],
+      "coverage_error_mcse": 0.13764944032237283,
+      "power_error_mcse": 0.5256080992634481
+    },
+    {
+      "cell": [
+        "normal",
+        0.02,
+        0.005
+      ],
+      "coverage_error_mcse": 0.0458831467741073,
+      "power_error_mcse": 0.19406609390626994
+    },
+    {
+      "cell": [
+        "normal",
+        0.02,
+        0
+      ],
+      "coverage_error_mcse": 0.5047146145152313,
+      "power_error_mcse": 0.5047146145152345
+    },
+    {
+      "cell": [
+        "normal",
+        0.01,
+        0.005
+      ],
+      "coverage_error_mcse": 0.5505977612893386,
+      "power_error_mcse": 0.5429886957751778
+    },
+    {
+      "cell": [
+        "normal",
+        0.01,
+        0
+      ],
+      "coverage_error_mcse": 1.0094292290304625,
+      "power_error_mcse": 1.009429229030472
+    },
+    {
+      "cell": [
+        "normal",
+        0.002,
+        0
+      ],
+      "coverage_error_mcse": 1.560026990319801,
+      "power_error_mcse": 1.56002699031982
+    },
+    {
+      "cell": [
+        "normal",
+        0.005,
+        0.005
+      ],
+      "coverage_error_mcse": 2.2941573387056198,
+      "power_error_mcse": 0.5069808281216266
+    }
+  ],
+  "passed": true,
+  "raw_rows_verified": 240000,
+  "raw_sha256": "3f5cc5f3db9703ac71292ac8ff4b9632fe69ced9b74e42ace8618af62196e968"
+}

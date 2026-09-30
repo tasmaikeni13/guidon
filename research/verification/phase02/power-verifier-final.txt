@@ -1,0 +1,1 @@
+Verified all 240000 three-pair intervals; Gaussian coverage/power agree with independent analytic targets

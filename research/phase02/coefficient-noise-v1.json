@@ -1,0 +1,1268 @@
+{
+  "conditions": {
+    "curvature-large-step": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 1.3445130445805102e-19,
+        "mcse": 2.7126658689645045e-19,
+        "mean": 6.661338147750939e-19,
+        "upper95": 1.1978163250921369e-18
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 2.220446049250313e-19,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0023436913085111352,
+        "mcse": 4.979781785930223e-05,
+        "mean": 0.0024412950315153676,
+        "upper95": 0.0025388987545196
+      }
+    },
+    "intended": {
+      "a_error_coordinate_variance_mean": 0.00031180367032919356,
+      "a_error_max_coordinate_mean_abs": 0.0012337288810510476,
+      "c_error_coordinate_variance_mean": 0.0012276678914429936,
+      "c_error_max_coordinate_mean_abs": 0.0016855203992813613,
+      "correction_error_norm": {
+        "lower95": 0.0003080366155715654,
+        "mcse": 2.088041224812992e-06,
+        "mean": 0.0003121291763721988,
+        "upper95": 0.00031622173717283226
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 5.861792383889886e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 21.06931236855741,
+        "mcse": 0.07515207562577356,
+        "mean": 21.216610436783924,
+        "upper95": 21.36390850501044
+      }
+    },
+    "rotate-0.001-1": {
+      "a_error_coordinate_variance_mean": 0.00031020564308893776,
+      "a_error_max_coordinate_mean_abs": 0.0011569844870334201,
+      "c_error_coordinate_variance_mean": 0.0012430653564525387,
+      "c_error_max_coordinate_mean_abs": 0.0018076719758221306,
+      "correction_error_norm": {
+        "lower95": 0.036921032026442036,
+        "mcse": 0.0003695642760428801,
+        "mean": 0.03764537800748608,
+        "upper95": 0.03836972398853013
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.019348110350506875,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.9069113991132391,
+        "mcse": 0.0022795678529214138,
+        "mean": 0.9113793521049651,
+        "upper95": 0.9158473050966911
+      }
+    },
+    "rotate-0.001-64": {
+      "a_error_coordinate_variance_mean": 0.0003130014008822348,
+      "a_error_max_coordinate_mean_abs": 0.0012550431836468303,
+      "c_error_coordinate_variance_mean": 0.001243941193283548,
+      "c_error_max_coordinate_mean_abs": 0.0016567358231341718,
+      "correction_error_norm": {
+        "lower95": 0.037743521333946935,
+        "mcse": 0.0004157240725387776,
+        "mean": 0.03855834051612294,
+        "upper95": 0.039373159698298944
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.02079047855450767,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.9096291414362061,
+        "mcse": 0.002265282442593118,
+        "mean": 0.9140690950236886,
+        "upper95": 0.9185090486111711
+      }
+    },
+    "rotate-0.2-16": {
+      "a_error_coordinate_variance_mean": 0.0003094169469176751,
+      "a_error_max_coordinate_mean_abs": 0.0016948785034854776,
+      "c_error_coordinate_variance_mean": 0.0012335237541236204,
+      "c_error_max_coordinate_mean_abs": 0.00200142280168417,
+      "correction_error_norm": {
+        "lower95": 0.037071632828834834,
+        "mcse": 0.00036704366653741885,
+        "mean": 0.037791038415248175,
+        "upper95": 0.038510444001661516
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.020082591785785187,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.9094076547791372,
+        "mcse": 0.002273466417837435,
+        "mean": 0.9138636489580986,
+        "upper95": 0.9183196431370599
+      }
+    },
+    "rotate-0.2-256": {
+      "a_error_coordinate_variance_mean": 0.00031181250507475965,
+      "a_error_max_coordinate_mean_abs": 0.0014251320017505504,
+      "c_error_coordinate_variance_mean": 0.0012564451320457048,
+      "c_error_max_coordinate_mean_abs": 0.0032079355484790203,
+      "correction_error_norm": {
+        "lower95": 0.03805527447896674,
+        "mcse": 0.00037822796264571696,
+        "mean": 0.038796601285752345,
+        "upper95": 0.03953792809253795
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.021406090218813047,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.9105721667214258,
+        "mcse": 0.0023379453466312494,
+        "mean": 0.915154539600823,
+        "upper95": 0.9197369124802203
+      }
+    },
+    "rotate-0.2-64": {
+      "a_error_coordinate_variance_mean": 0.00031465266775319064,
+      "a_error_max_coordinate_mean_abs": 0.0013120797191126662,
+      "c_error_coordinate_variance_mean": 0.001254379995823058,
+      "c_error_max_coordinate_mean_abs": 0.00122604905595662,
+      "correction_error_norm": {
+        "lower95": 0.0374280834499945,
+        "mcse": 0.00038309376605199515,
+        "mean": 0.038178947231456414,
+        "upper95": 0.03892981101291833
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.020009707030249957,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.9100082275794567,
+        "mcse": 0.002221805414385387,
+        "mean": 0.914362966191652,
+        "upper95": 0.9187177048038474
+      }
+    },
+    "screen-00": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-01": {
+      "a_error_coordinate_variance_mean": 0.0308486709480592,
+      "a_error_max_coordinate_mean_abs": 0.007733964306075279,
+      "c_error_coordinate_variance_mean": 0.03342800613375488,
+      "c_error_max_coordinate_mean_abs": 0.011006596307926365,
+      "correction_error_norm": {
+        "lower95": 0.000666112273352469,
+        "mcse": 1.063456033510386e-05,
+        "mean": 0.0006869560116092725,
+        "upper95": 0.0007077997498660761
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 2.3346474785541733e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 860.5121328448691,
+        "mcse": 1.6924479582964143,
+        "mean": 863.8293308431302,
+        "upper95": 867.1465288413912
+      }
+    },
+    "screen-02": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-03": {
+      "a_error_coordinate_variance_mean": 0.004080800911872304,
+      "a_error_max_coordinate_mean_abs": 0.0010589463693604557,
+      "c_error_coordinate_variance_mean": 0.06233309040782481,
+      "c_error_max_coordinate_mean_abs": 0.0016399944789882283,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-04": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-05": {
+      "a_error_coordinate_variance_mean": 0.10639118080552008,
+      "a_error_max_coordinate_mean_abs": 0.0007334220190982941,
+      "c_error_coordinate_variance_mean": 0.11331887683087734,
+      "c_error_max_coordinate_mean_abs": 0.004738662919770203,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-06": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-07": {
+      "a_error_coordinate_variance_mean": 0.001964878154629507,
+      "a_error_max_coordinate_mean_abs": 0.003502775905970995,
+      "c_error_coordinate_variance_mean": 0.03082877688617664,
+      "c_error_max_coordinate_mean_abs": 0.016697567703826112,
+      "correction_error_norm": {
+        "lower95": 0.8495328485664194,
+        "mcse": 0.003282022641335132,
+        "mean": 0.8559656129434363,
+        "upper95": 0.8623983773204532
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.7722490113904792,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 9.218565631882862,
+        "mcse": 0.0196810714317562,
+        "mean": 9.257140531889105,
+        "upper95": 9.295715431895347
+      }
+    },
+    "screen-08": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-09": {
+      "a_error_coordinate_variance_mean": 0.03122068795229814,
+      "a_error_max_coordinate_mean_abs": 0.016254995312494958,
+      "c_error_coordinate_variance_mean": 0.030562313548072158,
+      "c_error_max_coordinate_mean_abs": 0.012924611113504618,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-10": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 6.0936395807887144e-15,
+        "mcse": 6.136475059481851e-17,
+        "mean": 6.213914491954558e-15,
+        "upper95": 6.334189403120402e-15
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 2.2106439037592465e-16,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 1.380419257800292,
+        "mcse": 0.0013001135580467502,
+        "mean": 1.3829674803740637,
+        "upper95": 1.3855157029478353
+      }
+    },
+    "screen-11": {
+      "a_error_coordinate_variance_mean": 0.003971293545541361,
+      "a_error_max_coordinate_mean_abs": 0.0009112270641026043,
+      "c_error_coordinate_variance_mean": 0.06225741666144485,
+      "c_error_max_coordinate_mean_abs": 0.005628126195483673,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-12": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 2.4901923935331046e-16,
+        "mcse": 3.6842069622748246e-18,
+        "mean": 2.562402849993691e-16,
+        "upper95": 2.6346133064542775e-16
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 8.03129534716921e-18,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 8620.759781415974,
+        "mcse": 16.637975274331563,
+        "mean": 8653.370212953665,
+        "upper95": 8685.980644491356
+      }
+    },
+    "screen-13": {
+      "a_error_coordinate_variance_mean": 0.1082253448526409,
+      "a_error_max_coordinate_mean_abs": 0.004665951613735287,
+      "c_error_coordinate_variance_mean": 0.10970464163870397,
+      "c_error_max_coordinate_mean_abs": 0.0016285624624954647,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-14": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-15": {
+      "a_error_coordinate_variance_mean": 0.0019488787586113626,
+      "a_error_max_coordinate_mean_abs": 0.004188472764213842,
+      "c_error_coordinate_variance_mean": 0.03144184907858243,
+      "c_error_max_coordinate_mean_abs": 0.018665337914948395,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-16": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-17": {
+      "a_error_coordinate_variance_mean": 0.030236594117753472,
+      "a_error_max_coordinate_mean_abs": 0.01718877936384115,
+      "c_error_coordinate_variance_mean": 0.028668999543851523,
+      "c_error_max_coordinate_mean_abs": 0.01028842992467753,
+      "correction_error_norm": {
+        "lower95": 0.000641647466118969,
+        "mcse": 9.942220614282123e-06,
+        "mean": 0.000661134218522962,
+        "upper95": 0.0006806209709269549
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 4.0980676768942344e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 861.6686400853723,
+        "mcse": 1.7285764907759065,
+        "mean": 865.0566500072931,
+        "upper95": 868.4446599292139
+      }
+    },
+    "screen-18": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-19": {
+      "a_error_coordinate_variance_mean": 0.0039828506678539835,
+      "a_error_max_coordinate_mean_abs": 0.0025629303036566855,
+      "c_error_coordinate_variance_mean": 0.06572434047805244,
+      "c_error_max_coordinate_mean_abs": 0.007403832063657319,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-20": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-21": {
+      "a_error_coordinate_variance_mean": 0.10642837238748075,
+      "a_error_max_coordinate_mean_abs": 0.006729800689896647,
+      "c_error_coordinate_variance_mean": 0.11559220893254266,
+      "c_error_max_coordinate_mean_abs": 0.006367246293272195,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-22": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-23": {
+      "a_error_coordinate_variance_mean": 0.0019523983017204444,
+      "a_error_max_coordinate_mean_abs": 0.003908733890128767,
+      "c_error_coordinate_variance_mean": 0.03155822453475482,
+      "c_error_max_coordinate_mean_abs": 0.014103857504531157,
+      "correction_error_norm": {
+        "lower95": 0.8565989632635527,
+        "mcse": 0.0032809276286253014,
+        "mean": 0.8630295814156582,
+        "upper95": 0.8694601995677638
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.7792509640539299,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 9.161490152766074,
+        "mcse": 0.019069956462313,
+        "mean": 9.198867267432208,
+        "upper95": 9.236244382098342
+      }
+    },
+    "screen-24": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-25": {
+      "a_error_coordinate_variance_mean": 0.03059935156220253,
+      "a_error_max_coordinate_mean_abs": 0.005817629134865107,
+      "c_error_coordinate_variance_mean": 0.03223268861734169,
+      "c_error_max_coordinate_mean_abs": 0.00927073505412811,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-26": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 6.104251455417287e-15,
+        "mcse": 6.054571718431452e-17,
+        "mean": 6.2229210610985436e-15,
+        "upper95": 6.3415906667798e-15
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 2.1029631653638893e-16,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 1.3827734351992715,
+        "mcse": 0.0013182940521906405,
+        "mean": 1.3853572915415653,
+        "upper95": 1.387941147883859
+      }
+    },
+    "screen-27": {
+      "a_error_coordinate_variance_mean": 0.004249384117276678,
+      "a_error_max_coordinate_mean_abs": 0.0010359457088306954,
+      "c_error_coordinate_variance_mean": 0.06168369940644631,
+      "c_error_max_coordinate_mean_abs": 0.008057031203683437,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-28": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 2.4790577103620404e-16,
+        "mcse": 3.534381838638487e-18,
+        "mean": 2.548331594399355e-16,
+        "upper95": 2.6176054784366695e-16
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 7.881019625309316e-18,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 8633.707977483082,
+        "mcse": 16.39221148369469,
+        "mean": 8665.836711991124,
+        "upper95": 8697.965446499165
+      }
+    },
+    "screen-29": {
+      "a_error_coordinate_variance_mean": 0.11021900147133433,
+      "a_error_max_coordinate_mean_abs": 0.00566616129458305,
+      "c_error_coordinate_variance_mean": 0.11398525284561108,
+      "c_error_max_coordinate_mean_abs": 0.010680808663331683,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-30": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "screen-31": {
+      "a_error_coordinate_variance_mean": 0.0019414584052921458,
+      "a_error_max_coordinate_mean_abs": 0.004673863603109767,
+      "c_error_coordinate_variance_mean": 0.031788631025177524,
+      "c_error_max_coordinate_mean_abs": 0.01211811781161333,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "target-batch_size-128": {
+      "a_error_coordinate_variance_mean": 7.845977992677472e-05,
+      "a_error_max_coordinate_mean_abs": 0.0005227178855980768,
+      "c_error_coordinate_variance_mean": 0.0012423677124080742,
+      "c_error_max_coordinate_mean_abs": 0.0029048736056480813,
+      "correction_error_norm": {
+        "lower95": 0.00027503953313108115,
+        "mcse": 1.8093584012284193e-06,
+        "mean": 0.00027858587559748886,
+        "upper95": 0.00028213221806389657
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 8.959437713164296e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.757250667118658,
+        "mcse": 0.07797109338345928,
+        "mean": 20.91007401015024,
+        "upper95": 21.06289735318182
+      }
+    },
+    "target-batch_size-8": {
+      "a_error_coordinate_variance_mean": 0.0012480351587658826,
+      "a_error_max_coordinate_mean_abs": 0.00236661129722603,
+      "c_error_coordinate_variance_mean": 0.0012441737393232722,
+      "c_error_max_coordinate_mean_abs": 0.0013644683454197984,
+      "correction_error_norm": {
+        "lower95": 0.00041963165465025594,
+        "mcse": 2.952473859723641e-06,
+        "mean": 0.00042541850341531426,
+        "upper95": 0.0004312053521803726
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.1163521589295744e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 21.00558629617191,
+        "mcse": 0.07750797705866566,
+        "mean": 21.157501931206895,
+        "upper95": 21.30941756624188
+      }
+    },
+    "target-beta1-0": {
+      "a_error_coordinate_variance_mean": 0.0003089024160396355,
+      "a_error_max_coordinate_mean_abs": 0.0008768630578203425,
+      "c_error_coordinate_variance_mean": 0.0012513856951771893,
+      "c_error_max_coordinate_mean_abs": 0.0024194499412577082,
+      "correction_error_norm": {
+        "lower95": 0.00031048128360801753,
+        "mcse": 2.046311347481415e-06,
+        "mean": 0.0003144920538490811,
+        "upper95": 0.00031850282409014467
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.2884441711423955e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.989775378460084,
+        "mcse": 0.07804322795293811,
+        "mean": 21.142740105247842,
+        "upper95": 21.2957048320356
+      }
+    },
+    "target-beta1-0.99": {
+      "a_error_coordinate_variance_mean": 0.0003170393701895186,
+      "a_error_max_coordinate_mean_abs": 0.0011417359403848538,
+      "c_error_coordinate_variance_mean": 0.0012269989649963085,
+      "c_error_max_coordinate_mean_abs": 0.0017151474500872973,
+      "correction_error_norm": {
+        "lower95": 0.00030757010541190746,
+        "mcse": 2.0572097160229623e-06,
+        "mean": 0.0003116022364553125,
+        "upper95": 0.0003156343674987175
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 8.869650485450993e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.928734592070622,
+        "mcse": 0.07392072870334836,
+        "mean": 21.073619220329185,
+        "upper95": 21.218503848587748
+      }
+    },
+    "target-condition_number-1": {
+      "a_error_coordinate_variance_mean": 0.0003166189701683961,
+      "a_error_max_coordinate_mean_abs": 0.0010485135524494439,
+      "c_error_coordinate_variance_mean": 0.0012480135918761614,
+      "c_error_max_coordinate_mean_abs": 0.001836419682042511,
+      "correction_error_norm": {
+        "lower95": 0.03560345847942011,
+        "mcse": 0.00038911858643602397,
+        "mean": 0.03636613090883472,
+        "upper95": 0.037128803338249326
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.02541369402794544,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 1.3829671311880753,
+        "mcse": 0.002019430949410815,
+        "mean": 1.3869252158489205,
+        "upper95": 1.3908833005097656
+      }
+    },
+    "target-condition_number-10000": {
+      "a_error_coordinate_variance_mean": 0.00031075756910430767,
+      "a_error_max_coordinate_mean_abs": 0.0008923445828042406,
+      "c_error_coordinate_variance_mean": 0.001242941188109891,
+      "c_error_max_coordinate_mean_abs": 0.002305495337153971,
+      "correction_error_norm": {
+        "lower95": 3.825766885397637e-06,
+        "mcse": 2.713136727402109e-08,
+        "mean": 3.878944365254718e-06,
+        "upper95": 3.932121845111799e-06
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.0831214087956181e-07,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 1218.2576857334311,
+        "mcse": 7.4410229369958625,
+        "mean": 1232.842090689943,
+        "upper95": 1247.426495646455
+      }
+    },
+    "target-delay-16": {
+      "a_error_coordinate_variance_mean": 0.0003128269379708665,
+      "a_error_max_coordinate_mean_abs": 0.0011603618429078854,
+      "c_error_coordinate_variance_mean": 0.0012385394373729147,
+      "c_error_max_coordinate_mean_abs": 0.0012041613074806553,
+      "correction_error_norm": {
+        "lower95": 0.00030982424254896935,
+        "mcse": 2.1138608854760407e-06,
+        "mean": 0.0003139674098845024,
+        "upper95": 0.0003181105772200354
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 8.814483775615832e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.958992242904777,
+        "mcse": 0.07645262599080452,
+        "mean": 21.108839389846754,
+        "upper95": 21.25868653678873
+      }
+    },
+    "target-delay-64": {
+      "a_error_coordinate_variance_mean": 0.0003098369856076082,
+      "a_error_max_coordinate_mean_abs": 0.001386128191500169,
+      "c_error_coordinate_variance_mean": 0.0012784296410457727,
+      "c_error_max_coordinate_mean_abs": 0.0021675858066972343,
+      "correction_error_norm": {
+        "lower95": 0.00031228785044514526,
+        "mcse": 2.1163871082840504e-06,
+        "mean": 0.000316435969177382,
+        "upper95": 0.00032058408790961877
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 9.269598086436315e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.809729516086232,
+        "mcse": 0.07844548894653368,
+        "mean": 20.96348267442144,
+        "upper95": 21.117235832756645
+      }
+    },
+    "target-groups-1": {
+      "a_error_coordinate_variance_mean": 0.0005796603250922509,
+      "a_error_max_coordinate_mean_abs": 0.0012003103645339124,
+      "c_error_coordinate_variance_mean": 0.0025878032090399703,
+      "c_error_max_coordinate_mean_abs": 0.0016270148636634047,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "target-groups-2": {
+      "a_error_coordinate_variance_mean": 0.00031875182267032177,
+      "a_error_max_coordinate_mean_abs": 0.0009594482794631816,
+      "c_error_coordinate_variance_mean": 0.001252675511851962,
+      "c_error_max_coordinate_mean_abs": 0.0007731048798685691,
+      "correction_error_norm": {
+        "lower95": 0.0018192315168038408,
+        "mcse": 7.24461381445432e-05,
+        "mean": 0.0019612259475671454,
+        "upper95": 0.00210322037833045
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.00016391512464818128,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.1967766209398962,
+        "mcse": 0.0026486920232405013,
+        "mean": 0.2019680573054476,
+        "upper95": 0.20715949367099898
+      }
+    },
+    "target-groups-64": {
+      "a_error_coordinate_variance_mean": 0.000313910938680549,
+      "a_error_max_coordinate_mean_abs": 0.001462652321830504,
+      "c_error_coordinate_variance_mean": 0.0012587201802966791,
+      "c_error_max_coordinate_mean_abs": 0.0031985117735564145,
+      "correction_error_norm": {
+        "lower95": 0.0006443542448022152,
+        "mcse": 2.2986041097348022e-06,
+        "mean": 0.0006488595088572954,
+        "upper95": 0.0006533647729123756
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.9663488142801992e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 80.65239418544655,
+        "mcse": 0.10788688810908433,
+        "mean": 80.86385248614036,
+        "upper95": 81.07531078683417
+      }
+    },
+    "target-guide_stream_size-512": {
+      "a_error_coordinate_variance_mean": 0.0003173081131956941,
+      "a_error_max_coordinate_mean_abs": 0.0011495543141863784,
+      "c_error_coordinate_variance_mean": 0.0012402756212249754,
+      "c_error_max_coordinate_mean_abs": 0.0026597464301655054,
+      "correction_error_norm": {
+        "lower95": 0.00031071029205878933,
+        "mcse": 2.247138482157888e-06,
+        "mean": 0.00031511468348381877,
+        "upper95": 0.0003195190749088482
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.2054860958654652e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.9606248163508,
+        "mcse": 0.0764516866593476,
+        "mean": 21.11047012220312,
+        "upper95": 21.260315428055442
+      }
+    },
+    "target-interval-1": {
+      "a_error_coordinate_variance_mean": 0.0003190482047768046,
+      "a_error_max_coordinate_mean_abs": 0.0015610376890977066,
+      "c_error_coordinate_variance_mean": 0.0012449907205782824,
+      "c_error_max_coordinate_mean_abs": 0.002191751102715958,
+      "correction_error_norm": {
+        "lower95": 0.0003103922124812471,
+        "mcse": 2.1001882132789345e-06,
+        "mean": 0.00031450858137927384,
+        "upper95": 0.0003186249502773006
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.2208995733966211e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.83367466537368,
+        "mcse": 0.07581919929709806,
+        "mean": 20.982280295995995,
+        "upper95": 21.13088592661831
+      }
+    },
+    "target-interval-256": {
+      "a_error_coordinate_variance_mean": 0.00030924000802416604,
+      "a_error_max_coordinate_mean_abs": 0.0011393416342853355,
+      "c_error_coordinate_variance_mean": 0.0012558878140428713,
+      "c_error_max_coordinate_mean_abs": 0.00287858008506611,
+      "correction_error_norm": {
+        "lower95": 0.00031104309208694375,
+        "mcse": 2.1610534737575037e-06,
+        "mean": 0.00031527875689550845,
+        "upper95": 0.00031951442170407315
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 6.5826371164186704e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.889821830494434,
+        "mcse": 0.07662550074619817,
+        "mean": 21.040007811956983,
+        "upper95": 21.19019379341953
+      }
+    },
+    "target-interval-64": {
+      "a_error_coordinate_variance_mean": 0.00031770269607951516,
+      "a_error_max_coordinate_mean_abs": 0.0006363622375582487,
+      "c_error_coordinate_variance_mean": 0.0012529766791307237,
+      "c_error_max_coordinate_mean_abs": 0.002460595884553651,
+      "correction_error_norm": {
+        "lower95": 0.0003119858444220413,
+        "mcse": 2.13387601013301e-06,
+        "mean": 0.000316168241401902,
+        "upper95": 0.0003203506383817627
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 8.40466334823286e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.842996278576926,
+        "mcse": 0.07622626790277394,
+        "mean": 20.992399763666363,
+        "upper95": 21.1418032487558
+      }
+    },
+    "target-mismatch-1": {
+      "a_error_coordinate_variance_mean": 0.00031454852336610604,
+      "a_error_max_coordinate_mean_abs": 0.0007478938298371069,
+      "c_error_coordinate_variance_mean": 0.0012421721075665999,
+      "c_error_max_coordinate_mean_abs": 0.002431139343727381,
+      "correction_error_norm": {
+        "lower95": 0.00028172765778494566,
+        "mcse": 1.9690745142921307e-06,
+        "mean": 0.0002855870438329582,
+        "upper95": 0.0002894464298809708
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.0783235089700619e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.923698244216975,
+        "mcse": 0.07479838645203747,
+        "mean": 21.07030308166297,
+        "upper95": 21.216907919108966
+      }
+    },
+    "target-noise-0": {
+      "a_error_coordinate_variance_mean": 0.0,
+      "a_error_max_coordinate_mean_abs": 0.0,
+      "c_error_coordinate_variance_mean": 0.0,
+      "c_error_max_coordinate_mean_abs": 0.0,
+      "correction_error_norm": {
+        "lower95": 6.71240500373789e-17,
+        "mcse": 3.043225174749861e-18,
+        "mean": 7.308877137988863e-17,
+        "upper95": 7.905349272239836e-17
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 6.475560785997952e-18,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.76656900536237,
+        "mcse": 0.07642962627190976,
+        "mean": 20.916371072855313,
+        "upper95": 21.066173140348255
+      }
+    },
+    "target-noise-0.5": {
+      "a_error_coordinate_variance_mean": 0.007710450711306688,
+      "a_error_max_coordinate_mean_abs": 0.00513239273030018,
+      "c_error_coordinate_variance_mean": 0.03135634184175212,
+      "c_error_max_coordinate_mean_abs": 0.006203791152440183,
+      "correction_error_norm": {
+        "lower95": 0.0015518703232295828,
+        "mcse": 1.0343741575710242e-05,
+        "mean": 0.0015721440567179749,
+        "upper95": 0.001592417790206367
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 3.992401227883579e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 20.880002991965288,
+        "mcse": 0.07630405177270164,
+        "mean": 21.029558933439784,
+        "upper95": 21.17911487491428
+      }
+    },
+    "target-radius-0": {
+      "a_error_coordinate_variance_mean": 0.0003150917541855699,
+      "a_error_max_coordinate_mean_abs": 0.0010523872780595696,
+      "c_error_coordinate_variance_mean": 0.0012597566350690328,
+      "c_error_max_coordinate_mean_abs": 0.0023337228599882424,
+      "correction_error_norm": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 0.0,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 0.0,
+        "mcse": 0.0,
+        "mean": 0.0,
+        "upper95": 0.0
+      }
+    },
+    "target-radius-0.05": {
+      "a_error_coordinate_variance_mean": 0.0003179595245181749,
+      "a_error_max_coordinate_mean_abs": 0.001466899611048077,
+      "c_error_coordinate_variance_mean": 0.001267421232368621,
+      "c_error_max_coordinate_mean_abs": 0.002574536547836984,
+      "correction_error_norm": {
+        "lower95": 0.0001042755906366742,
+        "mcse": 7.03039728231076e-07,
+        "mean": 0.0001056535485040071,
+        "upper95": 0.00010703150637134001
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 4.254471595958112e-06,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 7.023845436964699,
+        "mcse": 0.02532356290354746,
+        "mean": 7.073479620255652,
+        "upper95": 7.123113803546605
+      }
+    },
+    "target-radius-0.3": {
+      "a_error_coordinate_variance_mean": 0.0003123675729111722,
+      "a_error_max_coordinate_mean_abs": 0.00163262481610648,
+      "c_error_coordinate_variance_mean": 0.0012389421657809292,
+      "c_error_max_coordinate_mean_abs": 0.0021507739604607985,
+      "correction_error_norm": {
+        "lower95": 0.0006206303887768505,
+        "mcse": 4.231120179102984e-06,
+        "mean": 0.0006289233843278923,
+        "upper95": 0.0006372163798789341
+      },
+      "n": 1000,
+      "normalization_correction_bias_norm": 1.9123075971465114e-05,
+      "scope": "u depends on sampled g; variance includes that dependence. Correction bias is diagnostic, not an unbiasedness claim.",
+      "true_population_fresh_gain": {
+        "lower95": 42.13898371243924,
+        "mcse": 0.15044408813525995,
+        "mean": 42.433854125184354,
+        "upper95": 42.728724537929466
+      }
+    }
+  },
+  "raw_path": "artifacts/phase02/coefficient-noise-v1.jsonl.gz",
+  "raw_sha256": "3c91525bfeb70c71557c734529f89560a09e36b4de8e3d072a55a7b1cf995cad",
+  "rows": 60000,
+  "scope": "secondary first-probe measurements on existing confirmation seeds"
+}

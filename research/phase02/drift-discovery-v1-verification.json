@@ -1,0 +1,151 @@
+{
+  "condition_counts": {
+    "drift-g14-w0.001-k1": 1000,
+    "drift-g14-w0.001-k256": 1000,
+    "drift-g14-w0.001-k64": 1000,
+    "drift-g14-w0.2-k1": 1000,
+    "drift-g14-w0.2-k256": 1000,
+    "drift-g14-w0.2-k64": 1000,
+    "drift-g2-w0.001-k1": 1000,
+    "drift-g2-w0.001-k256": 1000,
+    "drift-g2-w0.001-k64": 1000,
+    "drift-g2-w0.2-k1": 1000,
+    "drift-g2-w0.2-k256": 1000,
+    "drift-g2-w0.2-k64": 1000,
+    "drift-g64-w0.001-k1": 1000,
+    "drift-g64-w0.001-k256": 1000,
+    "drift-g64-w0.001-k64": 1000,
+    "drift-g64-w0.2-k1": 1000,
+    "drift-g64-w0.2-k256": 1000,
+    "drift-g64-w0.2-k64": 1000
+  },
+  "independent_reference_replays": {
+    "drift-g14-w0.001-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g14-w0.001-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g14-w0.001-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g14-w0.2-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g14-w0.2-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g14-w0.2-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.001-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 3.3306690738754696e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.001-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.7755575615628914e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.001-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 3.3306690738754696e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.2-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.2-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g2-w0.2-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.001-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.001-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.1102230246251565e-15,
+      "max_weight_discrepancy": 4.440892098500626e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.001-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.2-k1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.2-k256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "drift-g64-w0.2-k64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 4.440892098500626e-16,
+      "replayed_draws": 3
+    }
+  },
+  "manufactured": {
+    "fault_rejection": {
+      "excess_radius": true,
+      "independent_coordinate_clip": true,
+      "no_projection": true,
+      "nonfinite_weights": true,
+      "wrong_sign": true
+    },
+    "finite_difference_gradient": true,
+    "hand_weights": [
+      1.15,
+      0.85
+    ],
+    "known_hessian_gradient": true
+  },
+  "passed": true,
+  "raw_sha256": "134b2b4dd8557464973b9798af6e041236840ad3e8bb4cd28327291316e69932",
+  "rows_verified": 18000,
+  "stream": "discovery"
+}

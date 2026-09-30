@@ -1,0 +1,15 @@
+{
+  "regime": "continued_pretraining",
+  "status": "planned_not_executed",
+  "required_primary_runs": 6,
+  "required_information_control_runs": 3,
+  "training_loss_tokens_per_run": 1000000000,
+  "batch_loss_tokens": 524288,
+  "full_updates": 1907,
+  "final_partial_loss_tokens": 182784,
+  "updates": 1908,
+  "guidance_probes": 28,
+  "additional_guidance_tokens_per_guidon_or_control_run": 1835008,
+  "guide_token_fraction": 0.001835008,
+  "ready_for_confirmation": false
+}

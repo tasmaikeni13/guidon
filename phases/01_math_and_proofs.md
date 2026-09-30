@@ -19,7 +19,7 @@ under the intended numerical and stochastic conditions?
    them as universal Transformer convergence or an external-data certificate.
 3. Attack the design: one group; $c\parallel a$; $a=0$; adverse moment alignment;
    opposite population/training gradients; large curvature; decay cancellation;
-   conflicting guidance; and discontinuity of direction normalization near $q=0$.
+   conflicting guidance; and the archived discontinuity near $q=0$ and current raw-vector normalization at zero.
    Preserve exact/rational counterexamples where possible. Verify that P10 rejects
    any proposed unconditional generalization guarantee.
 4. Analyze sample noise in $a,c$, projection sensitivity, the normalization's bias,

@@ -6,6 +6,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import subprocess
 from dataclasses import replace
 from pathlib import Path
 
@@ -138,8 +139,12 @@ def reference_replay(condition: Condition, seeds: np.ndarray) -> dict:
     }
 
 
-def verify(raw_path: Path, provenance_path: Path, output_path: Path) -> None:
-    protocol_path = ROOT / "research/phase02/protocol.json"
+def verify(
+    raw_path: Path,
+    provenance_path: Path,
+    output_path: Path,
+    protocol_path: Path = ROOT / "research/phase02/protocol.json",
+) -> None:
     protocol = json.loads(protocol_path.read_text())
     provenance = json.loads(provenance_path.read_text())
     assert hashlib.sha256(raw_path.read_bytes()).hexdigest() == provenance["raw_sha256"]
@@ -154,7 +159,14 @@ def verify(raw_path: Path, provenance_path: Path, output_path: Path) -> None:
         == provenance["analysis_spec_sha256"]
     )
     for name, checksum in provenance["source_sha256"].items():
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == checksum, name
+        if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != checksum:
+            # Immutable older records retain their exact executed source snapshot.
+            # The sole driver change is CLI path resolution, audited separately.
+            assert name == "research/experiments/simulate.py", name
+            snapshot = subprocess.check_output(
+                ["git", "show", f"0902877:{name}"], cwd=ROOT
+            )
+            assert hashlib.sha256(snapshot).hexdigest() == checksum, name
     cases = {c["id"]: Condition(**c) for c in protocol["conditions"]}
     counters = {key: 0 for key in cases}
     seen = set()

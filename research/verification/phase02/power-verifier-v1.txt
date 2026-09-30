@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/tasma/optimizer/research/experiments/verify_power.py", line 114, in <module>
+    verify()
+  File "/home/tasma/optimizer/research/experiments/verify_power.py", line 29, in verify
+    assert abs(critical - summary["critical_t_df2"]) < 2e-11
+AssertionError

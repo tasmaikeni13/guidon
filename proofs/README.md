@@ -14,7 +14,7 @@ No project axioms or proof placeholders are permitted. The audit prints dependen
 Lean's standard `propext`, `Classical.choice`, and `Quot.sound` are expected.
 
 `Core.lean` proves finite real coefficient identities, normalized radius bounds,
-the quadratic optimum, and conditional Taylor inequalities. `Isolation.lean`
+the quadratic optimum, and conditional Taylor inequalities. `Robustness.lean` adds the v0.2 signal-floor bounds, exact projection idempotence and deterministic coefficient-noise/drift transfer bounds. All 32 public theorem statements are included in `Audit.lean`. `Isolation.lean`
 proves evaluation noninterference for the specified pure transition and gives a
 counterexample to unconditional generalization. [theory.md](../theory.md) maps P1–P11
 to actual theorem names and states assumptions.
