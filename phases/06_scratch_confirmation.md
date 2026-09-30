@@ -1,5 +1,7 @@
 # Phase 06 — Full 125M scratch competition
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** gate 05 valid and frozen. This phase launches the requested experiment;
 it has not been run as part of repository preparation.
 

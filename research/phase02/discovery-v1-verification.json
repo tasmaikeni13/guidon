@@ -1,0 +1,501 @@
+{
+  "condition_counts": {
+    "control-collinear": 1000,
+    "control-remove": 1000,
+    "control-reverse": 1000,
+    "control-shuffle": 1000,
+    "curvature-large-step": 1000,
+    "intended": 1000,
+    "rotate-0.001-1": 1000,
+    "rotate-0.001-64": 1000,
+    "rotate-0.2-16": 1000,
+    "rotate-0.2-256": 1000,
+    "rotate-0.2-64": 1000,
+    "screen-00": 1000,
+    "screen-01": 1000,
+    "screen-02": 1000,
+    "screen-03": 1000,
+    "screen-04": 1000,
+    "screen-05": 1000,
+    "screen-06": 1000,
+    "screen-07": 1000,
+    "screen-08": 1000,
+    "screen-09": 1000,
+    "screen-10": 1000,
+    "screen-11": 1000,
+    "screen-12": 1000,
+    "screen-13": 1000,
+    "screen-14": 1000,
+    "screen-15": 1000,
+    "screen-16": 1000,
+    "screen-17": 1000,
+    "screen-18": 1000,
+    "screen-19": 1000,
+    "screen-20": 1000,
+    "screen-21": 1000,
+    "screen-22": 1000,
+    "screen-23": 1000,
+    "screen-24": 1000,
+    "screen-25": 1000,
+    "screen-26": 1000,
+    "screen-27": 1000,
+    "screen-28": 1000,
+    "screen-29": 1000,
+    "screen-30": 1000,
+    "screen-31": 1000,
+    "spurious-classification-0": 1000,
+    "spurious-classification-1": 1000,
+    "spurious-regression-0": 1000,
+    "spurious-regression-1": 1000,
+    "target-batch_size-128": 1000,
+    "target-batch_size-8": 1000,
+    "target-beta1-0": 1000,
+    "target-beta1-0.99": 1000,
+    "target-condition_number-1": 1000,
+    "target-condition_number-10000": 1000,
+    "target-delay-16": 1000,
+    "target-delay-64": 1000,
+    "target-groups-1": 1000,
+    "target-groups-2": 1000,
+    "target-groups-64": 1000,
+    "target-guide_stream_size-512": 1000,
+    "target-interval-1": 1000,
+    "target-interval-256": 1000,
+    "target-interval-64": 1000,
+    "target-mismatch-1": 1000,
+    "target-noise-0": 1000,
+    "target-noise-0.5": 1000,
+    "target-radius-0": 1000,
+    "target-radius-0.05": 1000,
+    "target-radius-0.3": 1000
+  },
+  "independent_reference_replays": {
+    "control-collinear": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 3.774758283725532e-15,
+      "replayed_draws": 3
+    },
+    "control-remove": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "control-reverse": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "control-shuffle": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "curvature-large-step": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.3322676295501878e-15,
+      "max_weight_discrepancy": 1.1102230246251565e-16,
+      "replayed_draws": 3
+    },
+    "intended": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "rotate-0.001-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "rotate-0.001-64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.996003610813204e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "rotate-0.2-16": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "rotate-0.2-256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "rotate-0.2-64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 7.771561172376096e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "screen-00": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 3.3306690738754696e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-01": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 1.7763568394002505e-15,
+      "replayed_draws": 3
+    },
+    "screen-02": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-03": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-04": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.1102230246251565e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-05": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-06": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-07": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 4.440892098500626e-16,
+      "replayed_draws": 3
+    },
+    "screen-08": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 3.3306690738754696e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-09": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-10": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 2.9976021664879227e-15,
+      "replayed_draws": 3
+    },
+    "screen-11": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-12": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "screen-13": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-14": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-15": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-16": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-17": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 1.5543122344752192e-15,
+      "replayed_draws": 3
+    },
+    "screen-18": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-19": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-20": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-21": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-22": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-23": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 4.440892098500626e-16,
+      "replayed_draws": 3
+    },
+    "screen-24": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-25": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-26": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 2.4424906541753444e-15,
+      "replayed_draws": 3
+    },
+    "screen-27": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-28": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "screen-29": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-30": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 0.0,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "screen-31": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "spurious-classification-0": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.3322676295501878e-15,
+      "max_weight_discrepancy": 1.1102230246251565e-15,
+      "replayed_draws": 3
+    },
+    "spurious-classification-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.3322676295501878e-15,
+      "max_weight_discrepancy": 2.4424906541753444e-15,
+      "replayed_draws": 3
+    },
+    "spurious-regression-0": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "spurious-regression-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.6645352591003757e-15,
+      "replayed_draws": 3
+    },
+    "target-batch_size-128": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.1102230246251565e-15,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-batch_size-8": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-beta1-0": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-beta1-0.99": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-condition_number-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 7.771561172376096e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-condition_number-10000": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-delay-16": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-delay-64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-groups-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "target-groups-2": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 2.220446049250313e-16,
+      "max_weight_discrepancy": 1.1102230246251565e-16,
+      "replayed_draws": 3
+    },
+    "target-groups-64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 7.771561172376096e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-guide_stream_size-512": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-interval-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 8.881784197001252e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-interval-256": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 7.771561172376096e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-interval-64": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-mismatch-1": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-noise-0": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-noise-0.5": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 1.1102230246251565e-15,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-radius-0": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 4.440892098500626e-16,
+      "max_weight_discrepancy": 0.0,
+      "replayed_draws": 3
+    },
+    "target-radius-0.05": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 5.551115123125783e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    },
+    "target-radius-0.3": {
+      "evaluation_noninterference_bitwise": true,
+      "max_parameter_discrepancy": 6.661338147750939e-16,
+      "max_weight_discrepancy": 2.220446049250313e-16,
+      "replayed_draws": 3
+    }
+  },
+  "manufactured": {
+    "fault_rejection": {
+      "excess_radius": true,
+      "independent_coordinate_clip": true,
+      "no_projection": true,
+      "nonfinite_weights": true,
+      "wrong_sign": true
+    },
+    "finite_difference_gradient": true,
+    "hand_weights": [
+      1.15,
+      0.85
+    ],
+    "known_hessian_gradient": true
+  },
+  "passed": true,
+  "raw_sha256": "cd2c181cff8e4a48c013fdf42114c8f289fea8097474e6514f92318920bfcf7a",
+  "rows_verified": 68000,
+  "stream": "discovery"
+}

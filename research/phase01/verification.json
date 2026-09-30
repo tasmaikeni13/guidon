@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "raw_sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24",
+  "verified_rows": 7168,
+  "cells": 224,
+  "resolved_fallbacks": 0,
+  "visible_moment_overflows": 1024,
+  "independent_checker_self_test": {
+    "faults_rejected": {
+      "wrong_sign": true,
+      "no_projection": true,
+      "independent_coordinate_clip": true,
+      "excess_radius": true,
+      "nonfinite_weights": true
+    },
+    "exact": {
+      "two_block_delta": [
+        "3/20",
+        "-3/20"
+      ],
+      "training_dot_delta": "0",
+      "fresh_raw_gain": "3/10",
+      "large_curvature_train_before": "0",
+      "large_curvature_train_after": "401/4",
+      "decay_cancelled_base": [
+        "0",
+        "0"
+      ],
+      "decay_cancelled_guided": [
+        "3/20",
+        "-3/20"
+      ],
+      "skew_zero_mean_normalization_bias": "1/20",
+      "near_zero_one_sided_delta_limit": [
+        "3/20",
+        "-3/20"
+      ],
+      "q_zero_delta": [
+        "0",
+        "0"
+      ],
+      "stale_current_gain_with_current_c_minus_stored_c": "-3/10",
+      "adverse_momentum_a": [
+        "-1",
+        "-1"
+      ],
+      "opposite_population_dot_correction": "-3/10",
+      "p10_train_losses": [
+        "1",
+        "0"
+      ],
+      "p10_evaluation_losses": [
+        "1",
+        "4"
+      ]
+    }
+  }
+}

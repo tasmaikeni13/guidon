@@ -1,9 +1,16 @@
 {
-  "protocol_version": "0.1",
+  "protocol_version": "0.2",
   "status": "planned_not_executed",
   "regime": "from_scratch",
-  "seeds": [42, 43, 44],
-  "optimizers": ["adamw", "guidon"],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "optimizers": [
+    "adamw",
+    "guidon"
+  ],
   "required_information_control": "adamw_plus_guidance",
   "training_loss_tokens": 2500000000,
   "global_batch_sequences": 256,
@@ -43,15 +50,20 @@
     "learning_rate": 0.0006,
     "beta1": 0.9,
     "beta2": 0.95,
-    "epsilon": 1e-8,
+    "epsilon": 1e-08,
     "weight_decay": 0.1,
     "global_gradient_clip_norm": 1.0,
     "guidon_radius": 0.15,
     "guide_interval": 64,
     "guide_warmup_updates": 128,
     "guide_batch_sequences": 32,
-    "neutrality_tolerance": 1e-5,
-    "decay_exclusions": ["bias", "layernorm_scale", "layernorm_bias"]
+    "neutrality_tolerance": 1e-05,
+    "decay_exclusions": [
+      "bias",
+      "layernorm_scale",
+      "layernorm_bias"
+    ],
+    "signal_floor": 0.01
   },
   "schedule": {
     "type": "cosine_by_consumed_training_loss_tokens",

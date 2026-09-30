@@ -1,5 +1,7 @@
 # Phase 07 — Continued pretraining and retention
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** valid 05/06, continued protocol frozen before scratch confirmation.
 Use **EleutherAI/pythia-160m-deduped**, pinned to the repository revision in the
 configuration, and the higher-quality **FineMath-4+** subset. These choices test

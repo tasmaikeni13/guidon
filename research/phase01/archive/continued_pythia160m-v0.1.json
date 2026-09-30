@@ -1,16 +1,9 @@
 {
-  "protocol_version": "0.2",
+  "protocol_version": "0.1",
   "status": "planned_not_executed",
   "regime": "continued_pretraining",
-  "seeds": [
-    42,
-    43,
-    44
-  ],
-  "optimizers": [
-    "adamw",
-    "guidon"
-  ],
+  "seeds": [42, 43, 44],
+  "optimizers": ["adamw", "guidon"],
   "required_information_control": "adamw_plus_guidance",
   "training_loss_tokens": 1000000000,
   "global_batch_sequences": 256,
@@ -28,15 +21,9 @@
     "dataset": "HuggingFaceTB/finemath",
     "config": "finemath-4plus",
     "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
-    "training_mixture": {
-      "finemath": 0.9,
-      "fineweb_edu_retention": 0.1
-    },
+    "training_mixture": {"finemath": 0.9, "fineweb_edu_retention": 0.1},
     "retention_revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
-    "guidance_mixture": {
-      "finemath": 0.9,
-      "fineweb_edu_retention": 0.1
-    },
+    "guidance_mixture": {"finemath": 0.9, "fineweb_edu_retention": 0.1},
     "split_seed": 20260930,
     "minimum_guidance_tokens": 10000000,
     "minimum_development_tokens": 10000000,
@@ -48,23 +35,18 @@
     "manifest_ready": false
   },
   "optimizer_defaults": {
-    "learning_rate": 6e-05,
+    "learning_rate": 0.00006,
     "beta1": 0.9,
     "beta2": 0.95,
-    "epsilon": 1e-08,
+    "epsilon": 1e-8,
     "weight_decay": 0.1,
     "global_gradient_clip_norm": 1.0,
     "guidon_radius": 0.15,
     "guide_interval": 64,
     "guide_warmup_updates": 128,
     "guide_batch_sequences": 32,
-    "neutrality_tolerance": 1e-05,
-    "decay_exclusions": [
-      "bias",
-      "layernorm_scale",
-      "layernorm_bias"
-    ],
-    "signal_floor": 0.01
+    "neutrality_tolerance": 1e-5,
+    "decay_exclusions": ["bias", "layernorm_scale", "layernorm_bias"]
   },
   "schedule": {
     "type": "cosine_by_consumed_training_loss_tokens",

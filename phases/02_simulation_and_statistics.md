@@ -1,5 +1,7 @@
 # Phase 02 — Monte Carlo, mechanisms, and statistical design
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** Phase 01 valid. **Purpose:** falsify behavioral predictions cheaply and
 design honest uncertainty analysis before expensive LLM trials.
 

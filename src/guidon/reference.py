@@ -21,6 +21,7 @@ class Config:
     guide_interval: int = 64
     guide_warmup: int = 128
     neutrality_tolerance: float = 1e-5
+    signal_floor: float = 1e-2
 
     def __post_init__(self) -> None:
         values = (
@@ -31,6 +32,7 @@ class Config:
             self.weight_decay,
             self.radius,
             self.neutrality_tolerance,
+            self.signal_floor,
         )
         if not all(np.isfinite(x) for x in values):
             raise ValueError("Configuration values must be finite")
@@ -40,6 +42,8 @@ class Config:
             raise ValueError("Invalid learning rate, decay, or epsilon")
         if not 0 <= self.radius < 1 or self.neutrality_tolerance <= 0:
             raise ValueError("Radius must lie in [0, 1); tolerance must be positive")
+        if self.signal_floor <= 0:
+            raise ValueError("The projected-signal floor must be positive")
         if self.guide_interval < 1 or self.guide_warmup < 0:
             raise ValueError("Invalid guidance schedule")
 
@@ -64,6 +68,10 @@ class State:
 def init(params: tuple[Array, ...]) -> State:
     if not params:
         raise ValueError("At least one parameter block is required")
+    if any(p.size == 0 for p in params):
+        raise ValueError("Parameter blocks must contain coordinates")
+    if any(np.shares_memory(p, q) for i, p in enumerate(params) for q in params[:i]):
+        raise ValueError("Tied or overlapping parameters must occur only once")
     return State(
         0,
         tuple(np.zeros_like(x, dtype=np.float64) for x in params),
@@ -87,21 +95,32 @@ def project(a: Array, c: Array) -> Array:
 
 
 def controller(
-    a: Array, c: Array, radius: float, tolerance: float
+    a: Array, c: Array, radius: float, tolerance: float, signal_floor: float = 1e-2
 ) -> tuple[Array, bool]:
     """Reproject a possibly stale guide vector against CURRENT training progress."""
     if not np.all(np.isfinite(a)) or not np.all(np.isfinite(c)):
         return np.ones_like(a), True
     q = project(a, c)
-    delta = radius * normalize(q)
+    # Idempotent in real arithmetic; the second projection removes rounding residue.
+    q = project(a, q)
+    delta = radius * q / max(float(np.max(np.abs(q))), signal_floor)
     candidate = 1 + delta
     realized = candidate - 1
     # A floating-point implementation needs a certificate as well as a real proof.
     a_unit = normalize(a)
     error = abs(float(a_unit @ realized))
     budget = tolerance * max(float(np.sum(np.abs(a_unit))) * radius, 1e-30)
+    gain_products = c * realized
+    gain_roundoff = (
+        4
+        * len(c)
+        * np.finfo(candidate.dtype).eps
+        * float(np.sum(np.abs(gain_products)))
+    )
     valid = (
-        np.all(np.isfinite(candidate)) and error <= budget and float(c @ realized) >= 0
+        np.all(np.isfinite(candidate))
+        and error <= budget
+        and float(np.sum(gain_products)) >= gain_roundoff
     )
     return (candidate, False) if valid else (np.ones_like(a), True)
 
@@ -150,6 +169,8 @@ def step(
         / (np.sqrt(v / (1 - config.beta2**count)) + config.epsilon)
         for m, v in zip(first, second, strict=True)
     )
+    if not all(np.all(np.isfinite(x)) for x in first + second + adaptive):
+        raise ValueError("Nonfinite Adam arithmetic; diagnose the training run")
     a = np.array([np.sum(g * u) for g, u in zip(gradients, adaptive, strict=True)])
     c = state.guide_coefficients.copy()
     last = state.last_probe
@@ -165,11 +186,15 @@ def step(
     radius = (
         config.radius * max(0.0, 1 - age / config.guide_interval) if last >= 0 else 0.0
     )
-    weights, fallback = controller(a, c, radius, config.neutrality_tolerance)
+    weights, fallback = controller(
+        a, c, radius, config.neutrality_tolerance, config.signal_floor
+    )
     result = tuple(
         p - config.learning_rate * (w * u + config.weight_decay * p * use_decay)
         for p, u, w, use_decay in zip(params, adaptive, weights, mask, strict=True)
     )
+    if not all(np.all(np.isfinite(x)) for x in result):
+        raise ValueError("Nonfinite parameter update; diagnose the training run")
     stats = {
         "weights": weights,
         "radius": radius,

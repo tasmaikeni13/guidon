@@ -1,5 +1,7 @@
 # Phase 09 — Paper and public research release
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** 01–08 verified, with complete evidence or explicitly reported scientific
 limitations. No full paper is created during the initial repository preparation.
 

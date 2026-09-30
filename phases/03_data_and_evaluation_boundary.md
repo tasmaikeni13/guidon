@@ -1,5 +1,7 @@
 # Phase 03 — Data preparation and evaluation isolation
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** 01/02 valid. Implement the full data tooling before TPU training. Current
 `guidon.data_boundary` checks declared identities; it does not construct trustworthy
 clusters or certify a corpus.

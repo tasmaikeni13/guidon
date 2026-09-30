@@ -1,5 +1,7 @@
 # Phase 04 — Training scripts and kernels for v4-32
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** 01/03 valid; user has started this phase and made the existing pod available.
 Do not provision another pod. A v4-32 slice has 16 physical chips with topology
 2x2x4 ([Google specification](https://docs.cloud.google.com/tpu/docs/v4)). Discover
@@ -33,7 +35,7 @@ evidence. Initialize every process before devices, use a global `Mesh` with
 Current `jax_optimizer.py` is the readable XLA path for both optimizers. Implement
 and benchmark an optimized XLA/Pallas path for **both**, with float32 fused moment
 update, bias correction, coefficient partial sums, and scaled parameter update.
-Respect the two-pass dependency: current $u$ is needed for $a,c$, and coefficients
+Preserve the optimization barrier on realized weights and the conservative guide-sign certificate. Respect the two-pass dependency: current $u$ is needed for $a,c$, and coefficients
 are needed before applying $w$. Prove/test tile padding, masks, group boundaries,
 ties, and reduction semantics. A global parameter element is counted once; do not
 sum already replicated, globally averaged gradients a second time across replicas.
@@ -43,7 +45,7 @@ end-to-end improvement; optimized XLA is an acceptable final kernel path if Pall
 does not help. Document the tried implementation and measured rejection.
 
 Compile ordinary and probe step graphs separately. The host/data scheduler supplies
-guidance only when `probe_due`; assert `schedule_ok` and log certificate/fallback
+guidance only when `probe_due`; assert `schedule_ok` and `numerics_ok` and log certificate/fallback
 statistics. The guide backward pass belongs in total cost and peak memory. Do not
 benchmark only an optimizer microkernel and call that training speed.
 

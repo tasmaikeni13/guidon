@@ -41,6 +41,11 @@ def init(params: Any, group_ids: Any, decay_mask: Any) -> State:
     _, _, structure, number = _layout(group_ids, decay_mask)
     if jax.tree.structure(params) != structure:
         raise ValueError("Parameter and group pytrees differ")
+    leaves = jax.tree.leaves(params)
+    if any(p.size == 0 for p in leaves):
+        raise ValueError("Parameter leaves must contain coordinates")
+    if len({id(p) for p in leaves}) != len(leaves):
+        raise ValueError("Tied parameters must occur only once in the pytree")
     zeros = jax.tree.map(lambda p: jnp.zeros(p.shape, jnp.float32), params)
     return State(
         jnp.asarray(0, jnp.int32),
@@ -59,7 +64,7 @@ def _normalize(x: Any) -> Any:
 def make_step(group_ids: Any, decay_mask: Any, config: Config):
     """Return a pure step for jax.jit; compile ordinary and probe calls separately.
 
-    A trainer MUST assert metrics['schedule_ok'] after synchronization and abort
+    A trainer MUST assert metrics['schedule_ok'] and metrics['numerics_ok'] and abort
     on False. Missing or unexpected probes use AdamW while exposing the violation.
     Reduce globally on global arrays; do not call this on unreduced pmap gradients.
     """
@@ -102,6 +107,7 @@ def make_step(group_ids: Any, decay_mask: Any, config: Config):
         due = jnp.asarray(False)
         schedule_ok = jnp.asarray(not has_guide)
         fallback = jnp.asarray(False)
+        a = jnp.zeros(number, jnp.float32)
         residual = proxy_gain = fresh_gain = radius = jnp.asarray(0.0, jnp.float32)
         if config.radius > 0:
             due = (state.count >= config.guide_warmup) & (
@@ -133,17 +139,28 @@ def make_step(group_ids: Any, decay_mask: Any, config: Config):
             q = c - a_unit * jnp.sum(a_unit * c) / jnp.where(
                 norm_squared > 0, norm_squared, 1.0
             )
-            delta = radius * _normalize(q)
-            candidate_weights = 1.0 + delta
+            q = q - a_unit * jnp.sum(a_unit * q) / jnp.where(
+                norm_squared > 0, norm_squared, 1.0
+            )
+            delta = radius * q / jnp.maximum(jnp.max(jnp.abs(q)), config.signal_floor)
+            # XLA may otherwise cancel (1 + delta) - 1 across a rounding boundary.
+            candidate_weights = jax.lax.optimization_barrier(1.0 + delta)
             realized_delta = candidate_weights - 1.0
             error = jnp.abs(jnp.sum(a_unit * realized_delta))
             budget = config.neutrality_tolerance * jnp.maximum(
                 jnp.sum(jnp.abs(a_unit)) * radius, 1e-30
             )
+            gain_products = c * realized_delta
+            gain_roundoff = (
+                4
+                * number
+                * jnp.finfo(jnp.float32).eps
+                * jnp.sum(jnp.abs(gain_products))
+            )
             valid = (
                 jnp.all(jnp.isfinite(candidate_weights))
                 & (error <= budget)
-                & (jnp.sum(c * realized_delta) >= 0)
+                & (jnp.sum(gain_products) >= gain_roundoff)
                 & schedule_ok
                 & valid_probe
             )
@@ -159,6 +176,14 @@ def make_step(group_ids: Any, decay_mask: Any, config: Config):
             p - lr * (weights[group] * u + config.weight_decay * p * mask)
             for p, u, group, mask in zip(ps, adaptive, groups, masks, strict=True)
         ]
+        numerics_ok = jnp.all(
+            jnp.stack(
+                [
+                    jnp.all(jnp.isfinite(x))
+                    for x in gs + first + second + adaptive + result
+                ]
+            )
+        )
         new_state = State(
             t,
             structure.unflatten(first),
@@ -170,11 +195,14 @@ def make_step(group_ids: Any, decay_mask: Any, config: Config):
             "weights": weights,
             "probe_due": due,
             "schedule_ok": schedule_ok,
+            "numerics_ok": numerics_ok,
             "fallback": fallback,
             "radius": radius,
             "training_residual": residual,
             "proxy_gain": proxy_gain,
             "fresh_gain": fresh_gain,
+            "train_coefficients": a,
+            "guide_coefficients": c,
         }
         return structure.unflatten(result), new_state, metrics
 

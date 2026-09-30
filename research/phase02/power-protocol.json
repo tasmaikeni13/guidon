@@ -1,0 +1,14 @@
+{
+  "version": "power-v1",
+  "seed": 271803,
+  "n_pairs": 3,
+  "draws_per_cell": 10000,
+  "paired_difference_sd": [0.002, 0.005, 0.01, 0.02],
+  "effects": [0, 0.005],
+  "distributions": ["normal", "t3", "skew_lognormal"],
+  "coverage_target_under_normal": 0.95,
+  "coverage_or_power_calibration_error_max_mcse": 4,
+  "critical_value": "two-sided t(0.975,df=2)",
+  "estimated_point_target": 0.005,
+  "scope": "design analysis using synthetic seed differences; no additional LLM seeds; normal coverage assumptions tested by distribution sensitivity"
+}

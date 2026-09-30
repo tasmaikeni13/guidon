@@ -1,0 +1,97 @@
+{
+  "all_invariant_failures": 0,
+  "checker_self_test": {
+    "exact": {
+      "adverse_momentum_a": [
+        "-1",
+        "-1"
+      ],
+      "decay_cancelled_base": [
+        "0",
+        "0"
+      ],
+      "decay_cancelled_guided": [
+        "3/20",
+        "-3/20"
+      ],
+      "fresh_raw_gain": "3/10",
+      "large_curvature_train_after": "401/4",
+      "large_curvature_train_before": "0",
+      "near_zero_one_sided_delta_limit": [
+        "3/20",
+        "-3/20"
+      ],
+      "opposite_population_dot_correction": "-3/10",
+      "p10_evaluation_losses": [
+        "1",
+        "4"
+      ],
+      "p10_train_losses": [
+        "1",
+        "0"
+      ],
+      "q_zero_delta": [
+        "0",
+        "0"
+      ],
+      "skew_zero_mean_normalization_bias": "1/20",
+      "stale_current_gain_with_current_c_minus_stored_c": "-3/10",
+      "training_dot_delta": "0",
+      "two_block_delta": [
+        "3/20",
+        "-3/20"
+      ]
+    },
+    "faults_rejected": {
+      "excess_radius": true,
+      "independent_coordinate_clip": true,
+      "no_projection": true,
+      "nonfinite_weights": true,
+      "wrong_sign": true
+    }
+  },
+  "environment": {
+    "backend": "cpu",
+    "device_count": 1,
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "jax": "0.6.2",
+    "local_device_count": 1,
+    "numpy": "2.2.6",
+    "process_count": 1,
+    "process_index": 0
+  },
+  "near_collinear_fallbacks": 1934,
+  "near_collinear_large_discrepancies": 1173,
+  "nullspace_dimensions": {
+    "1": 0,
+    "14": 13,
+    "2": 1,
+    "64": 63
+  },
+  "overflow_moment_cases": 1024,
+  "protocol_sha256": "6c01d41051e0966f4d44a12fcf48dfcdcdaaa703b5e339907a3bc4ac029c80c4",
+  "raw_path": "artifacts/phase01/math-v1.jsonl.gz",
+  "raw_sha256": "535cd969b60dce93166e632f62dd65decff564f3e32c0229d835fdb69beac03d",
+  "resolved": {
+    "bfloat16": {
+      "fallback_fraction": 0.08955223880597014,
+      "invariant_failures": 0,
+      "max_parameter_difference": 0.00015000018533316826,
+      "max_relative_neutrality": 9.629622044383e-06,
+      "max_weight_difference": 0.15000000000000002,
+      "n": 536
+    },
+    "float32": {
+      "fallback_fraction": 0.0026041666666666665,
+      "invariant_failures": 0,
+      "max_parameter_difference": 0.0001499999310821446,
+      "max_relative_neutrality": 1.5725198457795599e-06,
+      "max_weight_difference": 0.15000000000000002,
+      "n": 384
+    }
+  },
+  "rows": 7168,
+  "version": "math-audit-v1"
+}

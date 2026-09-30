@@ -1,0 +1,13 @@
+WARNING:2026-09-30 18:46:38,685:jax._src.xla_bridge:798: A Google TPU may be present on this machine, but either a TPU-enabled jaxlib or libtpu is not installed. Falling back to cpu.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/tasma/optimizer/research/experiments/math_audit.py", line 180, in <module>
+    run(args.raw, args.summary)
+  File "/home/tasma/optimizer/research/experiments/math_audit.py", line 148, in run
+    "raw_path": str(output.relative_to(ROOT)),
+  File "/usr/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'artifacts/phase01/math-final.jsonl.gz' is not in the subpath of '/home/tasma/optimizer' OR one path is relative and the other is absolute.

@@ -105,3 +105,28 @@ Holdout validity: [Dwork et al.](https://arxiv.org/abs/1506.02629).
 Agent instructions use concise repo-specific commands and contextual pointers from
 [official AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
 and [current instruction-maintenance advice](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra).
+
+## Phase 01/02 update — 2026-09-30, equations 0.2
+
+The new search targeted projected-gradient failure, normalization/noise and delay
+assumptions, and Monte Carlo design. This supports the signal-floor repair and
+simulation boundaries; it adds no claim of optimizer novelty or LLM performance.
+
+| Query / primary reading | Source-reported evidence used | Local interpretation and limit |
+|---|---|---|
+| Projection conflict, curvature, momentum → [PCGrad, §2.4 and appendices](https://papers.neurips.cc/paper_files/paper/2020/file/3fe78a8acf5fda99de95303940a2420c-Paper.pdf) | Its two-task convex/smooth analysis can reach a conflict point; higher-order behavior needs extra assumptions | Component precedent for projection, not a theorem for AdamW block coefficients |
+| Objective protection → [CAGrad, §3 and Eq. 3](https://papers.nips.cc/paper_files/paper/2021/file/9d27fdf2477ffbff837d73ef7ae23db9-Paper.pdf) | Optimizes worst task progress within a ball around the average gradient | Our equality plane and coordinate blocks differ; no transported convergence claim |
+| Validation-guided layer scales → [MetaLR v2, §2, Algorithm 1](https://arxiv.org/html/2206.01408) | Online provisional step and LR meta-update; later discussion includes validation from training batches | Closest feedback precedent remains; our guide is disclosed optimization data |
+| Alignment and negative direct-proxy outcome → [DoGE, §2 and Appendix C.5](https://arxiv.org/html/2310.15393v2) | Domain weights use alignment; its directly reweighted proxy can underperform uniform baseline even when transferred sampling weights work | Direct feedback need not improve a trajectory; retain equal-information failures |
+| Normalization, heavy tails, adaptive noise → [Sun et al., JMLR 26, §2–3](https://jmlr.org/papers/volume26/24-1991/24-1991.pdf) | Normalization/clipping guarantees require specified smoothness and unbiased stochastic gradient models; momentum variants add assumptions | A bounded coefficient scale alone is not a convergence theorem; exact skew-noise counterexample remains relevant |
+| Stale feedback and dependency → [Dutta et al., assumptions and staleness analysis](https://arxiv.org/html/2003.10579) | Delay interacts with iterates; the analysis uses a stated gradient-difference staleness bound | Our P14 is deterministic; controlled rotation measures missing drift budgets |
+| Simulation uncertainty, design, coverage → [Morris, White & Crowther, Table 6 and §5.3](https://discovery.ucl.ac.uk/id/eprint/10066118/1/2019%20-%20Morris%20-%20simulation%20studies%20tutorial%20-%20stat%20med.pdf) | ADEMP separates aims/generators/estimands/methods/performance; power/coverage estimates need Monte Carlo error | Registered generators, immutable per-draw output and separate verifier; 1,000 cheap draws are not LLM seeds |
+
+Read scope: those method/assumption/negative-result sections, not just abstracts.
+Searches also retrieved adjacent noise-covariance and 2026 preconditioned-SGD
+papers; they were discovery leads, not evidence for an unexamined method. The
+finite search still does not resolve the inaccessible feasible-set projection
+comparison listed above or establish exhaustive novelty. The repaired scale
+preserves the exact constraint rather than adding an epsilon to its denominator.
+The observed XLA rounding issue and the specific repair are independently local
+implementation evidence, not a result reported by these papers.

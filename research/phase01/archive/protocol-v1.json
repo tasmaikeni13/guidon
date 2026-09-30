@@ -1,0 +1,21 @@
+{
+  "version": "math-audit-v1",
+  "frozen_before_draws": true,
+  "seed": 173901,
+  "groups": [1, 2, 14, 64],
+  "gradient_scales": [1e-30, 1e-15, 1e-6, 1, 1e6, 1e15, 1e30],
+  "collinearity_perturbations": [0, 1e-8, 1e-4, 1],
+  "draws_per_cell": 32,
+  "radius": 0.15,
+  "relative_neutrality_limit": 1e-5,
+  "radius_roundoff_limit": 2e-7,
+  "gain_relative_roundoff_limit": 1e-12,
+  "parameter_parity_atol": 3e-6,
+  "parameter_parity_rtol": 2e-5,
+  "weight_parity_atol_when_resolved": 2e-4,
+  "resolved_projected_signal": 1e-3,
+  "numerical_envelope": "finite float32 gradients with max abs <=1e15; FP32 parameters/moments, bfloat16 gradient interface audited after quantization",
+  "fallback_alert_fraction_resolved": 0.01,
+  "extreme_cases_policy": "retain outside-envelope overflow and near-collinear differences, diagnose; never call them exact-real proof failures",
+  "checker": "research/experiments/check_math.py; SVD nullspace and longdouble invariants; injected faulty weights must be rejected"
+}

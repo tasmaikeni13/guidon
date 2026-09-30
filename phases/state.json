@@ -1,17 +1,119 @@
 {
   "schema_version": 1,
-  "protocol_version": "0.1",
+  "protocol_version": "0.2",
   "foundation": "theory_proofs_optimizer_prototypes_and_plans",
   "llm_training_executed": false,
   "phases": [
-    {"id": "01", "status": "not_started", "depends_on": [], "evidence": null},
-    {"id": "02", "status": "not_started", "depends_on": ["01"], "evidence": null},
-    {"id": "03", "status": "not_started", "depends_on": ["01", "02"], "evidence": null},
-    {"id": "04", "status": "not_started", "depends_on": ["01", "03"], "evidence": null},
-    {"id": "05", "status": "not_started", "depends_on": ["02", "03", "04"], "evidence": null},
-    {"id": "06", "status": "not_started", "depends_on": ["05"], "evidence": null},
-    {"id": "07", "status": "not_started", "depends_on": ["05", "06"], "evidence": null},
-    {"id": "08", "status": "not_started", "depends_on": ["06", "07"], "evidence": null},
-    {"id": "09", "status": "not_started", "depends_on": ["01", "02", "03", "04", "05", "06", "07", "08"], "evidence": null}
+    {
+      "id": "01",
+      "status": "in_progress",
+      "depends_on": [],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "02",
+      "status": "invalidated",
+      "depends_on": [
+        "01"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "03",
+      "status": "invalidated",
+      "depends_on": [
+        "01",
+        "02"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "04",
+      "status": "invalidated",
+      "depends_on": [
+        "01",
+        "03"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "05",
+      "status": "invalidated",
+      "depends_on": [
+        "02",
+        "03",
+        "04"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "06",
+      "status": "invalidated",
+      "depends_on": [
+        "05"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "07",
+      "status": "invalidated",
+      "depends_on": [
+        "05",
+        "06"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "08",
+      "status": "invalidated",
+      "depends_on": [
+        "06",
+        "07"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    },
+    {
+      "id": "09",
+      "status": "invalidated",
+      "depends_on": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "evidence": null,
+      "reason": "v0.2 repairs and fresh evidence required"
+    }
+  ],
+  "invalidation_history": [
+    {
+      "previous_protocol": "0.1",
+      "new_protocol": "0.2",
+      "cause": "Phase 01 signal-normalization and XLA realized-correction audit",
+      "invalidated": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "archive": "research/phase01/archive",
+      "new_prerequisites_required": true
+    }
   ]
 }

@@ -1,5 +1,7 @@
 # Phase 05 — Fair pilots and protocol freeze
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** 02/03/04 valid. Pilot both scratch and continued regimes **before** opening
 either final evaluation. Use development data and seeds 101/102; reserve 42/43/44
 for confirmation. Do not substitute pilot results for the full requested runs.
@@ -9,7 +11,7 @@ at 32M training tokens per configuration per pilot seed. Register trial generati
 all trial IDs, early failure rules, and total compute before execution. Use a
 predefined space covering learning rate/schedule, beta2, weight decay, and clipping
 for the strong baseline, plus radius and interval for GUIDON. Include the documented
-defaults. A successive-halving variant is permitted only if its resource allocation
+defaults and the v0.2 signal floor; changing that floor after simulation invalidates 01/02 and their dependents. A successive-halving variant is permitted only if its resource allocation
 and stopping rule are fixed and equally available. Report algorithm-specific search
 dimensions and the entire search cost.
 

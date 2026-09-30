@@ -1,5 +1,7 @@
 # Phase 08 — Independent generalization and complete analysis
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** valid 06/07 and the evaluator/tasks/analysis frozen in 05. Use exact final
 checkpoints; no prompt, checkpoint, task, decoding, or threshold selection based on
 the scores below. Any dataset unable to pass the registered contamination/access

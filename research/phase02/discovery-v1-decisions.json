@@ -1,0 +1,18 @@
+{
+  "intended_transfer": {
+    "intended": true,
+    "target-groups-2": true,
+    "target-groups-64": true,
+    "target-interval-1": true,
+    "target-interval-64": true,
+    "target-radius-0.05": true,
+    "target-radius-0.3": true,
+    "target-noise-0": true,
+    "target-batch_size-128": true
+  },
+  "corruption_prediction": true,
+  "controlled_drift_detected": true,
+  "collinearity_and_noninterference": "checked by separate scalar verifier",
+  "llm_superiority": "unmeasured",
+  "local_mechanism_passed": true
+}

@@ -1,0 +1,1 @@
+Verified 7168 emitted coefficient/weight records; all invariants pass; 1024 overflows flagged

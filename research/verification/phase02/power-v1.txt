@@ -1,0 +1,1 @@
+Power calibration: 240000 synthetic three-pair experiments

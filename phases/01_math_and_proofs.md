@@ -1,5 +1,7 @@
 # Phase 01 — Mathematical behavior and proof fidelity
 
+**Method dependency:** GUIDON v0.2 uses $\tau=\rho_t/\max(\|q\|_\infty,0.01)$ and exact-idempotent numerical reprojection; the old v0.1 plans were invalidated by Phase 01. Require the current hash-verified prerequisite gates.
+
 **Entry:** requested by the user; optimizer foundation present. Existing proofs are
 starting evidence, not signoff for this wider analysis.
 

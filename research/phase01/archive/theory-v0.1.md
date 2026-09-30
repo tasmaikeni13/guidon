@@ -1,6 +1,6 @@
 # GUIDON: Guidance Using Independent Development Objectives and Neutrality
 
-Version 0.2, 2026-09-30. Experimental theory notes, not a paper.
+Version 0.1, 2026-09-30. Experimental theory notes, not a paper.
 
 ## Question and information boundary
 
@@ -75,7 +75,7 @@ Before the first probe set the correction to zero. For age $d=t-s$, use
 
 $$
 \rho_t=\rho\max(0,1-d/K),\qquad
-\tau_t=\rho_t/\max(\|q_t\|_\infty,\kappa),\qquad\kappa>0,
+\tau_t=\begin{cases}\rho_t/\|q_t\|_\infty,&q_t\ne0,\\0,&q_t=0,\end{cases}
 $$
 $$
 \delta_t=\tau_tq_t,\quad w_{t,j}=1+\delta_{t,j},\quad
@@ -86,7 +86,7 @@ $$
 Positive $c_j$ means that increasing the block's descent step improves the guide
 linear model; hence the **plus** sign in $w=1+\delta$. Normalizing $a$ does not change
 its orthogonal complement. Normalizing $c$ only rescales the positive step scale.
-Defaults are $\rho=0.15$, $K=64$, $\kappa=0.01$, first probe at zero-indexed update 128. The signal floor acts only on the positive scale, so $a^\top\delta=0$ still holds. It removes the full-radius discontinuity at $q=0$; below the floor, $\|\delta\|_\infty=\rho_t\|q\|_\infty/\kappa$. Both implementations reproject $q$ once for roundoff control; `projection_idempotent` proves this is the same exact-real equation. They are
+Defaults are $\rho=0.15$, $K=64$, first probe at zero-indexed update 128. They are
 provisional, subject to equally budgeted pilot tuning. Radius zero is AdamW.
 
 In exact arithmetic, for any $\tau\ge0$, $\delta=\tau P_A^\perp C$ solves
@@ -113,8 +113,8 @@ The finite real coefficient statements are machine checked in
 | P2 | `projection_gain` | $C^\top q=\|q\|_2^2$ |
 | P3 | `training_progress`, `normalized_training_progress` | $a_t^\top w_t=a_t^\top\mathbf1$, including raw-coefficient normalization |
 | P4 | `guide_progress`, `guide_nonworsening`, `normalized_guide_progress` | $C_s^\top(w_t-1)=\tau_t\|q_t\|_2^2\ge0$; raw fresh gain includes $\|c_s\|_\infty$ |
-| P5 | `floor_correction_bounded`, `floor_weight_interval`, `floor_weights_positive` | $|\delta_j|\le\rho_t$; $1-\rho_t\le w_j\le1+\rho_t$, positive for $\rho_t<1$ |
-| P6 | `floor_perturbation_energy` | $\sum_j\delta_j^2e_j\le\rho_t^2\sum_je_j$ for all $e_j\ge0$ |
+| P5 | `correction_bounded`, `weight_interval`, `weights_positive` | $|\delta_j|\le\rho_t$; $1-\rho_t\le w_j\le1+\rho_t$, positive for $\rho_t<1$ |
+| P6 | `perturbation_energy` | $\sum_j\delta_j^2e_j\le\rho_t^2\sum_je_j$ for all $e_j\ge0$ |
 | P7 | `conditional_descent` | Taylor upper bound plus step-size budget implies actual training nonincrease |
 | P8 | `guide_loss_comparison` | Explicit upper/lower Taylor bounds plus a gain budget imply guided loss no worse than the baseline step |
 | P9 | `evaluation_noninterference`, `transcript_extensionality` | Fixed authorized input transcript implies the same parameter trajectory for arbitrary evaluation payloads |
@@ -175,12 +175,12 @@ $$|A^\top\delta|\le \varepsilon_{\rm cert}
 \max(\rho_t\|A\|_1,10^{-30}),\qquad\varepsilon_{\rm cert}=10^{-5}.$$
 
 The certificate uses the **realized** correction $w-1$, after floating-point addition,
-and also checks that its stored-guide dot product is nonnegative. The guide sign certificate exceeds a conservative $4B\epsilon_{32}\sum_j|C_j(w_j-1)|$ summation-error budget. JAX places an optimization barrier before forming the realized correction, preventing XLA from cancelling the rounded addition/subtraction. Nonfinite
+and also checks that its stored-guide dot product is nonnegative. Nonfinite
 coefficients or a failed certificate return unit weights and log a fallback.
 Radius bounds in floating point carry rounding error; P5/P6 are exact-real statements.
 Nonfinite training gradients invalidate a run and must be diagnosed.
 Missing/unexpected probe calls are protocol errors; JAX reports `schedule_ok=False`
-and the trainer must abort. It must also assert `numerics_ok`; finite input gradients can still overflow moments or parameter updates. No independent coordinate clipping follows projection.
+and the trainer must abort. No independent coordinate clipping follows projection.
 
 Adam stores $2P$ moment elements. GUIDON adds $B$ coefficients and counters, one
 $O(P)$ train dot reduction per step, an $O(B)$ projection, and a guide
@@ -219,37 +219,3 @@ This composition is apparently distinct from the read closest formulations; nove
 is provisional, including an inaccessible 2026 feasible-set projection comparison,
 and must be checked again before a paper. Evidence and search limits are
 recorded in [the literature ledger](research/literature.md).
-
-## Coefficient uncertainty and drift (Phase 01)
-
-`dot_error_l1`, `population_neutrality_error`, and `stale_gain_lower` in
-[Robustness.lean](proofs/Guidon/Robustness.lean) prove deterministic bounds for
-$|\delta_j|\le\rho_t$:
-
-$$|a_*^\top\delta|\le\rho_t\|a_*-a_t\|_1,\qquad
-c_t^\top\delta\ge c_s^\top\delta-\rho_t\|c_t-c_s\|_1.$$
-
-The first inequality assumes sampled neutrality; the second uses raw coefficients
-expressed at the current adaptive direction, so coefficient drift includes changes
-in both guide gradients and Adam directions. A drift assumption
-$\|c_t-c_s\|_1\le L_c d$ gives an error budget $\rho_t L_c d$;
-the code does not estimate or enforce it. Normalizing stored coefficients hides
-raw magnitude changes, so its certificate alone cannot substitute for that bound.
-
-For fixed adaptive directions and unbiased coefficient estimates with finite
-coordinate variances, Cauchy–Schwarz suggests a noise scale proportional to
-$\rho_t\sum_j\sigma_j/\sqrt{n}$. This is a **measurement model**,
-not a formal theorem about adaptive Adam moments: the same sampled gradient enters
-$a$ and $u$, and they are dependent. Unbiased raw coefficient noise does not imply
-an unbiased normalized correction (the exact skew-noise witness in the Phase 01
-report disproves that claim). Projection sensitivity grows when the training
-coefficient norm approaches zero, and direction sensitivity grows near collinearity;
-the signal floor controls the latter amplification but does not certify population
-progress. Phase 02 measures these effects rather than assuming independence.
-
-The valid nullspace has $B-1$ dimensions for nonzero $a$ and $B$ for $a=0$
-by rank-nullity. One nonzero training group therefore has no correction. Canonical
-tied parameters occur once; accumulation precedes the common global clipping.
-A positive global clip rescales $a$ for a fixed $u$, preserving its nullspace, but
-clipping changes Adam moments and the protected gradient is the supplied clipped
-gradient. Future trainers must preserve these interface assumptions.
