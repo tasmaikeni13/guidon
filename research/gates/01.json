@@ -1,0 +1,270 @@
+{
+  "code_commit": "0ff8b368e1d0f82afde061a2ecf77f76d9017af4",
+  "code_commit_scope": "Final checked source/evidence snapshot; original executed snapshots and failures retained by their source hashes",
+  "commands": [
+    "uv run pytest -q tests/test_reference.py tests/test_jax.py tests/test_research_audits.py",
+    "uv run python -m research.experiments.math_audit",
+    "uv run python -m research.experiments.verify_math",
+    "cd proofs && lake build",
+    "cd proofs && lake env lean Audit.lean"
+  ],
+  "controller_equations": {
+    "adam": "Training-only shared first/second moments, bias correction and fixed decoupled weight decay",
+    "age": "rho_t=rho*max(0,1-age/interval); cached guide coefficients reprojected against current training a",
+    "coefficients": "a_b=<g_b,u_b>; fresh c_b=<h_b,u_b>, normalized by max absolute coefficient and stored only on scheduled probes",
+    "faults": "Unit weights for unsafe coefficient certificates; nonfinite moments/parameters are explicit run faults, not silent recovery",
+    "floating_certificate": "Actual rounded w-1 must meet relative neutrality and conservative nonnegative proxy-gain roundoff certificate; JAX optimization barrier retained",
+    "projection": "q=C-A*(A dot C)/(A dot A), zero A uses q=C; second numerical projection is exact-real idempotence",
+    "scale": "tau=rho_t/max(max_abs(q),0.01); w=1+tau*q"
+  },
+  "dataset_and_checkpoint_hashes": null,
+  "dataset_reason": "coefficient audit only; no external datasets or checkpoints",
+  "decision_statistics": {
+    "cells": 224,
+    "independent_checker_self_test": {
+      "exact": {
+        "adverse_momentum_a": [
+          "-1",
+          "-1"
+        ],
+        "decay_cancelled_base": [
+          "0",
+          "0"
+        ],
+        "decay_cancelled_guided": [
+          "3/20",
+          "-3/20"
+        ],
+        "fresh_raw_gain": "3/10",
+        "large_curvature_train_after": "401/4",
+        "large_curvature_train_before": "0",
+        "near_zero_one_sided_delta_limit": [
+          "3/20",
+          "-3/20"
+        ],
+        "opposite_population_dot_correction": "-3/10",
+        "p10_evaluation_losses": [
+          "1",
+          "4"
+        ],
+        "p10_train_losses": [
+          "1",
+          "0"
+        ],
+        "q_zero_delta": [
+          "0",
+          "0"
+        ],
+        "skew_zero_mean_normalization_bias": "1/20",
+        "stale_current_gain_with_current_c_minus_stored_c": "-3/10",
+        "training_dot_delta": "0",
+        "two_block_delta": [
+          "3/20",
+          "-3/20"
+        ]
+      },
+      "faults_rejected": {
+        "excess_radius": true,
+        "independent_coordinate_clip": true,
+        "no_projection": true,
+        "nonfinite_weights": true,
+        "wrong_sign": true
+      }
+    },
+    "passed": true,
+    "public_theorems_built_and_audited": 32,
+    "raw_sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24",
+    "resolved_fallbacks": 0,
+    "verified_rows": 7168,
+    "visible_moment_overflows": 1024
+  },
+  "depends_on": [],
+  "environment": {
+    "backend": "cpu",
+    "device_count": 1,
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "jax": "0.6.2",
+    "local_device_count": 1,
+    "numpy": "2.2.6",
+    "process_count": 1,
+    "process_index": 0
+  },
+  "load_bearing_theorems": [
+    "conditional_descent",
+    "correction_bounded",
+    "dot_error_l1",
+    "effective_degrees_of_freedom",
+    "evaluation_noninterference",
+    "floorScale_nonneg",
+    "floor_correction_bounded",
+    "floor_perturbation_energy",
+    "floor_weight_interval",
+    "floor_weights_positive",
+    "generalization_counterexample",
+    "guide_loss_comparison",
+    "guide_nonworsening",
+    "guide_progress",
+    "normalized_guide_progress",
+    "normalized_reconstruction",
+    "normalized_training_progress",
+    "perturbation_energy",
+    "population_neutrality_error",
+    "projection_gain",
+    "projection_idempotent",
+    "projection_neutral",
+    "quadratic_optimality",
+    "quadratic_optimum_attained",
+    "stale_gain_lower",
+    "stepScale_nonneg",
+    "training_progress",
+    "transcript_extensionality",
+    "weight_interval",
+    "weights_positive",
+    "zero_constraint_degrees_of_freedom",
+    "zero_radius"
+  ],
+  "next_action": "Phase 02 is now renewed against this exact prerequisite; phases 03-09 require separate requests and fresh phase-specific evidence.",
+  "outstanding_assumptions": [
+    "Float32/bfloat16 checks are finite numerical evidence, not formal floating-point proof",
+    "Training harness must canonicalize ties, accumulate/clip identically and abort on schedule/numerics faults",
+    "No independent generalization, Transformer convergence or TPU performance guarantee",
+    "Noise/adaptive-moment joint distribution and raw coefficient drift must be measured in Phase 02 and later pilots"
+  ],
+  "pass_reason": "All 32 public theorem statements compile with exact domains and only standard foundations. The independent checker verifies all 7168 actual-emitted coefficient/weight cases; resolved signals meet parity/fallback limits and moment-overflow faults are visible. Every named failure boundary, normalization bias, population/drift limit and unresolved adaptive-noise assumption is retained.",
+  "phase": "01",
+  "protocol_decisions": {
+    "final_math_audit": {
+      "certificate": "optimization barrier on realized weights; positive gain exceeds conservative summation roundoff bound",
+      "checker": "research/experiments/check_math.py; SVD nullspace and longdouble invariants; injected faulty weights must be rejected",
+      "collinearity_perturbations": [
+        0,
+        1e-08,
+        0.0001,
+        1
+      ],
+      "draws_per_cell": 32,
+      "extreme_cases_policy": "retain outside-envelope overflow and near-collinear differences, diagnose; never call them exact-real proof failures",
+      "fallback_alert_fraction_resolved": 0.01,
+      "frozen_before_draws": true,
+      "gain_relative_roundoff_limit": 1e-12,
+      "gradient_scales": [
+        1e-30,
+        1e-15,
+        1e-06,
+        1,
+        1000000.0,
+        1000000000000000.0,
+        1e+30
+      ],
+      "groups": [
+        1,
+        2,
+        14,
+        64
+      ],
+      "numerical_envelope": "finite float32 gradients with max abs <=1e15; FP32 parameters/moments, bfloat16 gradient interface audited after quantization",
+      "parameter_parity_atol": 3e-06,
+      "parameter_parity_rtol": 2e-05,
+      "radius": 0.15,
+      "radius_roundoff_limit": 2e-07,
+      "regularization": "tau=rho/max(norm_inf(q),signal_floor); exact-idempotent second projection",
+      "relative_neutrality_limit": 1e-05,
+      "resolved_projected_signal": 0.01,
+      "seed": 173903,
+      "signal_floor": 0.01,
+      "version": "math-audit-v3",
+      "weight_parity_atol_when_resolved": 0.0002
+    },
+    "finite_arithmetic_envelope": "Moment-overflow cells retained and numerics_ok=false; resolved-signal parity claim is limited to q norm >0.01 and the stated finite scales",
+    "original_failure_protocols": [
+      "research/phase01/archive/protocol-v1.json",
+      "research/phase01/archive/protocol-v2.json"
+    ],
+    "raw_emitted_values": "Independent checker uses emitted a, C and actual rounded w; no reconstruction hides FP32 error"
+  },
+  "protocol_version": "0.2",
+  "raw_artifacts": [
+    {
+      "bytes": 2126981,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-final.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24"
+    },
+    {
+      "bytes": 172279,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v1.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "535cd969b60dce93166e632f62dd65decff564f3e32c0229d835fdb69beac03d"
+    },
+    {
+      "bytes": 2427196,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v2.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "6cabebdb8843de6d9ad9ea4297a8bfdbdc7b60e49795c7b7574f2c87b7389b59"
+    },
+    {
+      "bytes": 2126981,
+      "format": "gzip JSONL",
+      "path": "artifacts/phase01/math-v3.jsonl.gz",
+      "retention": "immutable local file outside Git; regenerate from pinned scripts/protocols",
+      "sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24"
+    }
+  ],
+  "schema_version": 1,
+  "source_and_evidence_sha256": {
+    "AGENTS.md": "948c53fb86ae832208e6a6b72e14d8ae23c932aeab7c85e4a8d6e8e5bfec850d",
+    "configs/continued_pythia160m.json": "267735ad930c33c3104dd89891d25841e84f9fada0437d716d200b29c0c1b2bf",
+    "configs/pretrain_125m.json": "7a9089a274eceeeedb5a7ef1752f96e1a332d046812df0d2108cf0ec1f156223",
+    "phases/01_math_and_proofs.md": "a6800d5cb0eaa48d71dc6348ede858b8b467387e405b639805804225da68dbce",
+    "proofs/Audit.lean": "0d723c426ffdcc9eb8e2febcc1a439ba1b5203b6014fe08864792ddeade72a39",
+    "proofs/Guidon.lean": "e22857e06fc2ef67d7d09574ee5c77d4321e9011ce9d9a1415af265d8fc4dbc8",
+    "proofs/Guidon/Core.lean": "23f1c2cef8ea54a1dd75cfa4ba05aad4fa47099c19c3d91c7e7da4cde2ecc385",
+    "proofs/Guidon/Isolation.lean": "b396ab28d0fb4352057ec957ec42bafda8814cff5f402b99411393165b855c24",
+    "proofs/Guidon/Robustness.lean": "7f53d538990620cae5f66a93b3cf14239f323c15a951300bc0eea1c7acc9dd87",
+    "proofs/lake-manifest.json": "ab016424b044477e25d2d3fed948d7a9c9e1a78da8a0c9a78728fa99359b1241",
+    "proofs/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "pyproject.toml": "9c67a7de2b349bdbe2a7823d195230860a7c38b4f5b323469819aa14d4626d49",
+    "research/experiments/check_math.py": "e00a492e53b893600319237d3af3e866e6eb7a03e57878f3aa4b4da2397053db",
+    "research/experiments/math_audit.py": "7548d89203de4e961ca281f90d8435fff3c7b6085db31f9963fda48cde54f7cf",
+    "research/experiments/verify_math.py": "05c16cc574b66b7a9638811bdc1b5abd5569b64f40a4f5fe493d22f6b3120c85",
+    "research/literature.md": "16456479e8341d92d1f2c2b5b26c9aa2b019a4543ccf6275459c6b72f806e983",
+    "research/phase01/archive/continued_pythia160m-v0.1.json": "27c0fedbfb2b145f851101a2ba44e6f22dfc58a86005b021da8e56685b391a07",
+    "research/phase01/archive/math_audit_v1.py": "8a413b5e9071dd6c7fee3ff62c91558d99cd8ca042b8669ec285ff4bdf49ce39",
+    "research/phase01/archive/pretrain_125m-v0.1.json": "6d86753f0572c4eb517208c9ec4060e42c346a82814e23e564d6ab6b69ea6bc3",
+    "research/phase01/archive/protocol-v1.json": "6c01d41051e0966f4d44a12fcf48dfcdcdaaa703b5e339907a3bc4ac029c80c4",
+    "research/phase01/archive/protocol-v2.json": "c1e5ab870bff27054af7d100e79a82e9b9a8cd8806d1ef7cf0838dba7290688b",
+    "research/phase01/archive/theory-v0.1.md": "f16e5d3c4adcd2af713a2ae7234ac71a2a6d51054cae5c7a0d2bc146c4c0b9b0",
+    "research/phase01/claims.md": "2e27e78ab65af1fdfe26d3c74a3a4169bb02c2c575a1a40f54ec6fa69749b40c",
+    "research/phase01/math-v1.json": "a48f05a65c0cef957b55ce21e6470fb14d2635e83786b6538d7b31e9baeff683",
+    "research/phase01/math-v2.json": "bbacf9ad787e74ac7af158d39fd47a7bea8ce6d1a4833e34b691800e46a09d56",
+    "research/phase01/math-v3.json": "c08455a7182b5b2c0109b36f6ca8089a92398435dff39aa0ef0c51b09796ca6a",
+    "research/phase01/proof_fidelity_v0.2.md": "1359c33c68b7104b22f26cf658bab4bb4a6a9930d45137fd0e23abec6cdc6df3",
+    "research/phase01/protocol.json": "a3f71b4f6b3d3b0329a3387f13a1bec0beee95de7204703ab0dea432532407b5",
+    "research/phase01/verification.json": "c1595b57614eaac5f5b6758494a6e525d57a75f318815797e55f4bf085697d13",
+    "research/verification/phase01/axioms.txt": "eec431dce52692827e270c83f99962a87ff6a8aa71f1b9254bd99944240ae1d9",
+    "research/verification/phase01/independent-verifier.txt": "7c984a0ddc53fa19fac17f2baede9cfe19c063a885c3b72c5fa6ea9402fd63a1",
+    "research/verification/phase01/lean-build.txt": "0c5ed8e9ebe12e52518ebb5b71708676d4b603270a744c2266ec6fd1d7db261d",
+    "research/verification/phase01/math-final.txt": "5938074f53bcd5035d0c7b8a2d6e1d8933696b54b2192ea0ba03af18ccae97dc",
+    "research/verification/phase01/python-focused.txt": "4cbe4ed8d1d5596ae77430a9b9a1a0eebbcb9c6575a0ee042a88cd974bfa1a94",
+    "src/guidon/__init__.py": "8c89e428f40cd78ef919361061f9388067d9b802853a4ebdd5a42a34e385aed8",
+    "src/guidon/data_boundary.py": "54bdefc798417edcd0407aedd586bd70dca1b3c1382d1f15f4ce2258e700d709",
+    "src/guidon/jax_optimizer.py": "ced6203c755c18eff9455f0313c6bb56105615e12e91193e6ee95d864766ba39",
+    "src/guidon/protocol.py": "33ae8b6d6fab67ad3d99e20d1e54aa0d8c57f6a32f3a7c20adb2393a526f1764",
+    "src/guidon/reference.py": "a572a62840c5e4a9b323888c8e55fc5a13d1350f22a445d70bf4437d2bbcd108",
+    "tests/test_data_boundary.py": "b12e11b81be9df7e772fbfccedf55b7c44ef1bf8841375282bf30c324a43ccff",
+    "tests/test_jax.py": "ca7280af3ca7afeb13a8a6ef352b612b23f1096d4fc592da3d58bace84872081",
+    "tests/test_protocol.py": "db8985389a76f2b0a77ee3ec0f57864b8717ead1186961e3932718b3f2d58a98",
+    "tests/test_reference.py": "8f15a6330d3a0b1b393973657be32e4d66aa86ad39a3a4ace3721a81388b26be",
+    "tests/test_research_audits.py": "9a66b8d662c66749810e0e79566750326620bf1ae6e7115192e98ddb0c6deb85",
+    "tests/test_sharding.py": "6c6e1a60052370133bdb632f315a2ccf5be264998e6b85ea9027d28a546eae60",
+    "theory.md": "a990400b1bbb97fb0647aa85dd45e6955c444f4c54e3ff59292c0312d352153d",
+    "uv.lock": "ac24bdc22d80a2065278f8383b05dc33273c49a18314ab2e78a7012e50a69821"
+  },
+  "status": "passed",
+  "theory_version": "0.2"
+}
