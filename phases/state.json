@@ -19,14 +19,15 @@
       "previous_protocol": "0.1"
     }
   ],
+  "llm_confirmation_executed": false,
   "llm_training_executed": false,
-  "next_action": "When separately requested, start Phase 03: executable corpus preparation, deduplication/source-group and benchmark exclusions, pinned tokenizer/model/data records, and sealed reader/process boundaries; verify these prerequisite gates first.",
+  "next_action": "Resume from research/HANDOFF.md. Do not restart the stopped corpus-wide index. Implement direct tokenization of pinned FineWeb-Edu sample-10BT into a deterministic 2.5B training tape and a registered 600M pilot subset; complete actual Phase 03/04 audits before any sweep. Keep the 2.5B confirmation budget and seeds 42,43,44 unchanged.",
   "phases": [
     {
       "depends_on": [],
       "evidence": {
         "path": "research/gates/01.json",
-        "sha256": "74487881ed51dc929ab64b91ceeb9882ff475085585dacb7493011e7148165ac"
+        "sha256": "b6535690fbc387cce702a4c1168e2f26bea6bfa306b5ecc7739035a98247cdc7"
       },
       "id": "01",
       "reason": "All 32 public theorem statements compile with exact domains and only standard foundations. The independent checker verifies all 7168 actual-emitted coefficient/weight cases; resolved signals meet parity/fallback limits and moment-overflow faults are visible. Every named failure boundary, normalization bias, population/drift limit and unresolved adaptive-noise assumption is retained.",
@@ -38,7 +39,7 @@
       ],
       "evidence": {
         "path": "research/gates/02.json",
-        "sha256": "67718b8666c90251aee98317740383ba26e99073556ffcd2f544f7bd2fb704ab"
+        "sha256": "cde8d5b2bcb508ee6570fa83f7c089dcd8379438006ec8d52017c31883497a74"
       },
       "id": "02",
       "reason": "Registered invariant coverage, all intended local population-transfer and signal-corruption predictions pass independent discovery/confirmation verification. Fresh interaction tests confirm the stale-current boundary while preserving original absent behavior. All-arm mismatch failures, information-control wins, null/negative conditions, simulation limitations and weak three-pair statistical resolution are documented. This passes Phase 02 only; it is not LLM confirmation.",
@@ -51,8 +52,8 @@
       ],
       "evidence": null,
       "id": "03",
-      "reason": "Prior 0.1 assumptions invalidated and plans rewritten for 0.2; no phase-specific execution or renewed gate yet",
-      "status": "invalidated"
+      "reason": "The original full-corpus index was stopped by user direction at 6,640,000 indexed FineWeb-Edu documents. It produced no prepared token tapes or passed gate. User has directed a simpler pinned sample-10BT token stream with no corpus-wide dedup; see research/HANDOFF.md. Direct tokenization, exact capacity, manifests, reader and sealing audits remain pending.",
+      "status": "in_progress"
     },
     {
       "depends_on": [
@@ -61,8 +62,8 @@
       ],
       "evidence": null,
       "id": "04",
-      "reason": "Prior 0.1 assumptions invalidated and plans rewritten for 0.2; no phase-specific execution or renewed gate yet",
-      "status": "invalidated"
+      "reason": "Trainer/evaluator/checkpoints implemented; source parity and compiled TPU kernel checks pass; full model and real-data profiling/resume evidence pending.",
+      "status": "in_progress"
     },
     {
       "depends_on": [
@@ -72,8 +73,8 @@
       ],
       "evidence": null,
       "id": "05",
-      "reason": "Prior 0.1 assumptions invalidated and plans rewritten for 0.2; no phase-specific execution or renewed gate yet",
-      "status": "invalidated"
+      "reason": "Rewritten as a 125M/600M-token/2500-update hyperparameter sweep with 3 independent pilot seeds; not authorized to execute yet.",
+      "status": "not_started"
     },
     {
       "depends_on": [

@@ -1,0 +1,167 @@
+{
+  "coverage": {
+    "arc_easy": {
+      "artifacts": [
+        {
+          "path": "ARC-Easy/test-00000-of-00001.parquet",
+          "sha256": "4160597d618ae851c7eb04e281574f3f654776216ac6b6641588d64527b47177"
+        },
+        {
+          "path": "ARC-Easy/train-00000-of-00001.parquet",
+          "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5"
+        },
+        {
+          "path": "ARC-Easy/validation-00000-of-00001.parquet",
+          "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 25981,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "rows": 5197,
+      "uncovered_short_rows": 0
+    },
+    "gsm8k": {
+      "artifacts": [
+        {
+          "path": "main/test-00000-of-00001.parquet",
+          "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+        },
+        {
+          "path": "main/train-00000-of-00001.parquet",
+          "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 17584,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "rows": 8792,
+      "uncovered_short_rows": 0
+    },
+    "hellaswag": {
+      "artifacts": [
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "sha256": "e572fd5579bd1768b1985f47234f8bbe29247aca200a778b635bffc637714a41"
+        },
+        {
+          "path": "data/train-00000-of-00001.parquet",
+          "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02"
+        },
+        {
+          "path": "data/validation-00000-of-00001.parquet",
+          "sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 299750,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "Rowan/hellaswag",
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "rows": 59950,
+      "uncovered_short_rows": 0
+    },
+    "lambada_openai": {
+      "artifacts": [
+        {
+          "path": "default/test/default.parquet",
+          "sha256": "99d8a9e54cda761c6340ddd4fa6feda7f846ffb0e716afa52968dea75495eea7"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 5153,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "EleutherAI/lambada_openai",
+      "revision": "900124bf3b8235c6daf21033af9948b3f07346c4",
+      "rows": 5153,
+      "uncovered_short_rows": 0
+    },
+    "math": {
+      "artifacts": [
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "sha256": "7dca8d6e41af88ecf82f2b5f36eb5530e083aaaa86ee325f62bd5c31535178c6"
+        },
+        {
+          "path": "data/train-00000-of-00001.parquet",
+          "sha256": "eca6e667f4305dd5e5ba09b4fd55e7f3174a0fbe361cdfd4c44758b593a76933"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 24992,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "DigitalLearningGmbH/MATH-lighteval",
+      "revision": "0530c78699ea5e8eb5530600900e1f328b48acad",
+      "rows": 12500,
+      "uncovered_short_rows": 0
+    },
+    "piqa": {
+      "artifacts": [
+        {
+          "sha256": "54d32a04f59a7e354396f321723c8d7ec35cc6b08506563d8d1ffcc15ce98ddd",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "a73f46cb5d72b2cc399522a79f27728a429d9b89d9a236243fcfda8c02588d54",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "f55986008cf9f1a336854936b82cec4ccba6fb5c698d221861299fb508840a8c",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "402f1e2e61347db773e6e5e0a6b24f97396b59f6fd046dcdcbc12f483ac8553b",
+          "url": "https://yonatanbisk.com/piqa/data/tests.jsonl"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 60546,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "ybisk/piqa",
+      "revision": "2e8ac2dffd59bac8c3c6714948f4c551a0848bb0",
+      "rows": 21035,
+      "uncovered_short_rows": 0
+    },
+    "winogrande": {
+      "artifacts": [
+        {
+          "path": "winogrande_xl/test-00000-of-00001.parquet",
+          "sha256": "100885ec03a67f318d50f8a485cb7e55c9ed88fcefbc565c2907fc98de7f8444"
+        },
+        {
+          "path": "winogrande_xl/train-00000-of-00001.parquet",
+          "sha256": "5d8c38ad12b9a6c88f79b6e00aaf0f40781f93d4f94816f6cff2b67625d67399"
+        },
+        {
+          "path": "winogrande_xl/validation-00000-of-00001.parquet",
+          "sha256": "f9d914d1818c0aba98cabdf8af2bc4bd943c462b9c5e7062647e05c2ce3315d1"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 130296,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "allenai/winogrande",
+      "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+      "rows": 43432,
+      "uncovered_short_rows": 0
+    }
+  },
+  "math_source": "pinned MATH mirror; authors' original data provenance must be audited",
+  "no_model_evaluation_performed": true,
+  "references": {
+    "path": "data/benchmark-preparation-v2/references.jsonl",
+    "sha256": "bb07724bfedffdd025b5b290c0145584252f4f12f52bc9f85d7f87f32c1c56eb"
+  },
+  "schema_version": 1
+}

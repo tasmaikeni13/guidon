@@ -1,0 +1,59 @@
+{
+  "artifact_sha256": {
+    "config.json": "76eb275107220e450d31258f792a2efcbee109d8b62ae0088260057dec06362f",
+    "model.safetensors": "bbaae5c00917b163baa499fc8eb64859ee0c850c5fdecfc32f4d70dc07213575",
+    "special_tokens_map.json": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+    "tokenizer.json": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+    "tokenizer_config.json": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f"
+  },
+  "config": {
+    "activation": "gelu",
+    "attention_heads": 12,
+    "attention_kernel": "xla",
+    "compute_dtype": "float32",
+    "family": "gpt_neox",
+    "hidden_size": 768,
+    "layer_norm_epsilon": 1e-05,
+    "layers": 12,
+    "max_position_embeddings": 2048,
+    "mlp_size": 3072,
+    "parallel_residual": true,
+    "rematerialize": false,
+    "rotary_base": 10000,
+    "rotary_pct": 0.25,
+    "tie_embeddings": false,
+    "vocab_size": 50304
+  },
+  "environment": {
+    "backend": "cpu",
+    "jax": "0.6.2",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.55.4"
+  },
+  "import_implementation_sha256": "4e11e816dc128c16593caf6f0626d3f0a4a2e6cc522afa313af0f20556336184",
+  "model_id": "EleutherAI/pythia-160m-deduped",
+  "observations": [
+    {
+      "length": 1,
+      "maximum_absolute_error": 0.0009765625
+    },
+    {
+      "length": 7,
+      "maximum_absolute_error": 0.003326416015625
+    },
+    {
+      "length": 32,
+      "maximum_absolute_error": 0.00726318359375
+    }
+  ],
+  "parameter_count": 162322944,
+  "passed": true,
+  "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+  "scope": "pinned pretrained GPT-NeoX FP32 full-vocabulary source logits",
+  "source_implementation_sha256": "5fd626ffdddf3155d5280b454f24a4c664d8e9f00d0cffa4559d6ee617c713e5",
+  "source_parameter_count": 162322944,
+  "tolerance": {
+    "atol": 3e-05,
+    "rtol": 3e-05
+  }
+}

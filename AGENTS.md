@@ -1,10 +1,12 @@
 # Working on GUIDON
 
-This is an experimental optimizer foundation. The user will start research phases
-separately. Creating or reviewing the repository does not authorize large training
-runs, TPU provisioning, or opening sealed evaluation. When a phase is requested,
-follow [phases/README.md](phases/README.md) and that phase's document. Complete its
-authorized repairs without requesting repeated permission for routine fixes.
+This is an active research task. When the user says “read AGENTS.md and continue
+where left,” first read [research/HANDOFF.md](research/HANDOFF.md), then continue
+the listed next action without asking the user to repeat context. The handoff is
+the current source of truth for progress; keep it updated as work advances.
+Complete the currently authorized Phase 03/04 work and the Phase 05 protocol
+rewrite. Do not start final confirmation, open sealed evaluation, or provision a
+new TPU. Do not run large sweeps unless the user explicitly directs execution.
 
 ## Where to look
 
@@ -15,6 +17,7 @@ authorized repairs without requesting repeated permission for routine fixes.
 - `configs/`: proposed protocols; never silently alter the 125M/2.5B/42,43,44 contract.
 - `research/`: literature, boundaries, live evidence, and failed branches.
 - `phases/state.json`: gate status; use evidence hashes when changing status.
+- `research/HANDOFF.md`: exact continuation point and current run state.
 - `skills/`: user-supplied research methods and references; read relevant ones.
 
 ## Scientific rules
@@ -22,8 +25,12 @@ authorized repairs without requesting repeated permission for routine fixes.
 Treat guidance as optimization data. Training readers get only `train` and
 `guidance`; development is for pilot selection; final validation/test remain sealed
 until the registered confirmation. Never tune on a guidance score and label it
-independent evaluation. Deduplicate before packing; verify source groups, benchmark
-exclusions, token cursors, and dataset/model revisions.
+independent evaluation. The user has explicitly chosen the pinned FineWeb-Edu
+`sample-10BT` stream and waived corpus-wide deduplication for this task. Use a
+deterministic, documented token slice from that stream; do not resume the stopped
+corpus-wide dedup/index job. Keep benchmark/evaluation boundaries and role-restricted
+readers intact, and state plainly that the resulting run does not establish
+deduplication-based leakage isolation.
 
 Maintain strong AdamW, equal tuning budgets, and the AdamW-plus-guidance information
 control. Retain every required seed and all null, failed, and restarted runs. No
@@ -56,8 +63,9 @@ lake env lean Audit.lean
 Use focused tests for code changes; run all listed checks before a foundation release.
 Python follows PEP 8 through Ruff. Prefer explicit types, small pure functions, and
 comments explaining mathematical choices. A compiled CPU test is not TPU profiling.
-The training harness, dataset builder, Pallas kernels, and full paper are future
-phase deliverables, not existing completed capabilities.
+Check [research/HANDOFF.md](research/HANDOFF.md) for the exact in-progress
+deliverables and remaining verification. Do not describe partial data preparation,
+compiled kernels, or code presence as a completed training/evaluation result.
 
 Do not commit datasets, checkpoints, credentials, or local dependency caches. Keep
 small auditable records and links/hashes for large artifacts. Commit and push work

@@ -125,7 +125,7 @@
     "zero_constraint_degrees_of_freedom",
     "zero_radius"
   ],
-  "next_action": "Phases 03/04 authorized and in progress; no downstream gate is promoted by this renewal.",
+  "next_action": "Phase 02 is now renewed against this exact prerequisite; phases 03-09 require separate requests and fresh phase-specific evidence.",
   "outstanding_assumptions": [
     "Float32/bfloat16 checks are finite numerical evidence, not formal floating-point proof",
     "Training harness must canonicalize ties, accumulate/clip identically and abort on schedule/numerics faults",
@@ -215,20 +215,9 @@
       "sha256": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24"
     }
   ],
-  "renewal": {
-    "equivalence_record": "research/phase03/foundation-equivalence-v1.json",
-    "equivalence_record_sha256": "d08bd4593259b286f02d349425ebaa946ecac1dccef48cd213441768ce6c9d56",
-    "historical_gate_path": "research/gates/archive/01-108cbd5.json",
-    "historical_gate_sha256": "74487881ed51dc929ab64b91ceeb9882ff475085585dacb7493011e7148165ac",
-    "reason": "Administrative scope migration after exact raw recovery; all scientific evidence unchanged"
-  },
-  "runtime_package_versions": {
-    "jax": "0.6.2",
-    "jaxlib": "0.6.2",
-    "numpy": "2.2.6"
-  },
   "schema_version": 1,
   "source_and_evidence_sha256": {
+    "AGENTS.md": "948c53fb86ae832208e6a6b72e14d8ae23c932aeab7c85e4a8d6e8e5bfec850d",
     "configs/continued_pythia160m.json": "267735ad930c33c3104dd89891d25841e84f9fada0437d716d200b29c0c1b2bf",
     "configs/pretrain_125m.json": "7a9089a274eceeeedb5a7ef1752f96e1a332d046812df0d2108cf0ec1f156223",
     "phases/01_math_and_proofs.md": "a6800d5cb0eaa48d71dc6348ede858b8b467387e405b639805804225da68dbce",
@@ -239,10 +228,9 @@
     "proofs/Guidon/Robustness.lean": "7f53d538990620cae5f66a93b3cf14239f323c15a951300bc0eea1c7acc9dd87",
     "proofs/lake-manifest.json": "ab016424b044477e25d2d3fed948d7a9c9e1a78da8a0c9a78728fa99359b1241",
     "proofs/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "pyproject.toml": "9c67a7de2b349bdbe2a7823d195230860a7c38b4f5b323469819aa14d4626d49",
     "research/experiments/check_math.py": "e00a492e53b893600319237d3af3e866e6eb7a03e57878f3aa4b4da2397053db",
     "research/experiments/math_audit.py": "7548d89203de4e961ca281f90d8435fff3c7b6085db31f9963fda48cde54f7cf",
-    "research/experiments/renew_foundation_gates.py": "1f2f894a6bc4f8bb1b06dfb5760e5d6979e1686a7b3943f3aef9db186b9bb022",
-    "research/experiments/verify_gates.py": "a35b2eb33e1fe4a5010f755cf767ff5228c2eda27ef1176002ef4e8c706c9965",
     "research/experiments/verify_math.py": "05c16cc574b66b7a9638811bdc1b5abd5569b64f40a4f5fe493d22f6b3120c85",
     "research/literature.md": "16456479e8341d92d1f2c2b5b26c9aa2b019a4543ccf6275459c6b72f806e983",
     "research/phase01/archive/continued_pythia160m-v0.1.json": "27c0fedbfb2b145f851101a2ba44e6f22dfc58a86005b021da8e56685b391a07",
@@ -258,8 +246,6 @@
     "research/phase01/proof_fidelity_v0.2.md": "1359c33c68b7104b22f26cf658bab4bb4a6a9930d45137fd0e23abec6cdc6df3",
     "research/phase01/protocol.json": "a3f71b4f6b3d3b0329a3387f13a1bec0beee95de7204703ab0dea432532407b5",
     "research/phase01/verification.json": "c1595b57614eaac5f5b6758494a6e525d57a75f318815797e55f4bf085697d13",
-    "research/phase03/foundation-equivalence-v1.json": "d08bd4593259b286f02d349425ebaa946ecac1dccef48cd213441768ce6c9d56",
-    "research/phase03/upstream-raw-recovery-v1.json": "b638af974a60d9b23d8207164f8b1509ccb338d82943814e464f9ce8b08da32f",
     "research/verification/phase01/axioms.txt": "eec431dce52692827e270c83f99962a87ff6a8aa71f1b9254bd99944240ae1d9",
     "research/verification/phase01/independent-verifier.txt": "7c984a0ddc53fa19fac17f2baede9cfe19c063a885c3b72c5fa6ea9402fd63a1",
     "research/verification/phase01/lean-build.txt": "0c5ed8e9ebe12e52518ebb5b71708676d4b603270a744c2266ec6fd1d7db261d",
@@ -267,7 +253,6 @@
     "research/verification/phase01/python-focused.txt": "4cbe4ed8d1d5596ae77430a9b9a1a0eebbcb9c6575a0ee042a88cd974bfa1a94",
     "src/guidon/__init__.py": "8c89e428f40cd78ef919361061f9388067d9b802853a4ebdd5a42a34e385aed8",
     "src/guidon/data_boundary.py": "54bdefc798417edcd0407aedd586bd70dca1b3c1382d1f15f4ce2258e700d709",
-    "src/guidon/gates.py": "f74a215bde545f28f01c75b05f9729d2e9ba6c4877c61659f39a8a1a78bb3601",
     "src/guidon/jax_optimizer.py": "ced6203c755c18eff9455f0313c6bb56105615e12e91193e6ee95d864766ba39",
     "src/guidon/protocol.py": "33ae8b6d6fab67ad3d99e20d1e54aa0d8c57f6a32f3a7c20adb2393a526f1764",
     "src/guidon/reference.py": "a572a62840c5e4a9b323888c8e55fc5a13d1350f22a445d70bf4437d2bbcd108",
@@ -277,7 +262,8 @@
     "tests/test_reference.py": "8f15a6330d3a0b1b393973657be32e4d66aa86ad39a3a4ace3721a81388b26be",
     "tests/test_research_audits.py": "9a66b8d662c66749810e0e79566750326620bf1ae6e7115192e98ddb0c6deb85",
     "tests/test_sharding.py": "6c6e1a60052370133bdb632f315a2ccf5be264998e6b85ea9027d28a546eae60",
-    "theory.md": "a990400b1bbb97fb0647aa85dd45e6955c444f4c54e3ff59292c0312d352153d"
+    "theory.md": "a990400b1bbb97fb0647aa85dd45e6955c444f4c54e3ff59292c0312d352153d",
+    "uv.lock": "ac24bdc22d80a2065278f8383b05dc33273c49a18314ab2e78a7012e50a69821"
   },
   "status": "passed",
   "theory_version": "0.2"

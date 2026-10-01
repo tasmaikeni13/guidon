@@ -1,0 +1,50 @@
+{
+  "external_generation": {
+    "execution": "guidon-custody-phase03-v1-tnr8j",
+    "image": "gcr.io/google.com/cloudsdktool/google-cloud-cli@sha256:be4876b4311056bf3ce236a14a7dea1288e70b7cfea2454ea15e4165c819921f",
+    "job": "guidon-custody-phase03-v1",
+    "worker_source_path": "research/phase03/archive/evaluator_custody_worker_v1.py",
+    "worker_source_sha256": "6876a134159a86dfa18302f76d5de8b5c3ec11d1bf2a52507317fdfdadb4f636"
+  },
+  "final_release_policy": "Project owner may grant secret access to a separate evaluator only after registered confirmation gates and every final arm/seed checkpoint are frozen; research identity must remain denied",
+  "primary_documentation": [
+    "https://docs.cloud.google.com/secret-manager/docs/access-control",
+    "https://docs.cloud.google.com/run/docs/create-jobs"
+  ],
+  "private_key_available_to_research": false,
+  "public_key_path": "research/phase03/evaluator-public-v1.pem",
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "raw_artifacts": {
+    "artifacts/phase03/custody-job-complete-logs-v1.json": "02a53680aab3091d084fbd533c0699a0eef3f7755e4b800e6206d8fb38ceffbb",
+    "artifacts/phase03/custody-job-execution-metadata-v1.json": "899c7c7d08684239e79786acb299f7b7decdc4250c7203bb3037d141f3a26d0b",
+    "artifacts/phase03/custody-job-execution-v1.log": "9d512f6c6a45f826a11a0d0c2b40b04d9595758c679162fce2e6184533ec0071",
+    "artifacts/phase03/custody-research-access-v1.json": "99d6992565c68888b036b6e21adc13775969522da374bdfd24d774dcd4316f8e",
+    "artifacts/phase03/custody-secret-versions-v1.json": "68dc627151b93c28c647860561e14e047f9b760e57441cb1de6c925438dca8c7",
+    "artifacts/phase03/kms-permissions-v1.json": "4fd4879b411d4959e37621c4b812bd98d7d18e9fc17490b8917670c88adbc4b0",
+    "artifacts/phase03/kms-public-key-v1.log": "bcb61fcc091a0487ca61a6ba929356e74a3342fe5c8b1752e3c7cbd4dc906174"
+  },
+  "research_granted_permissions": [
+    "secretmanager.versions.add"
+  ],
+  "research_identity": "5918425225-compute@developer.gserviceaccount.com",
+  "research_private_key_payload_read": false,
+  "research_secret_access_http_status": 403,
+  "retained_execution_failure": {
+    "job_exit_code": 1,
+    "reason": "private key deposit succeeded; canonical project-number resource spelling differed from input project ID",
+    "repair": "verified sole enabled version creation time, immutable generated public output and explicit research access denial; normalized future source check; no key regenerated"
+  },
+  "rsa_bits": 3072,
+  "schema_version": 1,
+  "secret_metadata": {
+    "createTime": "2026-10-01T04:42:14.010012Z",
+    "etag": "\"165cc00a261c9c\"",
+    "name": "projects/5918425225/secrets/guidon-evaluator-phase03-20261001/versions/1",
+    "replicationStatus": {
+      "automatic": {}
+    },
+    "state": "ENABLED"
+  },
+  "secret_version": "projects/5918425225/secrets/guidon-evaluator-phase03-20261001/versions/1",
+  "status": "verified_external_custody"
+}

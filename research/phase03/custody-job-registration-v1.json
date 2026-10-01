@@ -1,0 +1,16 @@
+{
+  "cpu": 1,
+  "image": "gcr.io/google.com/cloudsdktool/google-cloud-cli@sha256:be4876b4311056bf3ce236a14a7dea1288e70b7cfea2454ea15e4165c819921f",
+  "job": "guidon-custody-phase03-v1",
+  "max_retries": 0,
+  "memory": "512Mi",
+  "project": "projectalgebraicai",
+  "purpose": "external one-shot key custody, no model execution",
+  "region": "us-central1",
+  "schema_version": 1,
+  "secret": "projects/projectalgebraicai/secrets/guidon-evaluator-phase03-20261001",
+  "service_account": "5918425225-compute@developer.gserviceaccount.com",
+  "tasks": 1,
+  "timeout_seconds": 120,
+  "worker_sha256": "6876a134159a86dfa18302f76d5de8b5c3ec11d1bf2a52507317fdfdadb4f636"
+}

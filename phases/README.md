@@ -1,16 +1,21 @@
 # Autonomous research, one phase at a time
 
-This is the execution contract for a future research agent. The initial repository
-contains theory, checked coefficient proofs, optimizer prototypes, tests, and
-proposed protocols. **Phases 01 and 02 now have local audit/simulation evidence; no LLM training run has been performed.** Current signoff is hash-verified in `state.json` and `research/gates/`; the initial foundation alone did not pass these gates. The user will request phases separately. Read the requested phase and
-its direct dependencies; do not start another phase or provision a pod just because
-these instructions describe it.
+This is the execution contract for the active research task. **Read
+`../research/HANDOFF.md` after `../AGENTS.md` whenever continuing from a new
+session.** Phases 01 and 02 have local audit/simulation evidence. Phase 03/04 code
+exists, but production data preparation and remaining hardware evidence are
+unfinished; no LLM training run has been performed. Current signoff is in
+`state.json` and `research/gates/`. Follow the user's active authorization and the
+handoff; do not open sealed evaluation or provision a new TPU.
 
 The objective remains better independent LLM generalization than well-tuned AdamW,
 near its compute and speed, with evaluation isolated from learning. Preserve the
 required scratch experiment: approximately 125M parameters, exactly 2.5B FineWeb-Edu
 training loss tokens, optimizers AdamW/GUIDON, seeds **42, 43, 44**. The added
 AdamW-plus-guidance arm controls extra information; it is the same optimizer.
+The active data plan uses pinned FineWeb-Edu `sample-10BT` without corpus-wide
+deduplication, as directed by the user on 2026-10-01; see Phase 03 and the handoff
+for limitations and exact resumption steps.
 
 ## Order and evidence
 
@@ -97,11 +102,11 @@ extension, with budgets identified before seeing its results.
 
 ## Commands and future artifacts
 
-Current verification commands are in [AGENTS.md](../AGENTS.md). The phase documents
-distinguish existing modules from code to build. In particular, there is currently
-**no full LLM trainer, dataset builder, Pallas implementation, benchmark harness,
-or paper**. Phase 04 must implement and validate these execution paths before Phase 06
-is attempted. Do not treat example future CLI contracts as currently runnable tools.
+Current verification commands are in [AGENTS.md](../AGENTS.md). Phase 03/04 trainer,
+data preparation, packing, sealing, Pallas, and profiling code is present; the direct
+sample-10BT token build and required end-to-end evidence remain incomplete. Do not
+treat code presence, compilation, or synthetic tests as a passed data gate, completed
+hardware profiling, or an LLM result. Follow the handoff for the next action.
 
 Each requested phase is complete only when its outputs exist, its gate is directly
 verified, dependencies remain valid, and the state/next action is refreshed. The

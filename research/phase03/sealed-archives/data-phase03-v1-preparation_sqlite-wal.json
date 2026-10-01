@@ -1,0 +1,49 @@
+{
+  "archive": {
+    "bytes": 16352328,
+    "generation": "1790831878737696",
+    "independent_sha256_readback": true,
+    "object_metadata": {
+      "bucket": "guidon-phase03-5918425225-20261001",
+      "content_type": "application/octet-stream",
+      "crc32c_hash": "sc+/xQ==",
+      "creation_time": "2026-10-01T05:17:58+0000",
+      "custom_fields": {
+        "sha256": "8ff618c5cfc60bf8c799546ebf89ceeb40a8cf075b12e5ff6388248eaa81852d"
+      },
+      "etag": "CKCe8M+ImJcDEAE=",
+      "generation": "1790831878737696",
+      "md5_hash": "J6ULyJD8rusWMZg/ZULqTQ==",
+      "metageneration": 1,
+      "name": "preparation-attempts/data-phase03-v1-preparation_sqlite-wal.aesgcm",
+      "size": 16352328,
+      "storage_class": "STANDARD",
+      "storage_class_update_time": "2026-10-01T05:17:58+0000",
+      "storage_url": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite-wal.aesgcm#1790831878737696",
+      "update_time": "2026-10-01T05:17:58+0000"
+    },
+    "sha256": "8ff618c5cfc60bf8c799546ebf89ceeb40a8cf075b12e5ff6388248eaa81852d",
+    "uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite-wal.aesgcm",
+    "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite-wal.aesgcm#1790831878737696"
+  },
+  "encryption": {
+    "algorithm": "RSA-OAEP-SHA256/AES-256-GCM",
+    "context": {
+      "optimizer_outcomes_inspected": false,
+      "original_path": "data/phase03-v1/preparation.sqlite-wal",
+      "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+      "role": "stopped_preparation_intermediate"
+    },
+    "context_sha256": "adda9e22c9340ff5b646912ce308b6066e63e9bb2e27c4f2ec03eb5b92d6ab11",
+    "nonce_base64": "5tbo+J+Vm4QmNggm",
+    "path": "data-phase03-v1-preparation_sqlite-wal.aesgcm",
+    "plaintext_sha256": "2d1890ca2d0dff641881612764763ae531a1f26f9718d1de7d7c3e26d2ad1a95",
+    "sha256": "8ff618c5cfc60bf8c799546ebf89ceeb40a8cf075b12e5ff6388248eaa81852d",
+    "wrapped_key_base64": "ZL0xypwGiOeSu+ly4yzWFC4U+EESWnMM3FJiA2DZlCZHDmYZCof4mPVuX0tXRz7E0lgwKTScl3EwGR0F7P7ujpXIgLL/pCe0NUMPiGL9sIi5FMp0OHH/LlOdAN7gTmd4VKAy7vr6pB1C5mRDb4NALWAET9zpiv0WrdIqyR5GFTtjJ//HujqeSdQ1mfzoyj6FmIJBHrxkxaNpfGK6ZHQnQPXHkr31qM/ZSNCJjDDGLn9IhF2/qc+1U16xS4b4A11++2nCYuMPmj8KjgYOkVQ5npVmqL6j1WG8atnasfb7ScyS1sXj4EhlABW1CfFW+/nCL5lGh068ESbB9tNH6mX4SuWbgHy+Oa+iqQYOC5zLEMQq/u+EB6s8aK9TOmDnG0h4DNGq6qbPlJA1+XY6UkGJXK5rl21J2S6N6OTiuwyrC2h2V79qDcil80tOswAVMfMH2QrsGX2JFfc5RXQPyxFNSUy2aCNoLTiyXo7Ar7/5NGhEkG4syEPUabQpklgldnmE"
+  },
+  "original_path": "data/phase03-v1/preparation.sqlite-wal",
+  "original_plaintext_removed_after_verified_publication": true,
+  "private_key_available_to_preparer": false,
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "schema_version": 1
+}

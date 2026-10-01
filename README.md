@@ -8,9 +8,10 @@ AdamW updates by model block. A small projection preserves the current training
 gradient's first-order progress while improving the fresh guidance linear model.
 
 The repository contains a working optimizer prototype, machine-checked coefficient
-theory, and a nine-phase plan for testing whether that mechanism improves independent
-generalization within 10% of AdamW's compute and wall time. **LLM performance and TPU
-speed are unmeasured.** The large research runs and full paper are future phases.
+theory, and implementation work for testing whether that mechanism improves
+independent generalization within 10% of AdamW's compute and wall time. **LLM
+performance and TPU training speed are unmeasured.** Read [the current handoff](research/HANDOFF.md)
+before continuing active Phase 03/04 work.
 
 ## What is here
 
@@ -22,7 +23,7 @@ speed are unmeasured.** The large research runs and full paper are future phases
 | [JAX optimizer and AdamW baseline](src/guidon/jax_optimizer.py) | JIT and global-array reduction correctness checked on CPU |
 | [Data-boundary checks](src/guidon/data_boundary.py) | Declared identity and reader-role checks; full corpus preparation is Phase 03 |
 | [Experiment configs](configs/) | Proposed, pinned sources; deliberately not frozen or launch ready |
-| [Nine research phases](phases/README.md) | Phases 01/02 completed locally with evidence; 03–09 remain unexecuted |
+| [Research phases](phases/README.md) | Phases 01/02 passed; 03/04 in progress; Phase 05 rewritten but not run |
 | [Math fidelity and simulations](research/phase02/README.md) | Numerical repair, 174k paired synthetic draws, 240k three-pair design experiments; all failures retained |
 | [Agent instructions](AGENTS.md) | Setup, scope, scientific boundaries, verification, and repair rules |
 
@@ -34,11 +35,12 @@ pilot development, sealed validation, and sealed test. Guidance cannot serve as
 evidence of independent generalization. Only the last two splits supply final
 confirmation, after tuning and checkpoint rules are frozen.
 
-The [data protocol](research/data_protocol.md) requires document/near-duplicate/source
-group isolation, benchmark exclusions, restricted readers, fresh guidance within
-each run, and an audit of continued-pretraining exposure. The Lean isolation result
-is conditional on that boundary; it cannot certify external datasets. The method
-does not promise a universal improvement on arbitrary future distributions.
+The original [data protocol](research/data_protocol.md) describes document/source
+deduplication. For the active user-directed experiment, the user chose pinned
+FineWeb-Edu `sample-10BT` and waived corpus-wide deduplication. The token tapes and
+their audit are still pending; this experiment must not claim deduplication-based
+leakage isolation or clean benchmark exposure. The method does not promise a
+universal improvement on arbitrary future distributions.
 
 ## Install and verify locally
 

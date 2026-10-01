@@ -100,11 +100,25 @@ def verify() -> None:
         assert phase["status"] == "passed"
         assert checksum(ROOT / phase["evidence"]["path"]) == phase["evidence"]["sha256"]
         verify_gate(phase["id"])
-    assert all(
-        p["status"] == "invalidated" and p["evidence"] is None
-        for p in state["phases"][2:]
+    # Later phases may now be active or passed. Every passed phase must have a
+    # current transitive gate; unfinished phases must never carry a passed gate.
+    from guidon.gates import verify as verify_dependencies
+
+    for phase in state["phases"][2:]:
+        if phase["status"] == "passed":
+            verify_dependencies([phase["id"]])
+        else:
+            assert phase["status"] in {
+                "invalidated",
+                "not_started",
+                "in_progress",
+                "blocked",
+            }
+            assert phase["evidence"] is None
+    assert not state.get("llm_confirmation_executed", False) or any(
+        p["id"] in {"06", "07"} and p["status"] in {"in_progress", "passed"}
+        for p in state["phases"]
     )
-    assert not state["llm_training_executed"]
     theorem_names = {
         name
         for source in (ROOT / "proofs/Guidon").glob("*.lean")
@@ -131,7 +145,9 @@ def verify() -> None:
         result = audit(config)
         assert result["training_loss_tokens_per_run"] == tokens
         assert result["updates"] == updates and result["guidance_probes"] == probes
-        assert not result["ready_for_confirmation"]
+        assert result["ready_for_confirmation"] == (
+            config["gates"]["frozen"] and config["data"]["manifest_ready"]
+        )
         assert config["optimizer_defaults"]["signal_floor"] == 0.01
     for stream in ("discovery", "confirmation"):
         assert json.loads(

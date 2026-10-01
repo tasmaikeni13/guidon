@@ -1,0 +1,49 @@
+{
+  "archive": {
+    "bytes": 9383952,
+    "generation": "1790831794525808",
+    "independent_sha256_readback": true,
+    "object_metadata": {
+      "bucket": "guidon-phase03-5918425225-20261001",
+      "content_type": "application/octet-stream",
+      "crc32c_hash": "pIDaog==",
+      "creation_time": "2026-10-01T05:16:34+0000",
+      "custom_fields": {
+        "sha256": "03104293c91e8597f91b9b4d93c23ad7865ee763f9c7613b1a2f7f8dfed9f488"
+      },
+      "etag": "CPCs3KeImJcDEAE=",
+      "generation": "1790831794525808",
+      "md5_hash": "grdyCKt4+SPQ7YZjmNMyRQ==",
+      "metageneration": 1,
+      "name": "preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm",
+      "size": 9383952,
+      "storage_class": "STANDARD",
+      "storage_class_update_time": "2026-10-01T05:16:34+0000",
+      "storage_url": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm#1790831794525808",
+      "update_time": "2026-10-01T05:16:34+0000"
+    },
+    "sha256": "03104293c91e8597f91b9b4d93c23ad7865ee763f9c7613b1a2f7f8dfed9f488",
+    "uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm",
+    "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm#1790831794525808"
+  },
+  "encryption": {
+    "algorithm": "RSA-OAEP-SHA256/AES-256-GCM",
+    "context": {
+      "optimizer_outcomes_inspected": false,
+      "original_path": "artifacts/phase03/preprocessing-equivalence-v1/parallel.sqlite",
+      "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+      "role": "stopped_preparation_intermediate"
+    },
+    "context_sha256": "e04282d43f5db3c82ea4fc994191286de70c1417627fde8eafe78ddf4d86f412",
+    "nonce_base64": "30/ICtGKWSe3F6No",
+    "path": "artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm",
+    "plaintext_sha256": "855b02b2e8de4ad914343b5b828db1c714e3ca52af400382b70097d6561fa2ff",
+    "sha256": "03104293c91e8597f91b9b4d93c23ad7865ee763f9c7613b1a2f7f8dfed9f488",
+    "wrapped_key_base64": "a1uVEQxMwub7m3crE+wOR28dz7R7USQu14VH1EHXI2q2TdvvuUlRM1aBDSt/SUgrz2+D4DPZfIyQ6yNlVUOXrkDnnQcH8/JQVaP6woQ4zcEyEX+WmsZtw2Sa3j8SloteM9xy7i7y+cCZjtRcuibekUx+1RK7AnbT/cTWyOGMReDiE2zyG6Vgi/gbbD0KOdUOBVG0X12pCt5ymxOkUauXQYsl9CGGcHtLsn3ovswRYZRjClh8I2EG3xkrJCvzmEpnjAlUufqrI4/6pdnwtV33BL4AtRtKODIaTIMw+O6azqsW/8VwQro3OvgEK/tfO6sDzA+MqJScYwuSjmf+W/npcI/Tlu+knaN6myww3doeS3MG+Kzjdlj5exuU41a8ES4rW31uUzn8swA0Hp1INawEMr95MEKeEtnaY+6CdCjEglFpBqbVbRfRi8FYpS6WsGGfEXHaLTUMcfp2XT3CNQEMIIttyeR4frSVGS+5lT7a7kktdZGvAoAK0S78AHNSS/u4"
+  },
+  "original_path": "artifacts/phase03/preprocessing-equivalence-v1/parallel.sqlite",
+  "original_plaintext_removed_after_verified_publication": true,
+  "private_key_available_to_preparer": false,
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "schema_version": 1
+}

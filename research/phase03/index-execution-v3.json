@@ -1,0 +1,25 @@
+{
+  "ciphertext_archive": "gs://guidon-phase03-5918425225-20261001/phase03-v3",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 uv run --no-sync python -m guidon.prepare_data --plan configs/data_phase03.json --output /dev/shm/guidon-phase03-v3 --index-only",
+  "custody_record": "research/phase03/evaluator-custody-v1.json",
+  "model_outcomes_inspected": false,
+  "output": "/dev/shm/guidon-phase03-v3",
+  "pids": [
+    1104980
+  ],
+  "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+  "prior_attempt_record": "research/phase03/index-v2-repair-record.json",
+  "raw_log": "artifacts/phase03/index-v3.log",
+  "schema_version": 1,
+  "source_sha256": {
+    "src/guidon/artifacts.py": "6f6ac1b3cd0c1ad5ed41a4bcdc471f93c2422386245e0a9faf8f92d87a6e8c5d",
+    "src/guidon/corpus.py": "431a0a3f08fcde2c40204c887d451319cdf173f66bbd8281f7c44bcc4b5a8aec",
+    "src/guidon/data_boundary.py": "54bdefc798417edcd0407aedd586bd70dca1b3c1382d1f15f4ce2258e700d709",
+    "src/guidon/prepare_data.py": "2cc58cc5d03554abcaebc2c424d2be752686f8f921b4f334d15277748da5496c",
+    "src/guidon/resources/public_suffix_list.dat": "8335d7c09592c5209e5026d275f7b291e1bc9c90cd949b967c1a7af5f8381b2a",
+    "src/guidon/resources/public_suffix_provenance.json": "7bb81568c48fd0e9d1d0691e1ffb755a599d501cd9fa320112cd0305082c4d5e",
+    "src/guidon/sources.py": "ada9034488af9b92f0f9121846cb587e71b8937b9456c63a197c85c7429ef881"
+  },
+  "source_snapshot": "artifacts/phase03/index-v3-source",
+  "temporary_storage": "201 GiB task-owned tmpfs; completed output requires durable hash-verified publication"
+}

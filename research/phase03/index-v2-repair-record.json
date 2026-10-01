@@ -1,0 +1,25 @@
+{
+  "durability": "RAM is only temporary preparation storage; publish hashed completed unsealed tapes locally and ciphertexts to the task-specific private GCS artifact bucket before cleanup",
+  "equivalence_record": "research/phase03/corpus-storage-audit-v1.json",
+  "equivalence_sha256": "065eda08acec765f938125205df96ff302ae484e0c89241fb3a28859fc34b9cb",
+  "model_outcomes_inspected": false,
+  "partial_accepted_metadata": {
+    "benchmark_flagged_documents": 9104,
+    "documents": 423001,
+    "duplicate_flagged_documents": 686,
+    "source_groups": 191404
+  },
+  "partial_metadata_is_final_audit": false,
+  "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+  "preservation": "Original SQLite transactions checkpointed after owned processes stopped; raw database, source cache, execution registration, source archive, and log retained",
+  "profile": "artifacts/phase03/index-v2-profile-root.json",
+  "profile_sha256": "48b10b51c962549312a0c199503444946c56a66afd3e88ca4010e2b79f98a8bd",
+  "raw_log": "artifacts/phase03/index-v2.log",
+  "raw_log_sha256": "bdc21f552cf7d63d46b875135b2db5ef91bac7a552e99c0a0783126bdd40a239",
+  "reason": "Measured persistent-disk SQLite write bottleneck; RAM store gives byte-identical database and scientific metadata on 5000 actual accepted documents",
+  "restart": "/dev/shm/guidon-phase03-v3, exact same pinned plan and scientific source implementation",
+  "retained_index": "data/phase03-v2/preparation.sqlite",
+  "retained_index_sha256": "4d78ed57bb3eacf129ab848d712f3911c765d3ffdbcedabb88e1f598a9573531",
+  "schema_version": 1,
+  "scientific_thresholds_or_document_order_changed": false
+}

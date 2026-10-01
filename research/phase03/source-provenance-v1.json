@@ -1,0 +1,38 @@
+{
+  "contains_corpus_examples": false,
+  "primary_sources_only": true,
+  "records": [
+    {
+      "kind": "dataset",
+      "path": "artifacts/phase03/provenance-v1/HuggingFaceFW--fineweb-edu/README.md",
+      "repository": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "sha256": "a0cc8998a20499432b28b6575f3046b714938eb8e11b8d59a1d25ddf3716061e",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/blob/87f09149ef4734204d70ed1d046ddc9ca3f2b8f9/README.md"
+    },
+    {
+      "kind": "dataset",
+      "path": "artifacts/phase03/provenance-v1/HuggingFaceTB--finemath/README.md",
+      "repository": "HuggingFaceTB/finemath",
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "sha256": "77b9162c99fc6b5944da8793f18fb99c3b520ab7cdce0cc67ec8a1e47871da61",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/blob/e92b25a616738fe95dc186b64dfb19f9c8525594/README.md"
+    },
+    {
+      "kind": "model",
+      "path": "artifacts/phase03/provenance-v1/EleutherAI--pythia-160m-deduped/README.md",
+      "repository": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e",
+      "sha256": "7fe6132bfdcd802b9acf6a59105795b1bb9d5857e33a7fe64809e5fd4aa3b26b",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m-deduped/blob/582159a2dfe3e712a8d47ae83dec95ae3bde8e7e/README.md"
+    },
+    {
+      "kind": "construction_code",
+      "path": "artifacts/phase03/provenance-v1/pile-README.md",
+      "repository": "EleutherAI/the-pile",
+      "revision": "df97f8651ae3da658b19659b3ceaa6a34b0fc014",
+      "sha256": "808e3b8cd6a49ea20c6e129740c591f3bae3897f8dd8b7cca9b40a40a1590b30",
+      "url": "https://github.com/EleutherAI/the-pile/blob/df97f8651ae3da658b19659b3ceaa6a34b0fc014/README.md"
+    }
+  ]
+}

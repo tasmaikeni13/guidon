@@ -1,0 +1,2152 @@
+{
+  "benchmark_coverage": {
+    "arc_easy": {
+      "artifacts": [
+        {
+          "path": "ARC-Easy/test-00000-of-00001.parquet",
+          "sha256": "4160597d618ae851c7eb04e281574f3f654776216ac6b6641588d64527b47177"
+        },
+        {
+          "path": "ARC-Easy/train-00000-of-00001.parquet",
+          "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5"
+        },
+        {
+          "path": "ARC-Easy/validation-00000-of-00001.parquet",
+          "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 25981,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "rows": 5197,
+      "uncovered_short_rows": 0
+    },
+    "gsm8k": {
+      "artifacts": [
+        {
+          "path": "main/test-00000-of-00001.parquet",
+          "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+        },
+        {
+          "path": "main/train-00000-of-00001.parquet",
+          "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 17584,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "rows": 8792,
+      "uncovered_short_rows": 0
+    },
+    "hellaswag": {
+      "artifacts": [
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "sha256": "e572fd5579bd1768b1985f47234f8bbe29247aca200a778b635bffc637714a41"
+        },
+        {
+          "path": "data/train-00000-of-00001.parquet",
+          "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02"
+        },
+        {
+          "path": "data/validation-00000-of-00001.parquet",
+          "sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 299750,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "Rowan/hellaswag",
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "rows": 59950,
+      "uncovered_short_rows": 0
+    },
+    "lambada_openai": {
+      "artifacts": [
+        {
+          "path": "default/test/default.parquet",
+          "sha256": "99d8a9e54cda761c6340ddd4fa6feda7f846ffb0e716afa52968dea75495eea7"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 5153,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "EleutherAI/lambada_openai",
+      "revision": "900124bf3b8235c6daf21033af9948b3f07346c4",
+      "rows": 5153,
+      "uncovered_short_rows": 0
+    },
+    "math": {
+      "artifacts": [
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "sha256": "7dca8d6e41af88ecf82f2b5f36eb5530e083aaaa86ee325f62bd5c31535178c6"
+        },
+        {
+          "path": "data/train-00000-of-00001.parquet",
+          "sha256": "eca6e667f4305dd5e5ba09b4fd55e7f3174a0fbe361cdfd4c44758b593a76933"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 24992,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "DigitalLearningGmbH/MATH-lighteval",
+      "revision": "0530c78699ea5e8eb5530600900e1f328b48acad",
+      "rows": 12500,
+      "uncovered_short_rows": 0
+    },
+    "piqa": {
+      "artifacts": [
+        {
+          "sha256": "54d32a04f59a7e354396f321723c8d7ec35cc6b08506563d8d1ffcc15ce98ddd",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "a73f46cb5d72b2cc399522a79f27728a429d9b89d9a236243fcfda8c02588d54",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "f55986008cf9f1a336854936b82cec4ccba6fb5c698d221861299fb508840a8c",
+          "url": "https://storage.googleapis.com/ai2-mosaic/public/physicaliqa/physicaliqa-train-dev.zip"
+        },
+        {
+          "sha256": "402f1e2e61347db773e6e5e0a6b24f97396b59f6fd046dcdcbc12f483ac8553b",
+          "url": "https://yonatanbisk.com/piqa/data/tests.jsonl"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 60546,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "ybisk/piqa",
+      "revision": "2e8ac2dffd59bac8c3c6714948f4c551a0848bb0",
+      "rows": 21035,
+      "uncovered_short_rows": 0
+    },
+    "winogrande": {
+      "artifacts": [
+        {
+          "path": "winogrande_xl/test-00000-of-00001.parquet",
+          "sha256": "100885ec03a67f318d50f8a485cb7e55c9ed88fcefbc565c2907fc98de7f8444"
+        },
+        {
+          "path": "winogrande_xl/train-00000-of-00001.parquet",
+          "sha256": "5d8c38ad12b9a6c88f79b6e00aaf0f40781f93d4f94816f6cff2b67625d67399"
+        },
+        {
+          "path": "winogrande_xl/validation-00000-of-00001.parquet",
+          "sha256": "f9d914d1818c0aba98cabdf8af2bc4bd943c462b9c5e7062647e05c2ce3315d1"
+        }
+      ],
+      "complete": true,
+      "fingerprints": 130296,
+      "labels_forwarded_to_training": false,
+      "model_scores_computed": false,
+      "repository": "allenai/winogrande",
+      "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+      "rows": 43432,
+      "uncovered_short_rows": 0
+    }
+  },
+  "benchmark_references": {
+    "path": "data/benchmark-preparation-v2/references.jsonl",
+    "sha256": "bb07724bfedffdd025b5b290c0145584252f4f12f52bc9f85d7f87f32c1c56eb"
+  },
+  "capabilities": [
+    {
+      "cohort": "pilot",
+      "path": "scratch-pilot-training.json",
+      "process_role": "training",
+      "tapes": {
+        "guidance": "scratch-guidance-pilot",
+        "train": "scratch-train-pilot"
+      }
+    },
+    {
+      "cohort": "confirmation",
+      "path": "scratch-confirmation-training.json",
+      "process_role": "training",
+      "tapes": {
+        "guidance": "scratch-guidance-confirmation",
+        "train": "scratch-train-confirmation"
+      }
+    },
+    {
+      "cohort": "pilot",
+      "path": "scratch-development.json",
+      "process_role": "development",
+      "tapes": {
+        "development": "scratch-development"
+      }
+    },
+    {
+      "cohort": "pilot",
+      "path": "continued-pilot-training.json",
+      "process_role": "training",
+      "tapes": {
+        "guidance": "continued-guidance-pilot.json",
+        "train": "continued-train-pilot.json"
+      }
+    },
+    {
+      "cohort": "confirmation",
+      "path": "continued-confirmation-training.json",
+      "process_role": "training",
+      "tapes": {
+        "guidance": "continued-guidance-confirmation.json",
+        "train": "continued-train-confirmation.json"
+      }
+    },
+    {
+      "cohort": "pilot",
+      "path": "continued-development.json",
+      "process_role": "development",
+      "tapes": {
+        "development": "continued-development.json"
+      }
+    }
+  ],
+  "dedup": {
+    "bands": 24,
+    "benchmark_containment": 0.8,
+    "benchmark_minimum_shingles": 3,
+    "jaccard_threshold": 0.8,
+    "permutations": 128,
+    "rows_per_band": 5,
+    "seed": 20260930,
+    "shingle_words": 5
+  },
+  "extension_policy": {
+    "borrow_sealed_evaluation": false,
+    "finemath_maximum_shards": 64,
+    "finemath_next_shards": 16,
+    "fineweb_if_insufficient": "register pinned sample-100BT lexicographic extension before tokenizing; retain failed capacity audit",
+    "inspect_model_outcomes": false
+  },
+  "group_before_pack": true,
+  "guidance_reuse_within_run": false,
+  "mixtures": [
+    {
+      "cohort": "pilot",
+      "loss_tokens": 32000000,
+      "name": "continued-train-pilot",
+      "role": "train",
+      "sources": [
+        "continued-math-train-pilot",
+        "continued-retention-train-pilot"
+      ]
+    },
+    {
+      "cohort": "pilot",
+      "loss_tokens": 10000000,
+      "name": "continued-guidance-pilot",
+      "role": "guidance",
+      "sources": [
+        "continued-math-guidance-pilot",
+        "continued-retention-guidance-pilot"
+      ]
+    },
+    {
+      "cohort": "confirmation",
+      "loss_tokens": 1000000000,
+      "name": "continued-train-confirmation",
+      "role": "train",
+      "sources": [
+        "continued-math-train-confirmation",
+        "continued-retention-train-confirmation"
+      ]
+    },
+    {
+      "cohort": "confirmation",
+      "loss_tokens": 10000000,
+      "name": "continued-guidance-confirmation",
+      "role": "guidance",
+      "sources": [
+        "continued-math-guidance-confirmation",
+        "continued-retention-guidance-confirmation"
+      ]
+    },
+    {
+      "cohort": "pilot",
+      "loss_tokens": 10000000,
+      "name": "continued-development",
+      "role": "development",
+      "sources": [
+        "continued-math-development",
+        "continued-retention-development"
+      ]
+    }
+  ],
+  "phase": "03",
+  "pretrained_exposure": {
+    "base_document_membership": "unverifiable_without_original_training_manifest",
+    "lineage": "The Pile deduplicated",
+    "model": "EleutherAI/pythia-160m-deduped",
+    "post_2023_crawl_proves_absence": false,
+    "public_benchmark_clean_claim": false
+  },
+  "protocol_version": "0.2",
+  "schema_version": 1,
+  "shifted_evaluation": {
+    "partition_seed": 20261003,
+    "selection_before_model_outcomes": true,
+    "temporal_claim": false,
+    "type": "independent_source_component_holdout"
+  },
+  "signature_workers": 32,
+  "sources": [
+    {
+      "card": {
+        "configs": [
+          {
+            "config_name": "default",
+            "data_files": [
+              {
+                "path": "data/*/*",
+                "split": "train"
+              }
+            ],
+            "features": [
+              {
+                "dtype": "string",
+                "name": "text"
+              },
+              {
+                "dtype": "string",
+                "name": "id"
+              },
+              {
+                "dtype": "string",
+                "name": "dump"
+              },
+              {
+                "dtype": "string",
+                "name": "url"
+              },
+              {
+                "dtype": "string",
+                "name": "date"
+              },
+              {
+                "dtype": "string",
+                "name": "file_path"
+              },
+              {
+                "dtype": "string",
+                "name": "language"
+              },
+              {
+                "dtype": "float64",
+                "name": "language_score"
+              },
+              {
+                "dtype": "int64",
+                "name": "token_count"
+              },
+              {
+                "dtype": "float64",
+                "name": "score"
+              },
+              {
+                "dtype": "int64",
+                "name": "int_score"
+              }
+            ]
+          },
+          {
+            "config_name": "sample-10BT",
+            "data_files": [
+              {
+                "path": "sample/10BT/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "sample-100BT",
+            "data_files": [
+              {
+                "path": "sample/100BT/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "sample-350BT",
+            "data_files": [
+              {
+                "path": "sample/350BT/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-05",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-05/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-08",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-08/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-13",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-13/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-18",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-18/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-21",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-21/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2025-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2025-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-51",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-51/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-46",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-46/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-42",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-42/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-38",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-38/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-33",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-33/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-30",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-30/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-18",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-18/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2024-10",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2024-10/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2023-50",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2023-50/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2023-40",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2023-40/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2023-23",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2023-23/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2023-14",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2023-14/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2023-06",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2023-06/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-49",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-49/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-40",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-40/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-33",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-33/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-27",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-27/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-21",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-21/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2022-05",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2022-05/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-49",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-49/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-43",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-43/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-39",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-39/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-31",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-31/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-25",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-25/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-21",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-21/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-17",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-17/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-10",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-10/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2021-04",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2021-04/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-50",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-50/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-45",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-45/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-40",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-40/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-34",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-34/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-29",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-29/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-24",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-24/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-16",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-16/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-10",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-10/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2020-05",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2020-05/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-51",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-51/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-47",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-47/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-43",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-43/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-39",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-39/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-35",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-35/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-30",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-30/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-18",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-18/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-13",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-13/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-09",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-09/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2019-04",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2019-04/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-51",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-51/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-47",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-47/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-43",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-43/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-39",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-39/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-34",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-34/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-30",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-30/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-17",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-17/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-13",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-13/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-09",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-09/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2018-05",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2018-05/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-51",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-51/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-47",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-47/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-43",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-43/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-39",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-39/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-34",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-34/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-30",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-30/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-17",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-17/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-13",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-13/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-09",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-09/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2017-04",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2017-04/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-50",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-50/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-44",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-44/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-40",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-40/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-36",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-36/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-30",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-30/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-26",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-26/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-18",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-18/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2016-07",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2016-07/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-48",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-48/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-40",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-40/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-35",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-35/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-32",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-32/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-27",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-27/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-22",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-22/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-18",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-18/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-14",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-14/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-11",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-11/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2015-06",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2015-06/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-52",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-52/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-49",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-49/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-42",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-42/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-41",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-41/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-35",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-35/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-23",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-23/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-15",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-15/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2014-10",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2014-10/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2013-48",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2013-48/*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "CC-MAIN-2013-20",
+            "data_files": [
+              {
+                "path": "data/CC-MAIN-2013-20/*",
+                "split": "train"
+              }
+            ]
+          }
+        ],
+        "language": [
+          "en"
+        ],
+        "license": "odc-by",
+        "pretty_name": "FineWeb-Edu",
+        "size_categories": [
+          "n>1T"
+        ],
+        "task_categories": [
+          "text-generation"
+        ]
+      },
+      "files": [
+        {
+          "bytes": 2152819114,
+          "path": "sample/10BT/000_00000.parquet",
+          "sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871"
+        },
+        {
+          "bytes": 2152222432,
+          "path": "sample/10BT/001_00000.parquet",
+          "sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693"
+        },
+        {
+          "bytes": 2151796315,
+          "path": "sample/10BT/002_00000.parquet",
+          "sha256": "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7"
+        },
+        {
+          "bytes": 2152437524,
+          "path": "sample/10BT/003_00000.parquet",
+          "sha256": "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb"
+        },
+        {
+          "bytes": 2152338550,
+          "path": "sample/10BT/004_00000.parquet",
+          "sha256": "33557ddd87a07a4ae6fcaf7a4789c7b484e5cc0c273ca12a65b74200e6d8748b"
+        },
+        {
+          "bytes": 2152189947,
+          "path": "sample/10BT/005_00000.parquet",
+          "sha256": "e08d79927ecb377786572cd854817c748ceb8880878b1a0eb91abf8c85d505ea"
+        },
+        {
+          "bytes": 2152689867,
+          "path": "sample/10BT/006_00000.parquet",
+          "sha256": "554fa2613c9261d6c9c396caab881de3160175794c6c3e1856bf28a0e9cb9b76"
+        },
+        {
+          "bytes": 2150686637,
+          "path": "sample/10BT/007_00000.parquet",
+          "sha256": "4b7d1f697d4afff7f5f65cb7aa4d83acc6db716da4d46ea23399d0c50608c6e3"
+        },
+        {
+          "bytes": 2151274846,
+          "path": "sample/10BT/008_00000.parquet",
+          "sha256": "a6d9dcc0c72ecd7c7f0173c2d06b3a4249a2ccaa94961469d1a522ca689bbf1a"
+        },
+        {
+          "bytes": 2151913277,
+          "path": "sample/10BT/009_00000.parquet",
+          "sha256": "f836cd3c70b95776699eb6c356b2dbf702816e25dcf39992f5c80a29029d23c3"
+        },
+        {
+          "bytes": 2152798864,
+          "path": "sample/10BT/010_00000.parquet",
+          "sha256": "e5a2eae25f057f0856a10bfae314c6ca8ea8bb08456d2131e9e89b2b8305e2f6"
+        },
+        {
+          "bytes": 2152323681,
+          "path": "sample/10BT/011_00000.parquet",
+          "sha256": "db71cf0425bb3d1813a09f12ff1acd6dabdfb91a2e4f141960254ee5a7f036e7"
+        },
+        {
+          "bytes": 2152069689,
+          "path": "sample/10BT/012_00000.parquet",
+          "sha256": "08b47a3e1c25161f796d2f8dbf99ccf60affdebdcea4910833d0d5783315551f"
+        },
+        {
+          "bytes": 540632672,
+          "path": "sample/10BT/013_00000.parquet",
+          "sha256": "b393f51fefab26cd6f4c8f65707c1924f6666c4961a0ebebe04bb57f7ec832de"
+        }
+      ],
+      "name": "fineweb_edu",
+      "prefix": "sample/10BT/",
+      "repository": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "selection": "lexicographic_pinned_shard_prefix_before_model_outcomes"
+    },
+    {
+      "card": {
+        "configs": [
+          {
+            "config_name": "finemath-3plus",
+            "data_files": [
+              {
+                "path": "finemath-3plus/train-*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "finemath-4plus",
+            "data_files": [
+              {
+                "path": "finemath-4plus/train-*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "infiwebmath-3plus",
+            "data_files": [
+              {
+                "path": "infiwebmath-3plus/train-*",
+                "split": "train"
+              }
+            ]
+          },
+          {
+            "config_name": "infiwebmath-4plus",
+            "data_files": [
+              {
+                "path": "infiwebmath-4plus/train-*",
+                "split": "train"
+              }
+            ]
+          }
+        ],
+        "dataset_info": [
+          {
+            "config_name": "finemath-3plus",
+            "dataset_size": 137764105388.93857,
+            "download_size": 65039196945,
+            "features": [
+              {
+                "dtype": "string",
+                "name": "url"
+              },
+              {
+                "dtype": "int64",
+                "name": "fetch_time"
+              },
+              {
+                "dtype": "string",
+                "name": "content_mime_type"
+              },
+              {
+                "dtype": "string",
+                "name": "warc_filename"
+              },
+              {
+                "dtype": "int32",
+                "name": "warc_record_offset"
+              },
+              {
+                "dtype": "int32",
+                "name": "warc_record_length"
+              },
+              {
+                "dtype": "string",
+                "name": "text"
+              },
+              {
+                "dtype": "int32",
+                "name": "token_count"
+              },
+              {
+                "dtype": "int32",
+                "name": "char_count"
+              },
+              {
+                "dtype": "string",
+                "name": "metadata"
+              },
+              {
+                "dtype": "float64",
+                "name": "score"
+              },
+              {
+                "dtype": "int64",
+                "name": "int_score"
+              },
+              {
+                "dtype": "string",
+                "name": "crawl"
+              },
+              {
+                "dtype": "string",
+                "name": "snapshot_type"
+              },
+              {
+                "dtype": "string",
+                "name": "language"
+              },
+              {
+                "dtype": "float64",
+                "name": "language_score"
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 137764105388.93857,
+                "num_examples": 21405610
+              }
+            ]
+          },
+          {
+            "config_name": "finemath-4plus",
+            "dataset_size": 39101488149.09091,
+            "download_size": 18365184633,
+            "features": [
+              {
+                "dtype": "string",
+                "name": "url"
+              },
+              {
+                "dtype": "int64",
+                "name": "fetch_time"
+              },
+              {
+                "dtype": "string",
+                "name": "content_mime_type"
+              },
+              {
+                "dtype": "string",
+                "name": "warc_filename"
+              },
+              {
+                "dtype": "int32",
+                "name": "warc_record_offset"
+              },
+              {
+                "dtype": "int32",
+                "name": "warc_record_length"
+              },
+              {
+                "dtype": "string",
+                "name": "text"
+              },
+              {
+                "dtype": "int32",
+                "name": "token_count"
+              },
+              {
+                "dtype": "int32",
+                "name": "char_count"
+              },
+              {
+                "dtype": "string",
+                "name": "metadata"
+              },
+              {
+                "dtype": "float64",
+                "name": "score"
+              },
+              {
+                "dtype": "int64",
+                "name": "int_score"
+              },
+              {
+                "dtype": "string",
+                "name": "crawl"
+              },
+              {
+                "dtype": "string",
+                "name": "snapshot_type"
+              },
+              {
+                "dtype": "string",
+                "name": "language"
+              },
+              {
+                "dtype": "float64",
+                "name": "language_score"
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 39101488149.09091,
+                "num_examples": 6699493
+              }
+            ]
+          },
+          {
+            "config_name": "infiwebmath-3plus",
+            "dataset_size": 96485696853.10182,
+            "download_size": 46808660851,
+            "features": [
+              {
+                "dtype": "string",
+                "name": "url"
+              },
+              {
+                "dtype": "string",
+                "name": "metadata"
+              },
+              {
+                "dtype": "float64",
+                "name": "score"
+              },
+              {
+                "dtype": "int64",
+                "name": "int_score"
+              },
+              {
+                "dtype": "int64",
+                "name": "token_count"
+              },
+              {
+                "dtype": "int64",
+                "name": "char_count"
+              },
+              {
+                "dtype": "string",
+                "name": "text"
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 96485696853.10182,
+                "num_examples": 13882669
+              }
+            ]
+          },
+          {
+            "config_name": "infiwebmath-4plus",
+            "dataset_size": 40002719500.1551,
+            "download_size": 19234328998,
+            "features": [
+              {
+                "dtype": "string",
+                "name": "url"
+              },
+              {
+                "dtype": "string",
+                "name": "metadata"
+              },
+              {
+                "dtype": "float64",
+                "name": "score"
+              },
+              {
+                "dtype": "int64",
+                "name": "int_score"
+              },
+              {
+                "dtype": "int64",
+                "name": "token_count"
+              },
+              {
+                "dtype": "int64",
+                "name": "char_count"
+              },
+              {
+                "dtype": "string",
+                "name": "text"
+              }
+            ],
+            "splits": [
+              {
+                "name": "train",
+                "num_bytes": 40002719500.1551,
+                "num_examples": 6296212
+              }
+            ]
+          }
+        ],
+        "license": "odc-by"
+      },
+      "files": [
+        {
+          "bytes": 286267316,
+          "path": "finemath-4plus/train-00000-of-00064.parquet",
+          "sha256": "5d0b26114b4cf309c82a4ba8f6f45857480b27812e23a46b61b45e8bbed61fe5"
+        },
+        {
+          "bytes": 288474354,
+          "path": "finemath-4plus/train-00001-of-00064.parquet",
+          "sha256": "4f38efdb251638c1a71be4ed380119bdd9966b1d6f200f6ff637e4768cc3930c"
+        },
+        {
+          "bytes": 287634720,
+          "path": "finemath-4plus/train-00002-of-00064.parquet",
+          "sha256": "aed5a2aed72e2683c6c967f669b12214c3a2370738a75b83fb92f6194217ab04"
+        },
+        {
+          "bytes": 284689405,
+          "path": "finemath-4plus/train-00003-of-00064.parquet",
+          "sha256": "b20b6da635493e3c7e151880db612bdf1bab2e6bc2fe87ed5cd21910f590aada"
+        },
+        {
+          "bytes": 284684820,
+          "path": "finemath-4plus/train-00004-of-00064.parquet",
+          "sha256": "9644be6589159f9ab85a147f71a48b4ea40ed712cb7c7b5b42bf91b1bb844973"
+        },
+        {
+          "bytes": 284773965,
+          "path": "finemath-4plus/train-00005-of-00064.parquet",
+          "sha256": "bc0e109357245f5bf91c956ec98e7d8f88e6356c08b25196e8760fe5839b2f99"
+        },
+        {
+          "bytes": 286407909,
+          "path": "finemath-4plus/train-00006-of-00064.parquet",
+          "sha256": "7afa1e173e27a492e0527fc82eb8859ff0040b79eae9aa39851c9b57aad0c95d"
+        },
+        {
+          "bytes": 286615349,
+          "path": "finemath-4plus/train-00007-of-00064.parquet",
+          "sha256": "b63045b1d32f7b10664e5e8cea9a4dfcd972cbc92e3d6eb9aa56c677ea9863b7"
+        },
+        {
+          "bytes": 287847133,
+          "path": "finemath-4plus/train-00008-of-00064.parquet",
+          "sha256": "39224cfcc751afbc04671bc9491266a90d58c30c27fd58f93551db8766ca96c6"
+        },
+        {
+          "bytes": 288931475,
+          "path": "finemath-4plus/train-00009-of-00064.parquet",
+          "sha256": "5e2b8db60462621ac0e45dd9865103f685915b09eee577f505b35f95ff601ea5"
+        },
+        {
+          "bytes": 285916752,
+          "path": "finemath-4plus/train-00010-of-00064.parquet",
+          "sha256": "9d9b4481659d3b24cc9913f2025f323bafb0d19c0e2f33f6eeb0fd82a230a018"
+        },
+        {
+          "bytes": 287613757,
+          "path": "finemath-4plus/train-00011-of-00064.parquet",
+          "sha256": "cc1f03a25f744f3595bc808a93b40ed5aa0f2b4976c0eebbadf693fe1ae9f7c9"
+        },
+        {
+          "bytes": 286861763,
+          "path": "finemath-4plus/train-00012-of-00064.parquet",
+          "sha256": "8357ab429ac19c08290ae78ee8280d75140a3d82c4f18b1e747607b70eeece93"
+        },
+        {
+          "bytes": 287269661,
+          "path": "finemath-4plus/train-00013-of-00064.parquet",
+          "sha256": "2188e377ec460f443a169d22cd44672282e5a5ea10b70ef67b66733d3e897ff2"
+        },
+        {
+          "bytes": 285892807,
+          "path": "finemath-4plus/train-00014-of-00064.parquet",
+          "sha256": "7418045311f2bac739b79175654fa97b394645d42548d7cf52ed7787ffd9883f"
+        },
+        {
+          "bytes": 284854630,
+          "path": "finemath-4plus/train-00015-of-00064.parquet",
+          "sha256": "7af8c5bcd8728514ec8bb4dd4aeeeec3cc0778818b8be6878d6a84e6b0c2c6eb"
+        }
+      ],
+      "name": "finemath",
+      "prefix": "finemath-4plus/",
+      "repository": "HuggingFaceTB/finemath",
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "selection": "lexicographic_pinned_shard_prefix_before_model_outcomes"
+    }
+  ],
+  "split_seed": 20260930,
+  "tapes": [
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 600000000,
+      "name": "scratch-train-pilot",
+      "role": "train",
+      "source_partition": {
+        "modulus": 10,
+        "remainders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-guidance-pilot",
+      "role": "guidance",
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 2500000000,
+      "name": "scratch-train-confirmation",
+      "role": "train",
+      "source_partition": {
+        "modulus": 10,
+        "remainders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-guidance-confirmation",
+      "role": "guidance",
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-development",
+      "role": "development",
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-validation",
+      "role": "validation",
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-test",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          0
+        ]
+      },
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "shift",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 50256,
+      "minimum_loss_tokens": 10000000,
+      "name": "scratch-test-shift",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          1
+        ]
+      },
+      "tokenizer": "gpt2"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 28800000,
+      "name": "continued-math-train-pilot",
+      "role": "train",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 3200000,
+      "name": "continued-retention-train-pilot",
+      "role": "train",
+      "source_partition": {
+        "modulus": 10,
+        "remainders": [
+          0
+        ]
+      },
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-guidance-pilot",
+      "role": "guidance",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-guidance-pilot",
+      "role": "guidance",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 900000000,
+      "name": "continued-math-train-confirmation",
+      "role": "train",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 100000000,
+      "name": "continued-retention-train-confirmation",
+      "role": "train",
+      "source_partition": {
+        "modulus": 10,
+        "remainders": [
+          0
+        ]
+      },
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-guidance-confirmation",
+      "role": "guidance",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-guidance-confirmation",
+      "role": "guidance",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-development",
+      "role": "development",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "pilot",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-development",
+      "role": "development",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-validation",
+      "role": "validation",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-validation",
+      "role": "validation",
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-test",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          0
+        ]
+      },
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "confirmation",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-test",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          0
+        ]
+      },
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "shift",
+      "dataset": "finemath",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-math-test-shift",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          1
+        ]
+      },
+      "tokenizer": "neox"
+    },
+    {
+      "cohort": "shift",
+      "dataset": "fineweb_edu",
+      "eos_token_id": 0,
+      "minimum_loss_tokens": 10000000,
+      "name": "continued-retention-test-shift",
+      "role": "test",
+      "source_partition": {
+        "modulus": 2,
+        "remainders": [
+          1
+        ]
+      },
+      "tokenizer": "neox"
+    }
+  ],
+  "tokenizers": {
+    "gpt2": {
+      "repository": "openai-community/gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+    },
+    "neox": {
+      "repository": "EleutherAI/pythia-160m-deduped",
+      "revision": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+    }
+  },
+  "train_fraction": 0.8
+}

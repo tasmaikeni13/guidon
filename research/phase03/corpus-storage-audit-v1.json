@@ -1,0 +1,35 @@
+{
+  "metadata_equal": true,
+  "method_and_document_order_identical": true,
+  "observations": [
+    {
+      "counts": {
+        "benchmark_documents": 93,
+        "candidates": 5000,
+        "quarantined_component_documents": 306
+      },
+      "database_sha256": "4211672bbc4a95cda392b7703809dc93d8fa212587fb84d49be39031f082c7c1",
+      "elapsed_seconds": 29.75149155105464,
+      "metadata_sha256": "7f6e996d929e90d91e041dcd3d1a8c8c52662299ecd56bbdf27bed82aff0b5fe",
+      "path": "artifacts/phase03/storage-audit-v1.sqlite",
+      "store": "disk"
+    },
+    {
+      "counts": {
+        "benchmark_documents": 93,
+        "candidates": 5000,
+        "quarantined_component_documents": 306
+      },
+      "database_sha256": "4211672bbc4a95cda392b7703809dc93d8fa212587fb84d49be39031f082c7c1",
+      "elapsed_seconds": 1.232350341975689,
+      "metadata_sha256": "7f6e996d929e90d91e041dcd3d1a8c8c52662299ecd56bbdf27bed82aff0b5fe",
+      "path": "/dev/shm/guidon-storage-audit-v1.sqlite",
+      "store": "ram"
+    }
+  ],
+  "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+  "sample_documents": 5000,
+  "scientific_outcomes_inspected": false,
+  "source_database": "data/phase03-v2/preparation.sqlite",
+  "timing_scope": "parent indexing/role assignment only; same preprocessed real sample, warmed references, disk then RAM; not total corpus time"
+}

@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/publicsuffix/list",
+  "revision": "714ac1bf5f2d038161c7419478cc3207431d706d",
+  "path": "public_suffix_list.dat",
+  "url": "https://raw.githubusercontent.com/publicsuffix/list/714ac1bf5f2d038161c7419478cc3207431d706d/public_suffix_list.dat",
+  "sha256": "8335d7c09592c5209e5026d275f7b291e1bc9c90cd949b967c1a7af5f8381b2a",
+  "license": "MPL-2.0",
+  "private_suffixes": true
+}

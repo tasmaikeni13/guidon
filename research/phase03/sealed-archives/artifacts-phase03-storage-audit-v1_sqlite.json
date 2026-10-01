@@ -1,0 +1,49 @@
+{
+  "archive": {
+    "bytes": 23109648,
+    "generation": "1790831802261441",
+    "independent_sha256_readback": true,
+    "object_metadata": {
+      "bucket": "guidon-phase03-5918425225-20261001",
+      "content_type": "application/octet-stream",
+      "crc32c_hash": "1lEQqg==",
+      "creation_time": "2026-10-01T05:16:42+0000",
+      "custom_fields": {
+        "sha256": "f2709bf9f7c217a0abc8683960ae614d9d8bb4bc8824d85ddcf2a0bd6e010efa"
+      },
+      "etag": "CMG/tKuImJcDEAE=",
+      "generation": "1790831802261441",
+      "md5_hash": "/X5JKl7bZiA/S0wxcVvJ2Q==",
+      "metageneration": 1,
+      "name": "preparation-attempts/artifacts-phase03-storage-audit-v1_sqlite.aesgcm",
+      "size": 23109648,
+      "storage_class": "STANDARD",
+      "storage_class_update_time": "2026-10-01T05:16:42+0000",
+      "storage_url": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-storage-audit-v1_sqlite.aesgcm#1790831802261441",
+      "update_time": "2026-10-01T05:16:42+0000"
+    },
+    "sha256": "f2709bf9f7c217a0abc8683960ae614d9d8bb4bc8824d85ddcf2a0bd6e010efa",
+    "uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-storage-audit-v1_sqlite.aesgcm",
+    "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-storage-audit-v1_sqlite.aesgcm#1790831802261441"
+  },
+  "encryption": {
+    "algorithm": "RSA-OAEP-SHA256/AES-256-GCM",
+    "context": {
+      "optimizer_outcomes_inspected": false,
+      "original_path": "artifacts/phase03/storage-audit-v1.sqlite",
+      "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+      "role": "stopped_preparation_intermediate"
+    },
+    "context_sha256": "013e053a5be86a62a21e5d856dccf5741e25e86689771b1f4bf9ff2dc484ddde",
+    "nonce_base64": "yfAS5jZqdt8ZciWz",
+    "path": "artifacts-phase03-storage-audit-v1_sqlite.aesgcm",
+    "plaintext_sha256": "4211672bbc4a95cda392b7703809dc93d8fa212587fb84d49be39031f082c7c1",
+    "sha256": "f2709bf9f7c217a0abc8683960ae614d9d8bb4bc8824d85ddcf2a0bd6e010efa",
+    "wrapped_key_base64": "rgNPegk5ok0iXE+ZI94rCTU5mvfqPENSg5NpE+rQ9UcPGNbAp2OUAROCRQD2mKurdCQ8TN6HbyjJNqo4y0ctL8gvJjbUZzCramPbhVZQr2WGApxyw+HhEjPmM6q16n56fJceaABzn+zu+Czjl8BW74AylGdskGUlBfKpRR8ibyIzw5rgtp6UeiRTexXcwtV21TxNYCK0Ycx59NgxSEoHgc6W1cQ2GC4NoQXYM3oyM4xR7iAItDD/7X9kFPFEx6cABgA/xBmgTyDLy0f3REpYjhaKGAOYLNsFfVInbnfH91V76yAsbsdgTmj6/ut67lNv5oTC9e2IOt7e0yP7uOQFweFCg++O8AzwUd6boVTo+gdpycUYznoNVj+Xysj/68G6Sv+r1uUkt/oqmOtrH/XG592XPRbmvbNvSbslXt9JeoJgsGqMVbvZZAekluzzokkWrFqxPkBQWbCgZO6/9ZVn4EJ8uuWoHUKl/A/z7u1AZ+Raq6mgfHw5pNvcrBaIl9li"
+  },
+  "original_path": "artifacts/phase03/storage-audit-v1.sqlite",
+  "original_plaintext_removed_after_verified_publication": true,
+  "private_key_available_to_preparer": false,
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "schema_version": 1
+}

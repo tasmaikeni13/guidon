@@ -1,0 +1,285 @@
+{
+  "failed_attempts_retained": [
+    "artifacts/phase04/model-tpu-v1",
+    "artifacts/phase04/model-tpu-v2"
+  ],
+  "parameter_count": 125226240,
+  "passed": true,
+  "promotion": false,
+  "scope": "actual allocated 125M full decoder, synthetic BF16/FP32 gradients, registered global main/probe shapes compiled on all 4 controllers; no empirical training or speed claim",
+  "source_snapshot_sha256": "93704bf15cef0d0534fe4fac1102f7368839e99fba7e86900434ea27505cf120",
+  "workers": [
+    {
+      "compiler_flops": {
+        "adamw-ordinary": 38275976790016.0,
+        "adamw_plus_guidance-probe": 43061350498304.0,
+        "guidon-ordinary": 38276584964096.0,
+        "guidon-probe": 43061346304000.0
+      },
+      "compiler_memory_estimates": {
+        "adamw-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15340323840,
+          "generated_code_size_in_bytes": 236777472,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13836537344
+        },
+        "adamw_plus_guidance-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16102698496,
+          "generated_code_size_in_bytes": 414745088,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14598830080
+        },
+        "guidon-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15331489280,
+          "generated_code_size_in_bytes": 238696448,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13827702784
+        },
+        "guidon-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16106914816,
+          "generated_code_size_in_bytes": 427019776,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14603046400
+        }
+      },
+      "host": "10.130.0.15",
+      "jax_rank": 1,
+      "launch_worker": 0,
+      "parameter_count": 125226240,
+      "precision": {
+        "bf16": 10.980233192443848,
+        "fp32": 10.980237007141113,
+        "gradient_relative_l2_error": 0.00861690565943718
+      },
+      "raw_sha256": "f632f9d120eeb20023040379f017324dc47fd98ea43c08976a47586541b8f2b0"
+    },
+    {
+      "compiler_flops": {
+        "adamw-ordinary": 38275976790016.0,
+        "adamw_plus_guidance-probe": 43061350498304.0,
+        "guidon-ordinary": 38276584964096.0,
+        "guidon-probe": 43061346304000.0
+      },
+      "compiler_memory_estimates": {
+        "adamw-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15340323840,
+          "generated_code_size_in_bytes": 236777472,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13836537344
+        },
+        "adamw_plus_guidance-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16102698496,
+          "generated_code_size_in_bytes": 414745088,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14598830080
+        },
+        "guidon-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15331489280,
+          "generated_code_size_in_bytes": 238696448,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13827702784
+        },
+        "guidon-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16106914816,
+          "generated_code_size_in_bytes": 427019776,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14603046400
+        }
+      },
+      "host": "10.130.0.14",
+      "jax_rank": 2,
+      "launch_worker": 1,
+      "parameter_count": 125226240,
+      "precision": {
+        "bf16": 10.980233192443848,
+        "fp32": 10.980237007141113,
+        "gradient_relative_l2_error": 0.00861690565943718
+      },
+      "raw_sha256": "a2579a8336d3eee3ca533bb32d2eda9e475985e6840455f9dbee96089b898179"
+    },
+    {
+      "compiler_flops": {
+        "adamw-ordinary": 38275976790016.0,
+        "adamw_plus_guidance-probe": 43061350498304.0,
+        "guidon-ordinary": 38276584964096.0,
+        "guidon-probe": 43061346304000.0
+      },
+      "compiler_memory_estimates": {
+        "adamw-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15340323840,
+          "generated_code_size_in_bytes": 236777472,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13836537344
+        },
+        "adamw_plus_guidance-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16102698496,
+          "generated_code_size_in_bytes": 414745088,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14598830080
+        },
+        "guidon-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15331489280,
+          "generated_code_size_in_bytes": 238696448,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13827702784
+        },
+        "guidon-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16106914816,
+          "generated_code_size_in_bytes": 427019776,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14603046400
+        }
+      },
+      "host": "10.130.0.16",
+      "jax_rank": 0,
+      "launch_worker": 2,
+      "parameter_count": 125226240,
+      "precision": {
+        "bf16": 10.980233192443848,
+        "fp32": 10.980237007141113,
+        "gradient_relative_l2_error": 0.00861690565943718
+      },
+      "raw_sha256": "52a1398332b7e6027b7a41aa55546326000482dbdfaac16324d5b8485294df00"
+    },
+    {
+      "compiler_flops": {
+        "adamw-ordinary": 38275976790016.0,
+        "adamw_plus_guidance-probe": 43061350498304.0,
+        "guidon-ordinary": 38276584964096.0,
+        "guidon-probe": 43061346304000.0
+      },
+      "compiler_memory_estimates": {
+        "adamw-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15340323840,
+          "generated_code_size_in_bytes": 236777472,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13836537344
+        },
+        "adamw_plus_guidance-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16102698496,
+          "generated_code_size_in_bytes": 414745088,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14598830080
+        },
+        "guidon-ordinary": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503774720,
+          "estimated_peak_bytes": 15331489280,
+          "generated_code_size_in_bytes": 238696448,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 13827702784
+        },
+        "guidon-probe": {
+          "alias_size_in_bytes": 1503118848,
+          "argument_size_in_bytes": 1503856640,
+          "estimated_peak_bytes": 16106914816,
+          "generated_code_size_in_bytes": 427019776,
+          "host_alias_size_in_bytes": 0,
+          "host_argument_size_in_bytes": 0,
+          "host_output_size_in_bytes": 0,
+          "host_temp_size_in_bytes": 0,
+          "output_size_in_bytes": 1503130624,
+          "temp_size_in_bytes": 14603046400
+        }
+      },
+      "host": "10.130.0.17",
+      "jax_rank": 3,
+      "launch_worker": 3,
+      "parameter_count": 125226240,
+      "precision": {
+        "bf16": 10.980233192443848,
+        "fp32": 10.980237007141113,
+        "gradient_relative_l2_error": 0.00861690565943718
+      },
+      "raw_sha256": "101693f58d4e0aaadf027db5aa6e2c0703808bf85455bd89f617e728a3e3ab30"
+    }
+  ]
+}

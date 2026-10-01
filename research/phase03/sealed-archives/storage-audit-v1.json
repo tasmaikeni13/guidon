@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "bytes": 23109648,
+    "generation": "1790831462533614",
+    "independent_sha256_readback": true,
+    "object_metadata": {
+      "bucket": "guidon-phase03-5918425225-20261001",
+      "content_type": "application/octet-stream",
+      "crc32c_hash": "TFEHAg==",
+      "creation_time": "2026-10-01T05:11:02+0000",
+      "custom_fields": {
+        "sha256": "eba51953aeac5eaeb8baf583bdd5105d3bb7a3a9aeeb982c2af5cdd9aecb32f1"
+      },
+      "etag": "CO6TtYmHmJcDEAE=",
+      "generation": "1790831462533614",
+      "md5_hash": "RAD9r//Zn5D7TF1r6bvPdA==",
+      "metageneration": 1,
+      "name": "preparation-attempts/storage-audit-v1.sqlite.aesgcm",
+      "size": 23109648,
+      "storage_class": "STANDARD",
+      "storage_class_update_time": "2026-10-01T05:11:02+0000",
+      "storage_url": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/storage-audit-v1.sqlite.aesgcm#1790831462533614",
+      "update_time": "2026-10-01T05:11:02+0000"
+    },
+    "sha256": "eba51953aeac5eaeb8baf583bdd5105d3bb7a3a9aeeb982c2af5cdd9aecb32f1",
+    "uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/storage-audit-v1.sqlite.aesgcm",
+    "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/storage-audit-v1.sqlite.aesgcm#1790831462533614"
+  },
+  "encryption": {
+    "algorithm": "RSA-OAEP-SHA256/AES-256-GCM",
+    "context": {
+      "attempt": "storage-audit-v1",
+      "plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+      "role": "preparation_audit_intermediate"
+    },
+    "context_sha256": "30ceeda90c093630c100692c8e8cfbd0dd959ac1b4460a6ff226e76614dcd5ec",
+    "nonce_base64": "ZDxca4+NQBlQt3hZ",
+    "path": "storage-audit-v1.aesgcm",
+    "plaintext_sha256": "4211672bbc4a95cda392b7703809dc93d8fa212587fb84d49be39031f082c7c1",
+    "sha256": "eba51953aeac5eaeb8baf583bdd5105d3bb7a3a9aeeb982c2af5cdd9aecb32f1",
+    "wrapped_key_base64": "GriFSs3MvF3nUvSb8VgNJHP3btVrm00JNLgHbOgNdE62ZoV7OrqAyzKlbqLhymCRVco/LbAq/pnIE3OusoKrEeBRfP9wI3Ac0bE2d6zY8GjWJRfhM25YamLQ2FwMudtZMhi0lR6dxBf7/EZXPt/HYJnDKQhHTzwsiNpHAk3c1ISut2F0zr4HLAo+MknIRWOaBWfJTWGRogDE1bsBS189aO2JE3lw7z90D4xn1HxqqBBjWpFmIiPxyTrydubaZFsBSUX3haFOXIYkVe/PP0ehoLsRBVLWBOqiF5EYWjOeEkrXT7lCdKFobbU6QfrHIqWwLQDqlmRBkRGGkgE59YAYzTtc0ziQn02dwj2hE5nS88r82o1P6qUpZjJLSJgOzMmjWR+YC/A7m8VlwbIYgHEu3jwoEVQaf/Kn9wJK0l7BXLpU8ec+jgSbNmcO1uFlm9nn3rlYNO+gkWnt+qorOEZEhLWdD1dXFSSlOb/NLzXoCIwuybUCaB7iWR3Ez0JlUCyU"
+  },
+  "original_path": "/dev/shm/guidon-storage-audit-v1.sqlite",
+  "original_plaintext_removed_after_verified_publication": true,
+  "private_key_available_to_preparer": false,
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "schema_version": 1
+}

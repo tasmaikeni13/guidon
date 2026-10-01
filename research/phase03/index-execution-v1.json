@@ -1,0 +1,24 @@
+{
+  "packages": {
+    "datasketch": "1.6.5",
+    "huggingface-hub": "0.34.4",
+    "numpy": "2.2.6",
+    "pyarrow": "19.0.1",
+    "tldextract": "5.3.0"
+  },
+  "process_id": 928943,
+  "promoted_gate": false,
+  "registered_plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+  "scope": "joint corpus indexing only; no tokenization or final evaluation",
+  "sealed_key_status": "external evaluator public key pending",
+  "source_archive": "artifacts/phase03/index-v1-source",
+  "source_sha256": {
+    "src/guidon/artifacts.py": "6f6ac1b3cd0c1ad5ed41a4bcdc471f93c2422386245e0a9faf8f92d87a6e8c5d",
+    "src/guidon/corpus.py": "9b9a1e54503988793bf83e7b492e95ab0f07baa969259e64c43efa69f203bde7",
+    "src/guidon/data_boundary.py": "54bdefc798417edcd0407aedd586bd70dca1b3c1382d1f15f4ce2258e700d709",
+    "src/guidon/prepare_data.py": "1beabce426db14c889435ccf8f2c52230ea174790e600a96051ce7fa52d0e364",
+    "src/guidon/resources/public_suffix_list.dat": "8335d7c09592c5209e5026d275f7b291e1bc9c90cd949b967c1a7af5f8381b2a",
+    "src/guidon/resources/public_suffix_provenance.json": "7bb81568c48fd0e9d1d0691e1ffb755a599d501cd9fa320112cd0305082c4d5e",
+    "src/guidon/sources.py": "ada9034488af9b92f0f9121846cb587e71b8937b9456c63a197c85c7429ef881"
+  }
+}

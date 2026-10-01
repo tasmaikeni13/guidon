@@ -1,0 +1,3697 @@
+{
+  "completion_sha256": "a99c7d661feb0d4b8fe3b3073cb20867e7400fa7bc9e5bdb54014c2fc2be8c49",
+  "failed_attempts_retained": [
+    "artifacts/phase04/kernel-tpu-v1",
+    "artifacts/phase04/kernel-tpu-v2",
+    "artifacts/phase04/kernel-tpu-v3",
+    "artifacts/phase04/kernel-tpu-v4",
+    "artifacts/phase04/kernel-tpu-v5",
+    "artifacts/phase04/kernel-tpu-v6"
+  ],
+  "launcher_sha256": "e5ea4829ada6436088b12e16e001e89e216c54ad134bbe6219ccb4e3b2f76edc",
+  "passed": true,
+  "scope": "compiled optimizer oracle parity and independent emitted coefficient certificates on all 4 controllers / 16 logical TPU v4 devices; no speed claim",
+  "source_snapshot_sha256": "bfd5a75ef135aad8b6feab242fddd264452f54b9f4e5d419780734dc18e232ed",
+  "workers": [
+    {
+      "environment": {
+        "backend": "tpu",
+        "device_count": 16,
+        "devices": [
+          {
+            "coordinates": [
+              0,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 0,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 1,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 2,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 3,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 4,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 5,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 6,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 7,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 8,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 9,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 10,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 11,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 12,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 13,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 14,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 15,
+            "kind": "TPU v4",
+            "process_index": 3
+          }
+        ],
+        "hostname": "t1v-n-0974eafe-w-0",
+        "local_device_count": 4,
+        "packages": {
+          "jax": "0.6.2",
+          "jaxlib": "0.6.2",
+          "libtpu": "0.0.17",
+          "numpy": "2.2.6"
+        },
+        "process_count": 4,
+        "process_index": 1
+      },
+      "host": "10.130.0.15",
+      "launch_worker": 0,
+      "observations": [
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.011356682366958637,
+            "passed": true,
+            "relative_neutrality": 7.719661064205508e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0056634455187491994,
+            "passed": true,
+            "relative_neutrality": 9.424344941058442e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.039611249535765225,
+            "passed": true,
+            "relative_neutrality": 8.209397939346195e-09
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01962126760159233,
+            "passed": true,
+            "relative_neutrality": 1.1561880915842499e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.11287648418952045,
+            "passed": true,
+            "relative_neutrality": 3.2707225780932496e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.056396638052707004,
+            "passed": true,
+            "relative_neutrality": 3.234240782165657e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.041113831590784855,
+            "passed": true,
+            "relative_neutrality": 9.426347073781395e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.020634866275045738,
+            "passed": true,
+            "relative_neutrality": 1.7581360733692876e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.05359048840190184,
+            "passed": true,
+            "relative_neutrality": 1.1713736871904222e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.02677500105330921,
+            "passed": true,
+            "relative_neutrality": 1.1702778602554854e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01738748201905782,
+            "passed": true,
+            "relative_neutrality": 7.687652720871257e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.009540007756049906,
+            "passed": true,
+            "relative_neutrality": 2.2400036216484353e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0770390585484968,
+            "passed": true,
+            "relative_neutrality": 1.6185190124256795e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.038729546135094495,
+            "passed": true,
+            "relative_neutrality": 1.357582652958289e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.06446736278355303,
+            "passed": true,
+            "relative_neutrality": 3.040781078698774e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.032497667328115654,
+            "passed": true,
+            "relative_neutrality": 1.4094345176026749e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.15267232527093455,
+            "passed": true,
+            "relative_neutrality": 1.8367534580074137e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07614620413050233,
+            "passed": true,
+            "relative_neutrality": 4.145774834971585e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.010613908497782099,
+            "passed": true,
+            "relative_neutrality": 3.9976097068511216e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.005308775286790635,
+            "passed": true,
+            "relative_neutrality": 2.588141680894505e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07563497380185424,
+            "passed": true,
+            "relative_neutrality": 1.9494495860892773e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.03737581758164765,
+            "passed": true,
+            "relative_neutrality": 4.6336725747567114e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01547381447047691,
+            "passed": true,
+            "relative_neutrality": 1.379391820559102e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.007688389054391287,
+            "passed": true,
+            "relative_neutrality": 3.869308072490972e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        }
+      ],
+      "rank": 1,
+      "raw_sha256": "a887cb0f868e8e4906730ffe83b2a5fc0ddc4b545f0b286d17c5a51e15adeebb"
+    },
+    {
+      "environment": {
+        "backend": "tpu",
+        "device_count": 16,
+        "devices": [
+          {
+            "coordinates": [
+              0,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 0,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 1,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 2,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 3,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 4,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 5,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 6,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 7,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 8,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 9,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 10,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 11,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 12,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 13,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 14,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 15,
+            "kind": "TPU v4",
+            "process_index": 3
+          }
+        ],
+        "hostname": "t1v-n-0974eafe-w-1",
+        "local_device_count": 4,
+        "packages": {
+          "jax": "0.6.2",
+          "jaxlib": "0.6.2",
+          "libtpu": "0.0.17",
+          "numpy": "2.2.6"
+        },
+        "process_count": 4,
+        "process_index": 2
+      },
+      "host": "10.130.0.14",
+      "launch_worker": 1,
+      "observations": [
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.011356682366958637,
+            "passed": true,
+            "relative_neutrality": 7.719661064205508e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0056634455187491994,
+            "passed": true,
+            "relative_neutrality": 9.424344941058442e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.039611249535765225,
+            "passed": true,
+            "relative_neutrality": 8.209397939346195e-09
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01962126760159233,
+            "passed": true,
+            "relative_neutrality": 1.1561880915842499e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.11287648418952045,
+            "passed": true,
+            "relative_neutrality": 3.2707225780932496e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.056396638052707004,
+            "passed": true,
+            "relative_neutrality": 3.234240782165657e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.041113831590784855,
+            "passed": true,
+            "relative_neutrality": 9.426347073781395e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.020634866275045738,
+            "passed": true,
+            "relative_neutrality": 1.7581360733692876e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.05359048840190184,
+            "passed": true,
+            "relative_neutrality": 1.1713736871904222e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.02677500105330921,
+            "passed": true,
+            "relative_neutrality": 1.1702778602554854e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01738748201905782,
+            "passed": true,
+            "relative_neutrality": 7.687652720871257e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.009540007756049906,
+            "passed": true,
+            "relative_neutrality": 2.2400036216484353e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0770390585484968,
+            "passed": true,
+            "relative_neutrality": 1.6185190124256795e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.038729546135094495,
+            "passed": true,
+            "relative_neutrality": 1.357582652958289e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.06446736278355303,
+            "passed": true,
+            "relative_neutrality": 3.040781078698774e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.032497667328115654,
+            "passed": true,
+            "relative_neutrality": 1.4094345176026749e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.15267232527093455,
+            "passed": true,
+            "relative_neutrality": 1.8367534580074137e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07614620413050233,
+            "passed": true,
+            "relative_neutrality": 4.145774834971585e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.010613908497782099,
+            "passed": true,
+            "relative_neutrality": 3.9976097068511216e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.005308775286790635,
+            "passed": true,
+            "relative_neutrality": 2.588141680894505e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07563497380185424,
+            "passed": true,
+            "relative_neutrality": 1.9494495860892773e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.03737581758164765,
+            "passed": true,
+            "relative_neutrality": 4.6336725747567114e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01547381447047691,
+            "passed": true,
+            "relative_neutrality": 1.379391820559102e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.007688389054391287,
+            "passed": true,
+            "relative_neutrality": 3.869308072490972e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        }
+      ],
+      "rank": 2,
+      "raw_sha256": "3929d6403f022a6ba143caa463e7a88d2d213758895e848baac1e40c1631602c"
+    },
+    {
+      "environment": {
+        "backend": "tpu",
+        "device_count": 16,
+        "devices": [
+          {
+            "coordinates": [
+              0,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 0,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 1,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 2,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 3,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 4,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 5,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 6,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 7,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 8,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 9,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 10,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 11,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 12,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 13,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 14,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 15,
+            "kind": "TPU v4",
+            "process_index": 3
+          }
+        ],
+        "hostname": "t1v-n-0974eafe-w-2",
+        "local_device_count": 4,
+        "packages": {
+          "jax": "0.6.2",
+          "jaxlib": "0.6.2",
+          "libtpu": "0.0.17",
+          "numpy": "2.2.6"
+        },
+        "process_count": 4,
+        "process_index": 0
+      },
+      "host": "10.130.0.16",
+      "launch_worker": 2,
+      "observations": [
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.011356682366958637,
+            "passed": true,
+            "relative_neutrality": 7.719661064205508e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0056634455187491994,
+            "passed": true,
+            "relative_neutrality": 9.424344941058442e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.039611249535765225,
+            "passed": true,
+            "relative_neutrality": 8.209397939346195e-09
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01962126760159233,
+            "passed": true,
+            "relative_neutrality": 1.1561880915842499e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.11287648418952045,
+            "passed": true,
+            "relative_neutrality": 3.2707225780932496e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.056396638052707004,
+            "passed": true,
+            "relative_neutrality": 3.234240782165657e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.041113831590784855,
+            "passed": true,
+            "relative_neutrality": 9.426347073781395e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.020634866275045738,
+            "passed": true,
+            "relative_neutrality": 1.7581360733692876e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.05359048840190184,
+            "passed": true,
+            "relative_neutrality": 1.1713736871904222e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.02677500105330921,
+            "passed": true,
+            "relative_neutrality": 1.1702778602554854e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01738748201905782,
+            "passed": true,
+            "relative_neutrality": 7.687652720871257e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.009540007756049906,
+            "passed": true,
+            "relative_neutrality": 2.2400036216484353e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0770390585484968,
+            "passed": true,
+            "relative_neutrality": 1.6185190124256795e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.038729546135094495,
+            "passed": true,
+            "relative_neutrality": 1.357582652958289e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.06446736278355303,
+            "passed": true,
+            "relative_neutrality": 3.040781078698774e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.032497667328115654,
+            "passed": true,
+            "relative_neutrality": 1.4094345176026749e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.15267232527093455,
+            "passed": true,
+            "relative_neutrality": 1.8367534580074137e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07614620413050233,
+            "passed": true,
+            "relative_neutrality": 4.145774834971585e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.010613908497782099,
+            "passed": true,
+            "relative_neutrality": 3.9976097068511216e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.005308775286790635,
+            "passed": true,
+            "relative_neutrality": 2.588141680894505e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07563497380185424,
+            "passed": true,
+            "relative_neutrality": 1.9494495860892773e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.03737581758164765,
+            "passed": true,
+            "relative_neutrality": 4.6336725747567114e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01547381447047691,
+            "passed": true,
+            "relative_neutrality": 1.379391820559102e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.007688389054391287,
+            "passed": true,
+            "relative_neutrality": 3.869308072490972e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        }
+      ],
+      "rank": 0,
+      "raw_sha256": "96daec171bfb6c57a54b0569d10d98d03a63efc71ab6b8e7fe571b15615be0e9"
+    },
+    {
+      "environment": {
+        "backend": "tpu",
+        "device_count": 16,
+        "devices": [
+          {
+            "coordinates": [
+              0,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 0,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 1,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 2,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              0
+            ],
+            "core_on_chip": 0,
+            "id": 3,
+            "kind": "TPU v4",
+            "process_index": 0
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 4,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 5,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 6,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              1
+            ],
+            "core_on_chip": 0,
+            "id": 7,
+            "kind": "TPU v4",
+            "process_index": 1
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 8,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 9,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 10,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              2
+            ],
+            "core_on_chip": 0,
+            "id": 11,
+            "kind": "TPU v4",
+            "process_index": 2
+          },
+          {
+            "coordinates": [
+              0,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 12,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              0,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 13,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              0,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 14,
+            "kind": "TPU v4",
+            "process_index": 3
+          },
+          {
+            "coordinates": [
+              1,
+              1,
+              3
+            ],
+            "core_on_chip": 0,
+            "id": 15,
+            "kind": "TPU v4",
+            "process_index": 3
+          }
+        ],
+        "hostname": "t1v-n-0974eafe-w-3",
+        "local_device_count": 4,
+        "packages": {
+          "jax": "0.6.2",
+          "jaxlib": "0.6.2",
+          "libtpu": "0.0.17",
+          "numpy": "2.2.6"
+        },
+        "process_count": 4,
+        "process_index": 3
+      },
+      "host": "10.130.0.17",
+      "launch_worker": 3,
+      "observations": [
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 5.960464477539063e-08,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0,
+            "passed": true,
+            "relative_neutrality": 0.0
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.0,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.011356682366958637,
+            "passed": true,
+            "relative_neutrality": 7.719661064205508e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0056634455187491994,
+            "passed": true,
+            "relative_neutrality": 9.424344941058442e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.039611249535765225,
+            "passed": true,
+            "relative_neutrality": 8.209397939346195e-09
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01962126760159233,
+            "passed": true,
+            "relative_neutrality": 1.1561880915842499e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.11287648418952045,
+            "passed": true,
+            "relative_neutrality": 3.2707225780932496e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.056396638052707004,
+            "passed": true,
+            "relative_neutrality": 3.234240782165657e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.041113831590784855,
+            "passed": true,
+            "relative_neutrality": 9.426347073781395e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.020634866275045738,
+            "passed": true,
+            "relative_neutrality": 1.7581360733692876e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.05359048840190184,
+            "passed": true,
+            "relative_neutrality": 1.1713736871904222e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.02677500105330921,
+            "passed": true,
+            "relative_neutrality": 1.1702778602554854e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01738748201905782,
+            "passed": true,
+            "relative_neutrality": 7.687652720871257e-08
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.009540007756049906,
+            "passed": true,
+            "relative_neutrality": 2.2400036216484353e-07
+          },
+          "interface": "<class 'jax.numpy.float32'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.0770390585484968,
+            "passed": true,
+            "relative_neutrality": 1.6185190124256795e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.038729546135094495,
+            "passed": true,
+            "relative_neutrality": 1.357582652958289e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.06446736278355303,
+            "passed": true,
+            "relative_neutrality": 3.040781078698774e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.032497667328115654,
+            "passed": true,
+            "relative_neutrality": 1.4094345176026749e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.15267232527093455,
+            "passed": true,
+            "relative_neutrality": 1.8367534580074137e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07614620413050233,
+            "passed": true,
+            "relative_neutrality": 4.145774834971585e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "packed_xla",
+          "maximum_leaf_error": 0.0,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.010613908497782099,
+            "passed": true,
+            "relative_neutrality": 3.9976097068511216e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 2.9802322387695312e-08,
+          "probe": true,
+          "radius": 0.15,
+          "step": 0
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.005308775286790635,
+            "passed": true,
+            "relative_neutrality": 2.588141680894505e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 1
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.07563497380185424,
+            "passed": true,
+            "relative_neutrality": 1.9494495860892773e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 2
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.03737581758164765,
+            "passed": true,
+            "relative_neutrality": 4.6336725747567114e-08
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 3
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.01547381447047691,
+            "passed": true,
+            "relative_neutrality": 1.379391820559102e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": true,
+          "radius": 0.15,
+          "step": 4
+        },
+        {
+          "independent_certificate": {
+            "bound_error": 0.0,
+            "finite": true,
+            "gain": 0.007688389054391287,
+            "passed": true,
+            "relative_neutrality": 3.869308072490972e-07
+          },
+          "interface": "<class 'jax.numpy.bfloat16'>",
+          "kernel": "pallas",
+          "maximum_leaf_error": 1.1920928955078125e-07,
+          "probe": false,
+          "radius": 0.15,
+          "step": 5
+        }
+      ],
+      "rank": 3,
+      "raw_sha256": "6676ad0dd96d0aaca32dde8d86ae3212fe5d5013402de87df96c8fb266d6d9fd"
+    }
+  ]
+}

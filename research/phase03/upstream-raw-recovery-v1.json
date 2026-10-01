@@ -1,0 +1,39 @@
+{
+  "discarded_attempts_retained_under": "artifacts/recovery",
+  "gate_promotion": false,
+  "historical_reconstructions": {
+    "age_diagnostics": {
+      "matches_signed_original": true,
+      "raw_sha256": "b4eb4c449119421c20923389e39b484986ce21217cd14434362fa3e98b36e19b",
+      "stream": "confirmation"
+    },
+    "math_v1": {
+      "audit": "research/phase01/archive/math_audit_v1.py",
+      "matches_signed_original": true,
+      "optimizer_commit": "5967ec0",
+      "raw_sha256": "535cd969b60dce93166e632f62dd65decff564f3e32c0229d835fdb69beac03d"
+    },
+    "math_v2": {
+      "basis": "documented intermediate draft before optimization barrier and conservative sign budget",
+      "matches_signed_original": true,
+      "raw_sha256": "6cabebdb8843de6d9ad9ea4297a8bfdbdc7b60e49795c7b7574f2c87b7389b59"
+    }
+  },
+  "preserves_failures": true,
+  "raw_sha256": {
+    "artifacts/phase01/math-final.jsonl.gz": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24",
+    "artifacts/phase01/math-v1.jsonl.gz": "535cd969b60dce93166e632f62dd65decff564f3e32c0229d835fdb69beac03d",
+    "artifacts/phase01/math-v2.jsonl.gz": "6cabebdb8843de6d9ad9ea4297a8bfdbdc7b60e49795c7b7574f2c87b7389b59",
+    "artifacts/phase01/math-v3.jsonl.gz": "b9ec7b2a6c3739de2140082373063a1b6c628cef3215cd1a9be0f1d757591c24",
+    "artifacts/phase02/age-diagnostics-v1.jsonl.gz": "b4eb4c449119421c20923389e39b484986ce21217cd14434362fa3e98b36e19b",
+    "artifacts/phase02/coefficient-noise-v1.jsonl.gz": "3c91525bfeb70c71557c734529f89560a09e36b4de8e3d072a55a7b1cf995cad",
+    "artifacts/phase02/confirmation-v1.jsonl.gz": "6a8147d713326b0c58c22fb89126c7cbbf7ea48a55c70c1c7037f7e670fe49ad",
+    "artifacts/phase02/discovery-v1.jsonl.gz": "cd2c181cff8e4a48c013fdf42114c8f289fea8097474e6514f92318920bfcf7a",
+    "artifacts/phase02/drift-confirmation-age-v1.jsonl.gz": "9755c366ffbd6453ba6a4d262a517fe4147f5246f62f4492443cd1e83784813d",
+    "artifacts/phase02/drift-confirmation-v1.jsonl.gz": "4b65d8725e4c10cf06d0db576cb450b9d1f062ce8845d090b8891befc4729b5b",
+    "artifacts/phase02/drift-discovery-age-v1.jsonl.gz": "022a5ec2db77b7426fff5db503c7fe4dc923c06802e8d81aa7ccf0e14df89353",
+    "artifacts/phase02/drift-discovery-v1.jsonl.gz": "134b2b4dd8557464973b9798af6e041236840ad3e8bb4cd28327291316e69932",
+    "artifacts/phase02/opposite-evaluation-v1.jsonl.gz": "6f0eb2ac3e6d8fb9b4a3915e9daa3288c959eb8010168195a2513a3f1f2534f7"
+  },
+  "scope": "recovery of ignored artifacts from signed preexisting phase 01/02 protocols; no new scientific draws, conditions or decisions"
+}

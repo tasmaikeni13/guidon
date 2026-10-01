@@ -1,0 +1,10 @@
+{
+  "axioms_log": "artifacts/phase04/lean-audit-v1.log",
+  "axioms_log_sha256": "eec431dce52692827e270c83f99962a87ff6a8aa71f1b9254bd99944240ae1d9",
+  "custom_axioms_or_sorry": false,
+  "lake_manifest_sha256": "ab016424b044477e25d2d3fed948d7a9c9e1a78da8a0c9a78728fa99359b1241",
+  "passed": true,
+  "scope": "unchanged pinned GUIDON proofs; full lake build completed 7362 jobs and actual Lean Audit.lean invocation passed",
+  "theorem_count": 32,
+  "toolchain": "leanprover/lean4:v4.24.0"
+}

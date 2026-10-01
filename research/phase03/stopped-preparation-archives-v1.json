@@ -1,0 +1,72 @@
+{
+  "failed_attempts_retained": true,
+  "private_key_available_to_research": false,
+  "public_key_sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "records": [
+    {
+      "original_path": "artifacts/phase03/preprocessing-equivalence-v1/original.sqlite",
+      "plaintext_sha256": "855b02b2e8de4ad914343b5b828db1c714e3ca52af400382b70097d6561fa2ff",
+      "record_path": "research/phase03/sealed-archives/artifacts-phase03-preprocessing-equivalence-v1-original_sqlite.json",
+      "record_sha256": "97b02d3bf4a5d2832eb3a62e1e5f847179ab00ccdd3530ef74a892e41656bcc9",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-original_sqlite.aesgcm#1790831786705479"
+    },
+    {
+      "original_path": "artifacts/phase03/preprocessing-equivalence-v1/parallel.sqlite",
+      "plaintext_sha256": "855b02b2e8de4ad914343b5b828db1c714e3ca52af400382b70097d6561fa2ff",
+      "record_path": "research/phase03/sealed-archives/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.json",
+      "record_sha256": "3787bd5ee495b10a72348b0a3c2bcd6c230ef3609a67143e987a93e850e3789e",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-preprocessing-equivalence-v1-parallel_sqlite.aesgcm#1790831794525808"
+    },
+    {
+      "original_path": "artifacts/phase03/storage-audit-v1.sqlite",
+      "plaintext_sha256": "4211672bbc4a95cda392b7703809dc93d8fa212587fb84d49be39031f082c7c1",
+      "record_path": "research/phase03/sealed-archives/artifacts-phase03-storage-audit-v1_sqlite.json",
+      "record_sha256": "c200b09c0b0a33077c0d761cc65b87fdc10228a705d40859bffaaa2274bcb861",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/artifacts-phase03-storage-audit-v1_sqlite.aesgcm#1790831802261441"
+    },
+    {
+      "original_path": "data/phase03-v1/.source-cache/sample/10BT/001_00000.parquet",
+      "plaintext_sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v1-_source-cache-sample-10BT-001_00000_parquet.json",
+      "record_sha256": "aa3bee737569261464ed068043cdf282c21c63853e642d6e2314defa6e4afc33",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-_source-cache-sample-10BT-001_00000_parquet.aesgcm#1790831821950506"
+    },
+    {
+      "original_path": "data/phase03-v1/preparation.sqlite",
+      "plaintext_sha256": "dd211aae319a098141d062be5f346956f42ddfd34ba57552bf41852718f46a93",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v1-preparation_sqlite.json",
+      "record_sha256": "8c114afab60a64665d8e197645b0062f0962eee36038bcb8c09f334f3cd46aba",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite.aesgcm#1790831853038743"
+    },
+    {
+      "original_path": "data/phase03-v1/preparation.sqlite-shm",
+      "plaintext_sha256": "c7035b19e617279cbba4dcc8549dd1c3716d5c99ffd37d8e17360aca3f978390",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v1-preparation_sqlite-shm.json",
+      "record_sha256": "4bd4d3324b5f34c2fc669d2eae92fa2fa88aef824a391844d39142ae21d1074d",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite-shm.aesgcm#1790831871180791"
+    },
+    {
+      "original_path": "data/phase03-v1/preparation.sqlite-wal",
+      "plaintext_sha256": "2d1890ca2d0dff641881612764763ae531a1f26f9718d1de7d7c3e26d2ad1a95",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v1-preparation_sqlite-wal.json",
+      "record_sha256": "c6f7282d569174697895a3ec830123da9111940581b99edfb33b6013076ed765",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v1-preparation_sqlite-wal.aesgcm#1790831878737696"
+    },
+    {
+      "original_path": "data/phase03-v2/.source-cache/sample/10BT/000_00000.parquet",
+      "plaintext_sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v2-_source-cache-sample-10BT-000_00000_parquet.json",
+      "record_sha256": "cd48aaf16b5f0d3c2860f827b9d5b80f9a7827172259249aa8b4d738e31880d4",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v2-_source-cache-sample-10BT-000_00000_parquet.aesgcm#1790831897250088"
+    },
+    {
+      "original_path": "data/phase03-v2/preparation.sqlite",
+      "plaintext_sha256": "4d78ed57bb3eacf129ab848d712f3911c765d3ffdbcedabb88e1f598a9573531",
+      "record_path": "research/phase03/sealed-archives/data-phase03-v2-preparation_sqlite.json",
+      "record_sha256": "0939da37522237dab6d74d2295cce3318eff037f8817e1aad42ad2439a56c5ce",
+      "version_uri": "gs://guidon-phase03-5918425225-20261001/preparation-attempts/data-phase03-v2-preparation_sqlite.aesgcm#1790831920902984"
+    }
+  ],
+  "schema_version": 1,
+  "source_plaintexts_removed_after_verified_readback": true
+}

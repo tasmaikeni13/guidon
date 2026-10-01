@@ -1,0 +1,27 @@
+{
+  "bytes": 625,
+  "generation": "1790831045063991",
+  "independent_sha256_readback": true,
+  "object_metadata": {
+    "bucket": "guidon-phase03-5918425225-20261001",
+    "content_type": "application/pem-certificate-chain",
+    "crc32c_hash": "qd180Q==",
+    "creation_time": "2026-10-01T05:04:05+0000",
+    "custom_fields": {
+      "sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23"
+    },
+    "etag": "CLfqrMKFmJcDEAE=",
+    "generation": "1790831045063991",
+    "md5_hash": "NetF74v4XqvxQShPrf90xw==",
+    "metageneration": 1,
+    "name": "custody/public-key-v1.pem",
+    "size": 625,
+    "storage_class": "STANDARD",
+    "storage_class_update_time": "2026-10-01T05:04:05+0000",
+    "storage_url": "gs://guidon-phase03-5918425225-20261001/custody/public-key-v1.pem#1790831045063991",
+    "update_time": "2026-10-01T05:04:05+0000"
+  },
+  "sha256": "615714cc173677be29e44828812199e22dd6b7bb86f89b7f80e9842955800b23",
+  "uri": "gs://guidon-phase03-5918425225-20261001/custody/public-key-v1.pem",
+  "version_uri": "gs://guidon-phase03-5918425225-20261001/custody/public-key-v1.pem#1790831045063991"
+}

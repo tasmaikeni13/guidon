@@ -1,0 +1,20 @@
+{
+  "correctness_equivalence_sha256": "225183fb66e1506955fbef550e7aa8c2e164d4000a6021a0382242d7ead8c0bb",
+  "last_indexed_aggregate": {
+    "benchmark_excluded_documents": 18355,
+    "duplicate_documents": 3740,
+    "stored_documents": 857001
+  },
+  "payloads_sealed_or_opened": false,
+  "reason": "sampling found serial shingling/benchmark checks dominate preprocessing; worker implementation passed exact metadata/exclusion/role equality on 2000 actual pinned documents",
+  "registered_plan_sha256": "f1bf065afa773cd27683464d60b83148393aadb5d528bd5816cd07d395286a3d",
+  "restart": "data/phase03-v2, same registered source and split plan",
+  "retained_directory": "data/phase03-v1",
+  "retained_log": "artifacts/phase03/index-v1.log",
+  "runtime_seconds": 5211.677326440811,
+  "sampling_profile_sha256": "966f17ee9125532596c3bb64f8dc9dc9368917616380ee1c1aeefafcff1d7561",
+  "scope": "data preprocessing engineering; no optimizer outcomes or scientific thresholds changed",
+  "status": "superseded_before_role_assignment",
+  "timing_caveat": "equivalence-v1 original timing also performs redundant worker benchmark preprocessing; use only its metadata equality, not its speed ratio",
+  "training_executed": false
+}

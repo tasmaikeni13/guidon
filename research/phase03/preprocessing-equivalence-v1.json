@@ -1,0 +1,32 @@
+{
+  "benchmark_reference_sha256": "bb07724bfedffdd025b5b290c0145584252f4f12f52bc9f85d7f87f32c1c56eb",
+  "current_source_sha256": "431a0a3f08fcde2c40204c887d451319cdf173f66bbd8281f7c44bcc4b5a8aec",
+  "data_examples_or_labels_emitted": false,
+  "observations": {
+    "original": {
+      "counts": {
+        "benchmark_documents": 35,
+        "candidates": 2000,
+        "quarantined_component_documents": 77
+      },
+      "documents": 1923,
+      "manifest_sha256": "15afa7d802a2cbb65cb6f1923c63ae2d93813d7b94886056f7bddab355759346",
+      "seconds": 20.599717075936496
+    },
+    "parallel": {
+      "counts": {
+        "benchmark_documents": 35,
+        "candidates": 2000,
+        "quarantined_component_documents": 77
+      },
+      "documents": 1923,
+      "manifest_sha256": "15afa7d802a2cbb65cb6f1923c63ae2d93813d7b94886056f7bddab355759346",
+      "seconds": 8.028013246017508
+    }
+  },
+  "original_source_sha256": "9b9a1e54503988793bf83e7b492e95ab0f07baa969259e64c43efa69f203bde7",
+  "passed": true,
+  "preprocessor_sha256": "2cc58cc5d03554abcaebc2c424d2be752686f8f921b4f334d15277748da5496c",
+  "scope": "2000 actual pinned FineWeb-Edu documents; same benchmark exclusions, duplicate flags, source components and hash roles; no model outcomes",
+  "speedup": 2.565979457763786
+}

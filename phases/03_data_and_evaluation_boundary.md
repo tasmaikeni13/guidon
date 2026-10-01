@@ -6,6 +6,17 @@
 `guidon.data_boundary` checks declared identities; it does not construct trustworthy
 clusters or certify a corpus.
 
+**Active user-directed simplification (2026-10-01):** For this work, use only the
+pinned FineWeb-Edu `sample-10BT` configuration and a deterministic token stream from
+it. The user explicitly waived corpus-wide deduplication. Do not resume the stopped
+all-candidate indexing job or spend time building MinHash/source clusters. Revise the
+preparation entry point to tokenize this one source directly, stop once the requested
+2.5B training labels are available, and register a deterministic 600M-label pilot
+slice from the same source. Keep validation/test access sealed and report that this
+design does not establish document/source deduplication or clean benchmark exposure.
+Do not mark Phase 03 passed until the actual token counts, role readers, manifests,
+and sealing/access checks are verified.
+
 Use the pinned revisions in `configs/`. Scratch: FineWeb-Edu `sample-10BT`, GPT-2
 tokenizer, exactly 2,500,000,000 loss tokens in the main training tape. Continued:
 Pythia-160M-deduped with its own tokenizer and FineMath `finemath-4plus`, 1B tokens
